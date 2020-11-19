@@ -1,48 +1,4 @@
-/* LOCOMOTIVE CSS 3.6.1 */
-html.has-scroll-smooth {
-    overflow: hidden; }
-  
-  html.has-scroll-dragging {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; }
-  
-  .has-scroll-smooth body {
-    overflow: hidden; }
-  
-  .has-scroll-smooth [data-scroll-container] {
-    min-height: 100vh; }
-  
-  .c-scrollbar {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 11px;
-    height: 100%;
-    transform-origin: center right;
-    transition: transform 0.3s, opacity 0.3s;
-    opacity: 0; }
-    .c-scrollbar:hover {
-      transform: scaleX(1.45); }
-    .c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
-      opacity: 1; }
-  
-  .c-scrollbar_thumb {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #080808;
-    border-radius: 0px;
-    opacity: 0.5;
-    width: 7px;
-    margin: 2px;
-    cursor: -webkit-grab;
-    cursor: grab; }
-    .has-scroll-dragging .c-scrollbar_thumb {
-      cursor: -webkit-grabbing;
-      cursor: grabbing; }
-  
+
   
   /**
    * Swiper 6.1.2
@@ -214,3 +170,5 @@ html.has-scroll-smooth {
     /* Distance from center where 1 is far left/far right, 0 is center */
     --distance-percent: calc((var(--distance) / var(--char-center)));
   }
+
+  
