@@ -13,8 +13,12 @@ const locoScroll = new LocomotiveScroll({
 	smooth: true,
 	getDirection: true,
 	scrollFromAnywhere: true,
-	//smoothMobile: true,
-	//lerp: .05
+	mobile: {
+        smooth: true
+    },
+    tablet: {
+        smooth: true
+    }
 });
 // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
 locoScroll.on("scroll", ScrollTrigger.update);
