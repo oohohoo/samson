@@ -14,7 +14,7 @@ const locoScroll = new LocomotiveScroll({
 	getDirection: true,
 	scrollFromAnywhere: true,
 	mobile: {
-        smooth: true
+        smooth: false
     },
     tablet: {
 		smooth: true,
