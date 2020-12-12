@@ -13,8 +13,8 @@ const locoScroll = new LocomotiveScroll({
 	smooth: true,
 	getDirection: true,
 	scrollFromAnywhere: true,
-	mobile: {
-        smooth: false
+	smartphone: {
+        smooth: true
     },
     tablet: {
 		smooth: true,
