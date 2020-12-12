@@ -18,7 +18,7 @@ const locoScroll = new LocomotiveScroll({
     },
     tablet: {
 		smooth: true,
-		touchMultiplier: 2
+		touchMultiplier: 4
     }
 });
 // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
