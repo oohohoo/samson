@@ -452,11 +452,14 @@ function initPageTransitions() {
       }) {
         // do something once on the initial page load
         initLoader();
-        
+        titleHero();
+        console.log("title hero loaded");
+        fullscreenMenu();
+        console.log("fullscreenmenu loaded");
         //resetActiveLink();
         //animationEnter();
         //homeanimations();
-        console.log("ONCE");
+        
       },
 
       async leave({
@@ -465,7 +468,7 @@ function initPageTransitions() {
         // animate loading screen in
         await pageTransitionIn(current);
         console.log("LEAVE");
-        
+
 
       },
       enter({
