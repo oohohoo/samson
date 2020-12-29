@@ -1,11 +1,15 @@
 // OVA VERZIJA RADI BARBA
 
+// SCROLLTRIGGER 
 gsap.registerPlugin(ScrollTrigger);
 console.log("ScrollTrigger Loaded!");
 
+// LOCOSCROLL 
 let locoScroll;
 console.log("Locomotive Loaded");
 
+// SPLITTING 
+Splitting();
 /*
 ================================================================================
 PRELOADER
@@ -152,6 +156,41 @@ console.log("Locomotive Updated once more");;
 } 
 
 );*/
+// --- 017 - LOCOMOTIVE 4.0 SCROLL TO  --------------------------------------------------------------------------
+$( "#totop" ).on( "click", function() {
+	locoScroll.scrollTo( '#top', {
+		'offset': 0,
+		'duration': 5000,
+		//'easing': [0.25, 0.00, 0.35, 1.00],
+		'disableLerp': true
+	});
+	});
+	
+	$( "#tocom" ).on( "click", function() {
+	locoScroll.scrollTo( '#com', {
+		'offset': -300,
+		'duration': 5000,
+		//'easing': [0.25, 0.00, 0.35, 1.00],
+		'disableLerp': true
+	});
+	});
+	$( "#tores" ).on( "click", function() {
+	locoScroll.scrollTo( '#res', {
+		'offset': -300,
+		'duration': 5000,
+		//'easing': [0.25, 0.00, 0.35, 1.00],
+		'disableLerp': true
+	});
+	});
+	$( "#tospe" ).on( "click", function() {
+	locoScroll.scrollTo( '#spe', {
+		'offset': -300,
+		'duration': 5000,
+		//'easing': [0.25, 0.00, 0.35, 1.00],
+		'disableLerp': true
+	});
+	});
+
 /* ===== */
 
 /*
@@ -174,19 +213,8 @@ SCROLLTRIGGER TEST
   });
   console.log("Scrolltrigger animacija loaded");
 
-  /*
-================================================================================
-LOCOMOTIVE 4 SCROLL TO TOP
-================================================================================
-*//*
-	locoScroll.scrollTo( '#top', {
-		'offset': 0,
-		'duration': 5000,
-		//'easing': [0.25, 0.00, 0.35, 1.00],
-		'disableLerp': true
-	});
-  */
-}
+
+} // end of main function
 
 /*
 ================================================================================
