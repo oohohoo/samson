@@ -344,16 +344,7 @@ LOADER
   height: var(--loader-height);
 }
 
-.fill-background {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  will-change: background-color;
-  background-color: var(--bcg-fill-color);
-  transition: background-color 0.3s linear;
-}
+
 
 /*
 ================================================================================
