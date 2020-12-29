@@ -452,8 +452,7 @@ function initPageTransitions() {
       }) {
         // do something once on the initial page load
         initLoader();
-        titleHero();
-        fullscreenMenu();
+        
         //resetActiveLink();
         //animationEnter();
         //homeanimations();
@@ -479,7 +478,9 @@ function initPageTransitions() {
       afterEnter({
         next
       }) {
-        animationEnter();
+        //animationEnter();
+        titleHero();
+        fullscreenMenu();
         console.log("AFTER ENTER");
 
       },
