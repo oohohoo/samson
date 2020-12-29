@@ -138,12 +138,12 @@ if ( scrollbar.length > 1 ) {
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
   // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
-  ScrollTrigger.refresh();
+ScrollTrigger.refresh();
   console.log("Scrolltrigger refreshed!");
 
 /* ===== */
 locoScroll.update();
-console.log("Locomotive Updated once more");;
+  console.log("Locomotive Updated once more");;
 //locoScroll.scrollTo( 'top' );
                 // When window reszie, need to update locomotive scroll.
                /* $( window ).on( 'resize', function() {
@@ -151,14 +151,14 @@ console.log("Locomotive Updated once more");;
                   console.log("JEBOTE RESIZED!");
 } 
 
-);*/
-/* ===== */
+); */
 
 /*
 ================================================================================
 SCROLLTRIGGER TEST
 ================================================================================
 */
+/*
   gsap.utils.toArray('.block1').forEach((el, i) => {
     gsap.from(el, {
       scrollTrigger: {
@@ -173,7 +173,7 @@ SCROLLTRIGGER TEST
     })
   });
   console.log("Scrolltrigger animacija loaded");
-
+*/
   /*
 ================================================================================
 LOCOMOTIVE 4 SCROLL TO TOP
