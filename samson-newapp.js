@@ -452,7 +452,7 @@ function initPageTransitions() {
       }) {
         // do something once on the initial page load
         initLoader();
-        titleHero();
+        //titleHero();
         console.log("title hero loaded");
         fullscreenMenu();
         console.log("fullscreenmenu loaded");
