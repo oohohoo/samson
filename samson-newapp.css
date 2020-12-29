@@ -19,10 +19,10 @@ DEFINE ROOT VARIABLES / definiraj svoje
   --bcg-green: #ACB7AE;
   --bcg-lightgreen: #a6b3b3;
   --bcg-lightbrown: #b0a7a4;
-  --bcg-lightblue: #B6FA00;
+  --bcg-lightblue:#f5f4f1;
 
   --bcg-loaderblue: #1e1e1e;
-  --bcg-loaderbluedark: #EDC4AC;
+  --bcg-loaderbluedark: #f5f4f1;
 
   --loader-width: 27.36vw;
   --loader-height: 50vh;
