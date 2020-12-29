@@ -465,6 +465,7 @@ function initPageTransitions() {
         // animate loading screen in
         await pageTransitionIn(current);
         console.log("LEAVE");
+        
 
       },
       enter({
