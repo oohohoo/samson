@@ -1,16 +1,11 @@
 // OVA VERZIJA RADI BARBA
 
-// SCROLLTRIGGER 
 gsap.registerPlugin(ScrollTrigger);
 console.log("ScrollTrigger Loaded!");
 
-// LOCOSCROLL 
 let locoScroll;
 console.log("Locomotive Loaded");
 
-// SPLITTING 
-Splitting();
-console.log("Splitting Loaded");
 /*
 ================================================================================
 PRELOADER
@@ -166,8 +161,67 @@ $( "#totop" ).on( "click", function() {
 		'disableLerp': true
 	});
 	});
-	/* ===== */
+	
+	$( "#tocom" ).on( "click", function() {
+	locoScroll.scrollTo( '#com', {
+		'offset': -300,
+		'duration': 5000,
+		//'easing': [0.25, 0.00, 0.35, 1.00],
+		'disableLerp': true
+	});
+	});
+	$( "#tores" ).on( "click", function() {
+	locoScroll.scrollTo( '#res', {
+		'offset': -300,
+		'duration': 5000,
+		//'easing': [0.25, 0.00, 0.35, 1.00],
+		'disableLerp': true
+	});
+	});
+	$( "#tospe" ).on( "click", function() {
+	locoScroll.scrollTo( '#spe', {
+		'offset': -300,
+		'duration': 5000,
+		//'easing': [0.25, 0.00, 0.35, 1.00],
+		'disableLerp': true
+	});
+	});
 
+/* ===== */
+
+/*
+================================================================================
+SCROLLTRIGGER TEST
+================================================================================
+*/
+  gsap.utils.toArray('.block1').forEach((el, i) => {
+    gsap.from(el, {
+      scrollTrigger: {
+        trigger: el,
+       // markers: true,
+        scroller: ".smooth-scroll",
+        start: 'top bottom',
+        end: "top top",
+      },
+      y: 100,
+      opacity: 0
+    })
+  });
+  console.log("Scrolltrigger animacija loaded");
+
+  /*
+================================================================================
+LOCOMOTIVE 4 SCROLL TO TOP
+================================================================================
+*//*
+	locoScroll.scrollTo( '#top', {
+		'offset': 0,
+		'duration': 5000,
+		//'easing': [0.25, 0.00, 0.35, 1.00],
+		'disableLerp': true
+	});
+  */
+}
 
 /*
 ================================================================================
@@ -474,4 +528,3 @@ function animationEnter() {
 
   }        
 
-}
