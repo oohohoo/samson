@@ -334,8 +334,8 @@ function pageTransitionIn({
       yPercent: 0
     }, 0) */
     .to(container, {
-      autoAlpha:1,
-      y: 150
+      autoAlpha:0,
+      //y: 150
     }, 0);
 
   return tl;
@@ -368,7 +368,7 @@ function pageTransitionOut({
     }, 0)*/
     .from(container, {
       //y: -150
-      autoAlpha:0
+      autoAlpha:1
     }, 0);
   return tl;
 }
