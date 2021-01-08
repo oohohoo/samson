@@ -360,12 +360,12 @@ function pageTransitionOut({
     onComplete: () => initContent()
   });
   tl
-    .to(loader, {
+    /*.to(loader, {
       yPercent: 100
     })
     .to(loaderMask, {
       yPercent: -80
-    }, 0)
+    }, 0)*/
     .from(container, {
       //y: -150
       autoAlpha:0
