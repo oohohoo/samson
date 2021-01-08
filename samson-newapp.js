@@ -684,7 +684,7 @@ function fullscreenMenu() {
     })
 */
     tl.to(".f-nav", {
-        duration: 0.35,
+        duration: 0.65,
         yPercent: -150,
         ease: "Expo.inOut",
         //stagger: -0.15,
