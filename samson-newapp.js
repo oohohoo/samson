@@ -457,7 +457,7 @@ function initPageTransitions() {
       }) {
         //animationEnter();
         titleHero();
-        fullscreenMenu();
+        //fullscreenMenu();
         console.log("AFTER ENTER");
 
       },
@@ -581,57 +581,24 @@ function fullscreenMenu() {
 
     let tl = gsap.timeline();
 
-    gsap.set(".menu-btn", {
-      pointerEvents: "none",
-    });
+    gsap.set(".menu-btn", {pointerEvents: "none",});
 
-    tl.fromTo(".nav--transition-slide", {
-        scaleY: 0,
-        transformOrigin: "bottom center",
-      }, {
-        duration: 0.5,
-        scaleY: 1,
-        ease: "Expo.inOut",
-      })
-
-      .set(".menu-btn", {
-        pointerEvents: "all",
-      })
+    tl.fromTo(".nav--transition-slide", {scaleY: 0, transformOrigin: "bottom center",}, 
+    {duration: 0.5, scaleY: 1, ease: "Expo.inOut", }) 
+       
+    .set(".menu-btn", {pointerEvents: "all",})
 
       /*.fromTo(".f-img-mask",	{clipPath:"polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)"},
 		{duration:0.5, ease: "Expo.inOut", sclipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}) */
 
       .fromTo(".f-img-mask", {
-        clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)"
-      }, {
-        autoAlpha: 1,
-        duration: 0.65,
-        y: 0,
-        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"
-      })
+        clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)"}, 
+        {autoAlpha: 1, duration: 0.65,y: 0,clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"})
 
-      .fromTo(".f-nav", {
-        yPercent: 150,
-      }, {
-        duration: 0.65,
-        yPercent: 0,
-        stagger: 0.02,
-      }, "<0.1")
-      .fromTo(".f-cap", {
-        yPercent: 100,
-      }, {
-        duration: 0.65,
-        yPercent: 0,
-        stagger: 0.02,
-      }, "<")
-      .fromTo(".f-foot, .arch, .copy-right", {
-        y: 20,
-        autoAlpha: 0
-      }, {
-        duration: 0.65,
-        y: 0,
-        autoAlpha: 1,
-        ease: "Expo.inOut",
+      .fromTo(".f-nav", {yPercent: 150,}, {duration: 0.65, yPercent: 0, stagger: 0.02,}, "<0.1")
+      //.fromTo(".f-cap", {yPercent: 100,}, {duration: 0.65,yPercent: 0,stagger: 0.02,}, "<")
+      .fromTo(".f-foot, .arch, .copy-right", {y: 20,autoAlpha: 0}, 
+        {duration: 0.65,y: 0,autoAlpha: 1, ease: "Expo.inOut",
         //stagger: 0.15,
       }, "<0.1")
 
@@ -654,33 +621,17 @@ function fullscreenMenu() {
       clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)"
     })
 */
-    tl.to(".f-nav", {
-        duration: 0.65,
-        yPercent: -150,
-        ease: "Expo.inOut",
+    tl.to(".f-nav", {duration: 0.65,yPercent: -150,ease: "Expo.inOut",
         //stagger: -0.15,
       }, 0)
-      .fromTo(".f-foot, .arch, .copy-right", {
-        y: 0,
-        autoAlpha: 1
-      }, {
-        duration: 0.65,
-        y: -20,
-        autoAlpha: 0,
-        ease: "Expo.inOut",
+      .fromTo(".f-foot, .arch, .copy-right", {y: 0,autoAlpha: 1}, 
+        {duration: 0.65,y: -20,autoAlpha: 0,ease: "Expo.inOut",
         //stagger: 0.15,
       }, "<0.1")
-      .to(".nav--transition-slide", {
-        duration: 0.35,
-        transformOrigin: "top center",
-        scaleY: 0,
-        ease: "Expo.inOut",
-      })
+      .to(".nav--transition-slide", {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
 
       //.to(".nav-W", {scaleY: 0})
-      .set(" .menu-btn", {
-        pointerEvents: "all",
-      });
+      .set(" .menu-btn", {pointerEvents: "all",});
   }
 
   /*
