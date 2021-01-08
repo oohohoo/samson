@@ -674,7 +674,7 @@ function fullscreenMenu() {
       pointerEvents: "none",
     });
 
-    tl.fromTo(".f-img-mask", {
+    /*tl.fromTo(".f-img-mask", {
       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"
     }, {
       autoAlpha: 1,
@@ -682,7 +682,7 @@ function fullscreenMenu() {
       y: 0,
       clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)"
     })
-
+*/
     tl.to(".f-nav", {
         duration: 0.35,
         yPercent: -150,
@@ -697,10 +697,10 @@ function fullscreenMenu() {
         y: -20,
         autoAlpha: 0,
         ease: "Expo.inOut",
-        stagger: 0.15,
+        //stagger: 0.15,
       }, "<0.1")
       .to(".nav--transition-slide", {
-        duration: 0.5,
+        duration: 0.35,
         transformOrigin: "top center",
         scaleY: 0,
         ease: "Expo.inOut",
