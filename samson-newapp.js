@@ -313,30 +313,12 @@ function pageTransitionIn({
 }) {
   // console.log('pageTransitionIn');
   // timeline to stretch the loader over the whole screen
-  const tl = gsap.timeline({
-    defaults: {
-      duration: 0.6,
-      ease: 'power1.inOut'
-    }
-  });
+  const tl = gsap.timeline({defaults: {duration: 0.6,ease: 'power1.inOut'}});
   tl
-   /* .set(loaderInner, {
-      autoAlpha: 0
-    })
-    .fromTo(loader, {
-      yPercent: -100
-    }, {
-      yPercent: 0
-    })
-    .fromTo(loaderMask, {
-      yPercent: 80
-    }, {
-      yPercent: 0
-    }, 0) */
-    .to(container, {
-      autoAlpha:0,
-      //y: 150
-    }, 0);
+   /* .set(loaderInner, {autoAlpha: 0})
+    .fromTo(loader, {yPercent: -100}, {yPercent: 0})
+    .fromTo(loaderMask, {yPercent: 80}, {yPercent: 0}, 0) */
+    .to(container, {autoAlpha:0, y:150}, 0);
 
   return tl;
 }
@@ -351,25 +333,14 @@ function pageTransitionOut({
 }) {
   //console.log('pageTransitionOut');
   // timeline to move loader away down
-  const tl = gsap.timeline({
-    defaults: {
-      duration: 0.6,
-      ease: 'power1.inOut'
-    },
+  const tl = gsap.timeline({defaults: {duration: 0.6, ease: 'power1.inOut'},
     // OVDJE SE INICIRA PONOVO SAV JS CONTENT / AKO ZATREBA
     onComplete: () => initContent()
   });
   tl
-    /*.to(loader, {
-      yPercent: 100
-    })
-    .to(loaderMask, {
-      yPercent: -80
-    }, 0)*/
-    .from(container, {
-      //y: -150
-      autoAlpha:1
-    }, 0);
+    /*.to(loader, {yPercent: 100})
+    .to(loaderMask, {yPercent: -80}, 0)*/
+    .from(container, {y: -150, autoAlpha:1, }, 0);
   return tl;
 }
 
@@ -716,7 +687,7 @@ function fullscreenMenu() {
   ================================================================================
   MENU ICON MOUSEOVER
   ================================================================================
-  */
+  *//*
   // MENU ICON MOUSEOVER 
   menuhover.addEventListener('mouseover', () => {
     let menuhovertimeline = gsap.timeline({
@@ -751,7 +722,7 @@ function fullscreenMenu() {
         width: "55%"
       }, "<-0.05")
   })
-
+*/
   /*
   ================================================================================
   MENU UNDERLINE
