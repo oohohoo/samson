@@ -456,7 +456,7 @@ function initPageTransitions() {
         initLoader();
         titleHero();
         console.log("title hero loaded");
-        //fullscreenMenu();
+        fullscreenMenu();
         console.log("fullscreenmenu loaded");
         //resetActiveLink();
         //animationEnter();
@@ -486,7 +486,7 @@ function initPageTransitions() {
       }) {
         //animationEnter();
         titleHero();
-       // fullscreenMenu();
+        fullscreenMenu();
         console.log("AFTER ENTER");
 
       },
