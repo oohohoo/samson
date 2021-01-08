@@ -661,7 +661,7 @@ function fullscreenMenu() {
         y: 0,
         autoAlpha: 1,
         ease: "Expo.inOut",
-        stagger: 0.15,
+        //stagger: 0.15,
       }, "<0.1")
 
   }
