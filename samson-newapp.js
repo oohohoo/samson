@@ -687,7 +687,7 @@ function fullscreenMenu() {
         duration: 0.35,
         yPercent: -150,
         ease: "Expo.inOut",
-        stagger: -0.15,
+        //stagger: -0.15,
       }, 0)
       .fromTo(".f-foot", {
         y: 0,
