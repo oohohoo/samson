@@ -615,7 +615,7 @@ function fullscreenMenu() {
     });
 
     tl.fromTo(".nav--transition-slide", {
-        scaleY: 0,
+        scaleY: 1,
         transformOrigin: "bottom center",
       }, {
         duration: 0.5,
