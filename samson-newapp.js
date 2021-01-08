@@ -640,7 +640,7 @@ function fullscreenMenu() {
       })
 
       .fromTo(".f-nav", {
-        yPercent: 110,
+        yPercent: 130,
       }, {
         duration: 0.65,
         yPercent: 0,
@@ -685,7 +685,7 @@ function fullscreenMenu() {
 
     tl.to(".f-nav", {
         duration: 0.35,
-        yPercent: -110,
+        yPercent: -130,
         ease: "Expo.inOut",
         stagger: -0.15,
       }, 0)
