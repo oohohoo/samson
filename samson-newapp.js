@@ -653,7 +653,7 @@ function fullscreenMenu() {
         yPercent: 0,
         stagger: 0.02,
       }, "<")
-      .fromTo(".f-foot", {
+      .fromTo(".f-foot, .arch, .copy-right", {
         y: 20,
         autoAlpha: 0
       }, {
@@ -689,7 +689,7 @@ function fullscreenMenu() {
         ease: "Expo.inOut",
         //stagger: -0.15,
       }, 0)
-      .fromTo(".f-foot", {
+      .fromTo(".f-foot, .arch, .copy-right", {
         y: 0,
         autoAlpha: 1
       }, {
