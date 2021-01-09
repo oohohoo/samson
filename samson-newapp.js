@@ -793,7 +793,7 @@ const closemenu = document.getElementById('closemenu');
 const animation = gsap.timeline({defaults:{autoAlpha:1}})
 animation.paused( true ); 
 animation
-
+.set(".open", {autoAlpha:1, scale: 1})
 //.to(".open", {autoAlpha:0, rotate:360, scale: 0.1})
 //.from(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
 
