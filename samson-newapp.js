@@ -414,7 +414,6 @@ views: [{
   console.log("Home JS triggered!");
   },
   afterEnter(data) {
-    sp
     titleHero();
     /*bigLogo();
     homeYoutube();
