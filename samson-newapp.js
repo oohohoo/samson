@@ -459,7 +459,7 @@ views: [{
     transitions: [{
       // ROUTE AKO IDE NA ABOUT IDE DRUGA ANIMACIJA
 
-
+      sync: true,
       once({
         next
       }) {
