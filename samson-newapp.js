@@ -813,7 +813,7 @@ tl.play();
 })
 
 close.addEventListener('click', () => {
-  tl.reverse(.7);
+  tl.reverse();
   })
 
 
