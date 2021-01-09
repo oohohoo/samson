@@ -808,7 +808,7 @@ const animation = gsap.timeline({defaults:{autoAlpha:1}})
 animation.paused( true ); 
 animation
 
-.to(".open", {autoAlpha:0, rotate:360, scale: 0.1})
+//.to(".open", {autoAlpha:0, rotate:360, scale: 0.1})
 .from(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
 
 .set(".menu-btn", {pointerEvents: "none",})
