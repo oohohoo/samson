@@ -396,21 +396,50 @@ function initPageTransitions() {
   barba.init({
     debug: true,
     prefetch: true,
-    /*
-    ================================================================================
-    BARBA VIEWS
-    ================================================================================
-    */
-    /* views: [{
-    namespace: 'about',
-    beforeEnter(){
-        strigtest();
-        aboutanimations();
-        console.log("About anomations tregered!");
-    } 
+  /*
+================================================================================
+BARBA VIEWS
+================================================================================
+*/  
+views: [{
+  namespace: 'home',
+  beforeEnter(data) {
+    titleHero();
+    /*bigLogo();
+    homeYoutube();
+    homeProductHover();
+    simpleTicker();
+    simpleTickerShow();*/
+  console.log("Home JS triggered!");
+  }},{
+  namespace: 'projects',
+  beforeEnter(){
+   /* productsMainSwiper();
+    resetLogo();
+    simpleTickerHide();*/
+  console.log("Projects JS triggered!");
+  }},{
+    namespace: 'materials',
+  beforeEnter(data) {
+    //soloProductsLottie(container);
+   /* simpleTickerHide();
+    productsoloAccordion();*/
+  console.log("Materials JS triggered!");
+  }},{
+  namespace: 'contact',
+  beforeEnter(data) {
+   // simpleTickerHide();
+  console.log("contact JS triggered!");
+  }},{
+  namespace: 'conversation',
+  beforeEnter(data) {
+    //resetLogo();
+  //simpleTickerHide();
+  console.log("about JS triggered!");
+  }},{
+ 
 
-
-}],*/
+}],
     /*
     ================================================================================
     BARBA TRANSITIONS
