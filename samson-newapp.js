@@ -643,7 +643,7 @@ function fullscreenMenu() {
         clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)"}, 
         {autoAlpha: 1, duration: 0.55,y: 0,clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"})
 */
-      .fromTo(".f-nav", {yPercent: 180,}, {duration: 0.65, yPercent: 0, stagger: 0.02,}, "<0.1")
+      .fromTo(".f-nav", {yPercent: 110,}, {duration: 0.65, yPercent: 0, stagger: 0.02,}, "<0.1")
       //.fromTo(".f-cap", {yPercent: 100,}, {duration: 0.65,yPercent: 0,stagger: 0.02,}, "<")
       .fromTo(".f-foot, .arch, .copy-right", {y: 20,autoAlpha: 0}, 
         {duration: 0.65,y: 0,autoAlpha: 1, ease: "Expo.inOut",
@@ -669,7 +669,7 @@ function fullscreenMenu() {
       clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)"
     })
 */
-    tl.to(".f-nav", {duration: 0.65,yPercent: -180,ease: "Expo.inOut",
+    tl.to(".f-nav", {duration: 0.65,yPercent: -110,ease: "Expo.inOut",
         //stagger: -0.15,
       }, 0)
       .fromTo(".f-foot, .arch, .copy-right", {y: 0,autoAlpha: 1}, 
@@ -842,7 +842,7 @@ function killMenu() {
     pointerEvents: "none",
   });
 
-  tl.to(".f-nav", {duration: 0.45,yPercent: -180,force3D:true,ease: "Expo.out",}, 0)
+  tl.to(".f-nav", {duration: 0.45,yPercent: -110,force3D:true,ease: "Expo.out",}, 0)
     .fromTo(".f-foot, .arch, .copy-right", {y: 0, autoAlpha: 1}, 
       {duration: 0.35,y: -20, autoAlpha: 0, ease: "none"}, "<0.1")
     .to(".nav--transition-slide", {duration: 0.65,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
