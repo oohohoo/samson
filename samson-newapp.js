@@ -603,7 +603,7 @@ function fullscreenMenu() {
   //const openmenu = document.getElementById('openmenu');
   //const closemenu = document.getElementById('closemenu');
   const menuhover = document.getElementById('menuhover');
-  var tl = gsap.timeline({ paused: true, reversed: true })
+
   //OPEN CLOSE MENU
 
   const {
@@ -625,7 +625,7 @@ function fullscreenMenu() {
 
   // SHOW MENU
   function show() {
-
+    var tl = gsap.timeline({ paused: true, reversed: true })
     let tl = gsap.timeline();
 
     gsap.set(".menu-btn", {pointerEvents: "none",});
