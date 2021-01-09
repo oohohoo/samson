@@ -785,7 +785,7 @@ function fullscreenMenuNew() {
 
 // OPEN MENU FROM CLICK
 const openmenu = document.getElementById('openmenu');
-const closemenu = document.getElementById('closemenu');
+const closemenu = document.getElementById('closemenux');
 //const menuhover = document.getElementById('menuhover');
 
 
