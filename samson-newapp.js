@@ -407,7 +407,7 @@ views: [{
   namespace: 'home',
 
   beforeEnter(data) {
-    fullscreenMenu();
+   // fullscreenMenu();
     //titleHero();
    // titleHero();
     /*bigLogo();
@@ -431,7 +431,7 @@ views: [{
 },{
   namespace: 'projects',
   beforeEnter(){
-    fullscreenMenu();
+   // fullscreenMenu();
    /* productsMainSwiper();
     resetLogo();
     simpleTickerHide();*/
@@ -439,7 +439,7 @@ views: [{
   }},{
     namespace: 'materials',
   beforeEnter(data) {
-    fullscreenMenu();
+  //  fullscreenMenu();
     //soloProductsLottie(container);
    /* simpleTickerHide();
     productsoloAccordion();*/
@@ -471,9 +471,10 @@ views: [{
         titleHero();
         console.log("title hero loaded");
         fullscreenMenu();
+        console.log(">>> FULSCREEN MENU ONCE LOADED");
         fsmenuHover();
         
-        console.log("fullscreenmenu loaded");
+       
         //resetActiveLink();
         //animationEnter();
         //homeanimations();
@@ -503,13 +504,14 @@ views: [{
         //animationEnter();
         titleHero();
         fullscreenMenu();
+        console.log(">>> FULSCREEN MENU AFTER ENTER LOADED");
         fsmenuHover();
         console.log("AFTER ENTER");
 
       },
 
       beforeEnter({next}) {
-        killMenu();
+       // killMenu();
 
       },
 
