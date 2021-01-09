@@ -781,7 +781,7 @@ function fullscreenMenu() {
 */
 function fullscreenMenuNew() {
 
-  let burger = document.querySelector('.open');
+  let burger = document.querySelector('.fs-nav-butt');
   let menuIsOpen = false; // tracks state
   
   /* -----------------------------
