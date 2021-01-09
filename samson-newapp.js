@@ -793,9 +793,9 @@ const closemenu = document.getElementById('closemenu');
 const animation = gsap.timeline({defaults:{autoAlpha:1}})
 animation.paused( true ); 
 animation
-.set(".open", {autoAlpha:1, scale: 1})
-//.to(".open", {autoAlpha:0, rotate:360, scale: 0.1})
-//.from(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
+//.set(".open", {autoAlpha:1, scale: 1})
+.to(".open", {autoAlpha:0, rotate:360, scale: 0.1})
+.from(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
 
 .set(".menu-btn", {pointerEvents: "none",})
 
@@ -815,8 +815,8 @@ animation
 const aniout = gsap.timeline({defaults:{autoAlpha:0}})
 //aniout.paused( true ); 
 aniout
-//.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
-//.to(".close", {autoAlpha:1, rotate:360, scale: 0.1}, "<")
+.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
+.to(".close", {autoAlpha:1, rotate:360, scale: 0.1}, "<")
 
 .set(".menu-btn", {pointerEvents: "none",})
 
