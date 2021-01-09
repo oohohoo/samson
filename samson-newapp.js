@@ -810,10 +810,12 @@ tl.to(".open", {autoAlpha:0, rotate:360, scale: 0.1})
   .set(".menu-btn", {pointerEvents: "all",})
 open.addEventListener('click', () => {
 tl.play();
+console.log("MENU PLAY");
 })
 
 close.addEventListener('click', () => {
   tl.reverse();
+  console.log("MENU REVERSE");
   })
 
 
