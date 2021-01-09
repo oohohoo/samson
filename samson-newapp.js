@@ -468,7 +468,29 @@ views: [{
         titleHero();
         console.log("title hero loaded");
         fullscreenMenu();
-        fsmenuHover();
+          let tl = gsap.timeline();
+
+  gsap.set(".menu-btn", {
+    pointerEvents: "none",
+  });
+
+  tl.to(".f-nav", {duration: 0.65,yPercent: -150,ease: "Expo.out",
+      //stagger: -0.15,
+    }, 0)
+    .fromTo(".f-foot, .arch, .copy-right", {y: 0,autoAlpha: 1}, 
+      {duration: 0.65,y: -20, autoAlpha: 0, ease: "none",
+      //stagger: 0.15,
+    }, "<0.1")
+    //.to(".nav--transition-slide", {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.out",},"<0.1")
+    .to(".nav--transition-slide", {autoAlpha:0, duration: 0.35},"<0.1")
+    .to(".nav--transition-slide", {scaleY: 0, duration: 0.1},"<0.35")
+    //.to(".nav-W", {scaleY: 0})
+    .set(" .menu-btn", {pointerEvents: "all",});
+
+  
+ 
+ }
+
         console.log("fullscreenmenu loaded");
         //resetActiveLink();
         //animationEnter();
@@ -498,8 +520,7 @@ views: [{
       }) {
         //animationEnter();
         titleHero();
-        fullscreenMenu();
-        fsmenuHover();
+        //fullscreenMenu();
         console.log("AFTER ENTER");
 
       },
@@ -855,7 +876,7 @@ function killMenu() {
 
  /*
 ================================================================================
-HOME PAGE TITLE & HERO GALLERY
+FS MENU HOVER
 ================================================================================
 */
 function fsmenuHover() {
@@ -894,3 +915,5 @@ dev.interactions = {
 dev.interactions.init();
 
 }
+
+
