@@ -468,6 +468,7 @@ views: [{
         titleHero();
         console.log("title hero loaded");
         fullscreenMenu();
+        fsmenuHover();
         console.log("fullscreenmenu loaded");
         //resetActiveLink();
         //animationEnter();
@@ -497,7 +498,8 @@ views: [{
       }) {
         //animationEnter();
         titleHero();
-        //fullscreenMenu();
+        fullscreenMenu();
+        fsmenuHover();
         console.log("AFTER ENTER");
 
       },
@@ -849,3 +851,46 @@ function killMenu() {
   
  
  }
+
+
+ /*
+================================================================================
+HOME PAGE TITLE & HERO GALLERY
+================================================================================
+*/
+function fsmenuHover() {
+
+
+const dev = {};
+
+dev.interactions = {
+  init: function() {
+    this.bindEvents();
+  },
+
+  bindEvents: function() {
+
+    let $filters = document.querySelectorAll("[data-filters] a");
+    $filters.forEach(function($filter) {
+      $filter.addEventListener("mouseenter", dev.interactions.filtersOnEnter);
+      $filter.addEventListener("mouseleave", dev.interactions.filtersOnLeave);
+    });
+
+  },
+
+  filtersOnEnter: function(e) {
+    // fade out all anchors
+    gsap.to("[data-filters] a", {color: "#9D9C9B"});
+    
+    // keep hovered anchor the same
+    gsap.to(e.target, {color: "#1e1e1e", overwrite: true});
+  },
+
+  filtersOnLeave: function(e) {
+    // animate all anchors to normal calue
+    gsap.to("[data-filters] a", {color: "#1e1e1e"});
+  }
+};
+dev.interactions.init();
+
+}
