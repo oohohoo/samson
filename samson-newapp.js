@@ -663,7 +663,7 @@ function fullscreenMenu() {
       clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)"
     })
 */
-    tl.to(".f-nav", {duration: 0.65,yPercent: -150,ease: "Expo.inOut",
+    tl.to(".f-nav", {duration: 0.65,yPercent: -170,ease: "Expo.inOut",
         //stagger: -0.15,
       }, 0)
       .fromTo(".f-foot, .arch, .copy-right", {y: 0,autoAlpha: 1}, 
@@ -836,7 +836,7 @@ function killMenu() {
     pointerEvents: "none",
   });
 
-  tl.to(".f-nav", {duration: 0.65,yPercent: -150,ease: "Expo.inOut",
+  tl.to(".f-nav", {duration: 0.65,yPercent: -170,ease: "Expo.inOut",
       //stagger: -0.15,
     }, 0)
     .fromTo(".f-foot, .arch, .copy-right", {y: 0,autoAlpha: 1}, 
