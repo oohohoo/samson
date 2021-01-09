@@ -818,29 +818,7 @@ function titleHero() {
  
  }
 
- /*
-================================================================================
-HOME PAGE TITLE & HERO GALLERY
-================================================================================
-*/
-function titleHero() {
-  /*
- ================================================================================
- IMAGE EXCHANGE GALLERY
- ================================================================================
- */
- var imgs = $.makeArray( $('#images img') );
- imgs.reverse();
- 
- function crossfade(){
- gsap.to(imgs[0], {duration:2, autoAlpha:0}) 
- gsap.to(imgs[1], {duration:2, autoAlpha:1})
- imgs.push( imgs.shift() )
- }
- 
- var cycle = setInterval(crossfade,3000)
- 
- 
+
  /*
  ================================================================================
 HIDE MENU ON CLICK
@@ -878,5 +856,4 @@ function hideMenu() {
 
 console.log("menuHiddeeeeeeeee");
 
-}
 }
