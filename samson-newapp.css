@@ -10,15 +10,9 @@ DEFINE ROOT VARIABLES / definiraj svoje
 ================================================================================
 */
 :root {
-  --text-color: white;
-  --text-dark-color: #202020;
   --header-height: 100px;
   --burger-width: 40px;
-  --font-headings: Georgia, serif;
 
-  --bcg-green: #ACB7AE;
-  --bcg-lightgreen: #a6b3b3;
-  --bcg-lightbrown: #b0a7a4;
   --bcg-lightblue:#f5f4f1;
 
   --bcg-loaderblue: #1e1e1e;
