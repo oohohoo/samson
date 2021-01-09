@@ -342,7 +342,7 @@ function pageTransitionOut({
   tl
     /*.to(loader, {yPercent: 100})
     .to(loaderMask, {yPercent: -80}, 0)*/
-    .from(container, {autoAlpha:0.5, }, 0);
+    .from(container, {autoAlpha:0.5, force3D: true}, 0);
   return tl;
 }
 
