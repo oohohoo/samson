@@ -788,6 +788,7 @@ const close = document.querySelector(".close")
 
 // SHOW
 var tl = gsap.timeline({defaults: {duration: 1, ease:"Expo.inOut"}})
+.set(".open", {autoAlpha:1, scale: 1})
 
 tl.paused(true);
 /*
