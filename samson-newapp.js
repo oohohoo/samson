@@ -816,7 +816,7 @@ tl.to(".open", {autoAlpha:0, rotate:360, scale: 0.1})
 
   var tl2 = gsap.timeline({defaults: {duration: 1, ease:"Expo.inOut"}})
 
-tl2.paused(true);
+//tl2.paused(true);
 /*
 tl.to("overlay", {fdfdfdfd})
 tl.to(".menu-container ")
