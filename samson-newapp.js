@@ -407,6 +407,7 @@ views: [{
   namespace: 'home',
 
   beforeEnter(data) {
+    fullscreenMenu();
     //titleHero();
    // titleHero();
     /*bigLogo();
@@ -417,7 +418,7 @@ views: [{
   console.log("Home JS triggered!");
   },
   afterEnter(data) {
-      
+  
     /*bigLogo();
     homeYoutube();
     homeProductHover();
@@ -430,6 +431,7 @@ views: [{
 },{
   namespace: 'projects',
   beforeEnter(){
+    fullscreenMenu();
    /* productsMainSwiper();
     resetLogo();
     simpleTickerHide();*/
@@ -437,6 +439,7 @@ views: [{
   }},{
     namespace: 'materials',
   beforeEnter(data) {
+    fullscreenMenu();
     //soloProductsLottie(container);
    /* simpleTickerHide();
     productsoloAccordion();*/
