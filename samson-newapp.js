@@ -801,12 +801,12 @@ tl.to(".open", {autoAlpha:0, rotate:360, scale: 0.1})
 .set(".menu-btn", {pointerEvents: "none",})
 
 .fromTo(".nav--transition-slide", {scaleY: 0, transformOrigin: "bottom center",}, 
-{duration: 0.5, scaleY: 1, ease: "Expo.inOut", }, "<") 
+{duration: 0.3, scaleY: 1, ease: "Expo.inOut", }, "<") 
    
-.fromTo(".f-nav", {yPercent: 110,}, {duration: 0.65, yPercent: 0, stagger: 0.02,}, "<0.1")
+.fromTo(".f-nav", {yPercent: 110,}, {duration: 0.65, yPercent: 0, stagger: 0.02,})
   //.fromTo(".f-cap", {yPercent: 100,}, {duration: 0.65,yPercent: 0,stagger: 0.02,}, "<")
 .fromTo(".f-foot, .arch, .copy-right", {y: 20,autoAlpha: 0}, 
-    {duration: 0.65,y: 0,autoAlpha: 1, ease: "Expo.inOut"}, "<0.1")
+    {duration: 0.65,y: 0,autoAlpha: 1, ease: "Expo.inOut"})
 
   .set(".menu-btn", {pointerEvents: "all",})
 
