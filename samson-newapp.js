@@ -780,21 +780,21 @@ function fullscreenMenu() {
 ================================================================================
 */
 function fullscreenMenuNew() {
+
   
+const open = document.querySelector(".open")
+const close = document.querySelector(".close")
+//const overlay = document.querySelector(".nav--transition-slide")
 
+var tl = gsap.timeline({defaults: {duration: 1, ease:"Expo.inOut"}})
 
-// OPEN MENU FROM CLICK
-const openmenu = document.getElementById('openmenu');
-const closemenu = document.getElementById('closemenux');
-//const menuhover = document.getElementById('menuhover');
+tl.paused(true);
+/*
+tl.to("overlay", {fdfdfdfd})
+tl.to(".menu-container ")
+*/
 
-
-	// OPEN MENU
-const animation = gsap.timeline({defaults:{autoAlpha:1}})
-animation.paused( true ); 
-animation
-//.set(".open", {autoAlpha:1, scale: 1})
-.to(".open", {autoAlpha:0, rotate:360, scale: 0.1})
+tl.to(".open", {autoAlpha:0, rotate:360, scale: 0.1})
 .from(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
 
 .set(".menu-btn", {pointerEvents: "none",})
@@ -808,29 +808,20 @@ animation
     {duration: 0.65,y: 0,autoAlpha: 1, ease: "Expo.inOut"}, "<0.1")
 
   .set(".menu-btn", {pointerEvents: "all",})
+open.addEventListener('click', () => {
+tl.play();
+})
+
+close.addEventListener('click', () => {
+  tl.reverse(.7);
+  })
+
+
+///// STARI NOVI MENU
 
 
 
-// CLOSE MENU
-const aniout = gsap.timeline({defaults:{autoAlpha:0}})
-//aniout.paused( true ); 
-aniout
-//.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
-//.to(".close", {autoAlpha:1, rotate:360, scale: 0.1}, "<")
 
-//.set(".menu-btn", {pointerEvents: "none",})
-
- .to(".f-nav", {duration: 0.65,rotate:360, yPercent: -110,ease: "Expo.inOut"}, 0)
- //.fromTo(".f-foot, .arch, .copy-right", {y: 0,autoAlpha: 1}, 
-     // {duration: 0.65,y: -20,autoAlpha: 0,ease: "Expo.inOut",}, "<0.1")
-//.to(".nav--transition-slide", {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
-
-//.set(" .menu-btn", {pointerEvents: "all",});
-
-
-// EVENT LISTENERS
-openmenu.addEventListener("click", function(){ animation.restart(), animation.play(); });
-closemenu.addEventListener("click", function(){ aniout.restart(), aniout.play(); });
 
 
 
