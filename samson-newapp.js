@@ -842,7 +842,7 @@ function killMenu() {
     }, "<0.1")
     //.to(".nav--transition-slide", {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.out",},"<0.1")
     .to(".nav--transition-slide", {autoAlpha:0, duration: 0.35},"<0.1")
-
+    .to(".nav--transition-slide", {scaleY: 0, duration: 0.1},"<0.1")
     //.to(".nav-W", {scaleY: 0})
     .set(" .menu-btn", {pointerEvents: "all",});
 
