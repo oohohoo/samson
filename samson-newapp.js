@@ -320,7 +320,7 @@ function pageTransitionIn({
    /* .set(loaderInner, {autoAlpha: 0})
     .fromTo(loader, {yPercent: -100}, {yPercent: 0})
     .fromTo(loaderMask, {yPercent: 80}, {yPercent: 0}, 0) */
-    .to(container, {autoAlpha:0}, 0);
+    .to(container, {autoAlpha:0, force3D: true}, 0);
 
   return tl;
 }
@@ -342,7 +342,7 @@ function pageTransitionOut({
   tl
     /*.to(loader, {yPercent: 100})
     .to(loaderMask, {yPercent: -80}, 0)*/
-    .from(container, {autoAlpha:1, }, 0);
+    .from(container, {autoAlpha:0.5, }, 0);
   return tl;
 }
 
