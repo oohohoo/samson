@@ -6,6 +6,8 @@ console.log("ScrollTrigger Loaded!");
 let locoScroll;
 console.log("Locomotive Loaded");
 
+Splitting();
+console.log("Splitting Loaded");
 /*
 ================================================================================
 PRELOADER
