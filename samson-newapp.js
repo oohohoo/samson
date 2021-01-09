@@ -407,6 +407,7 @@ views: [{
   namespace: 'home',
 
   beforeEnter(data) {
+    //titleHero();
    // titleHero();
     /*bigLogo();
     homeYoutube();
@@ -416,7 +417,7 @@ views: [{
   console.log("Home JS triggered!");
   },
   afterEnter(data) {
-      titleHero();
+      
     /*bigLogo();
     homeYoutube();
     homeProductHover();
@@ -464,7 +465,7 @@ views: [{
       }) {
         // do something once on the initial page load
         initLoader();
-        titleHero();
+       // titleHero();
         console.log("title hero loaded");
         fullscreenMenu();
         console.log("fullscreenmenu loaded");
