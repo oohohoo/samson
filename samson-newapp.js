@@ -819,11 +819,6 @@ close.addEventListener('click', () => {
   })
 
 
-///// STARI NOVI MENU
-
-
-
-
 
 
 
