@@ -511,7 +511,7 @@ views: [{
       },
 
       beforeEnter({next}) {
-       // killMenu();
+        killMenu();
 
       },
 
