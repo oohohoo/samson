@@ -626,7 +626,7 @@ function fullscreenMenu() {
   // SHOW MENU
   function show() {
     
-    let tl = gsap.timeline({ reversed: true });
+    let tl = gsap.timeline({});
     
     gsap.set(".menu-btn", {pointerEvents: "none",});
 
