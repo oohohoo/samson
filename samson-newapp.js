@@ -841,14 +841,10 @@ function killMenu() {
     pointerEvents: "none",
   });
 
-  tl.to(".f-nav", {duration: 0.65,yPercent: -170,ease: "Expo.inOut",
-      //stagger: -0.15,
-    }, 0)
-    .fromTo(".f-foot, .arch, .copy-right", {y: 0,autoAlpha: 1}, 
-      {duration: 0.65,y: -20, autoAlpha: 0, ease: "none",
-      //stagger: 0.15,
-    }, "<0.1")
-    .to(".nav--transition-slide", {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.out",},"<0.1")
+  tl.to(".f-nav", {duration: 0.65,yPercent: -170,force3D:true, ease: "Expo.inOut",}, 0)
+    .fromTo(".f-foot, .arch, .copy-right", {y: 0, autoAlpha: 1}, 
+      {duration: 0.65,y: -20, autoAlpha: 0, ease: "none"}, "<0.1")
+    .to(".nav--transition-slide", {duration: 0.35, force3D: true, transformOrigin: "top center", scaleY: 0, ease: "Expo.out",},"<")
     //.to(".nav--transition-slide", {autoAlpha:0, duration: 0.35},"<0.1")
    // .to(".nav--transition-slide", { duration: 0.1},"<0.35")
     //.to(".nav-W", {scaleY: 0})
