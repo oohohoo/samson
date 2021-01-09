@@ -786,6 +786,7 @@ const open = document.querySelector(".open")
 const close = document.querySelector(".close")
 //const overlay = document.querySelector(".nav--transition-slide")
 
+// SHOW
 var tl = gsap.timeline({defaults: {duration: 1, ease:"Expo.inOut"}})
 
 tl.paused(true);
@@ -793,7 +794,6 @@ tl.paused(true);
 tl.to("overlay", {fdfdfdfd})
 tl.to(".menu-container ")
 */
-
 tl.to(".open", {autoAlpha:0, rotate:360, scale: 0.1})
 .from(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
 
@@ -812,13 +812,38 @@ tl.to(".open", {autoAlpha:0, rotate:360, scale: 0.1})
 
 
 
+  // HIDE
+
+  var tl2 = gsap.timeline({defaults: {duration: 1, ease:"Expo.inOut"}})
+
+tl2.paused(true);
+/*
+tl.to("overlay", {fdfdfdfd})
+tl.to(".menu-container ")
+*/
+tl2.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
+.to(".close", {autoAlpha:1, rotate:360, scale: 0.1}, "<")
+
+.set(".menu-btn", {pointerEvents: "none",})
+
+.to(".f-nav", {duration: 0.65,rotate:360, yPercent: -110,ease: "Expo.inOut"}, 0)
+//.fromTo(".f-foot, .arch, .copy-right", {y: 0,autoAlpha: 1}, 
+    // {duration: 0.65,y: -20,autoAlpha: 0,ease: "Expo.inOut",}, "<0.1")
+//.to(".nav--transition-slide", {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
+
+//.set(" .menu-btn", {pointerEvents: "all",});
+
+
+  //
+
+
 open.addEventListener('click', () => {
 tl.play();
 console.log("MENU PLAY");
 })
 
 close.addEventListener('click', () => {
-  tl.reverse();
+  tl2.play();
   console.log("MENU REVERSE");
   })
 
