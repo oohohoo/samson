@@ -813,7 +813,7 @@ animation
 
 // CLOSE MENU
 const aniout = gsap.timeline({defaults:{autoAlpha:0}})
-//aniout.paused( true ); 
+aniout.paused( true ); 
 aniout
 .from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
 .to(".close", {autoAlpha:1, rotate:360, scale: 0.1}, "<")
