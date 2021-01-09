@@ -403,7 +403,17 @@ BARBA VIEWS
 */  
 views: [{
   namespace: 'home',
+
   beforeEnter(data) {
+   // titleHero();
+    /*bigLogo();
+    homeYoutube();
+    homeProductHover();
+    simpleTicker();
+    simpleTickerShow();*/
+  console.log("Home JS triggered!");
+  },
+  afterEnter(data) {
     titleHero();
     /*bigLogo();
     homeYoutube();
@@ -411,7 +421,10 @@ views: [{
     simpleTicker();
     simpleTickerShow();*/
   console.log("Home JS triggered!");
-  }},{
+  }
+
+
+},{
   namespace: 'projects',
   beforeEnter(){
    /* productsMainSwiper();
