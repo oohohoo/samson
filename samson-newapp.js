@@ -414,6 +414,7 @@ views: [{
   console.log("Home JS triggered!");
   },
   afterEnter(data) {
+    sp
     titleHero();
     /*bigLogo();
     homeYoutube();
@@ -825,6 +826,8 @@ HOME PAGE TITLE & HERO GALLERY
 ================================================================================
 */
 function titleHero() {
+
+  Splitting();
   /*
  ================================================================================
  IMAGE EXCHANGE GALLERY
