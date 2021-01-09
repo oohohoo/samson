@@ -848,9 +848,9 @@ function killMenu() {
       {duration: 0.65,y: -20, autoAlpha: 0, ease: "none",
       //stagger: 0.15,
     }, "<0.1")
-    //.to(".nav--transition-slide", {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.out",},"<0.1")
-    .to(".nav--transition-slide", {autoAlpha:0, duration: 0.35},"<0.1")
-    .to(".nav--transition-slide", { duration: 0.1},"<0.35")
+    .to(".nav--transition-slide", {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.out",},"<0.1")
+    //.to(".nav--transition-slide", {autoAlpha:0, duration: 0.35},"<0.1")
+   // .to(".nav--transition-slide", { duration: 0.1},"<0.35")
     //.to(".nav-W", {scaleY: 0})
     .set(" .menu-btn", {pointerEvents: "all",});
 
