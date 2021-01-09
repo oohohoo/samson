@@ -625,9 +625,9 @@ function fullscreenMenu() {
 
   // SHOW MENU
   function show() {
-    
-    let tl = gsap.timeline({});
-    
+
+    let tl = gsap.timeline();
+
     gsap.set(".menu-btn", {pointerEvents: "none",});
 
     tl.fromTo(".nav--transition-slide", {scaleY: 0, transformOrigin: "bottom center",}, 
