@@ -495,9 +495,8 @@ views: [{
         console.log("NEXT");
       },
 
-      afterEnter({
-        next
-      }) {
+      afterEnter({next}) {
+        hideMenu();
         //animationEnter();
         titleHero();
         //fullscreenMenu();
@@ -505,9 +504,7 @@ views: [{
 
       },
 
-      beforeEnter({
-        next
-      }) {
+      beforeEnter({next}) {
 
       },
 
@@ -787,45 +784,6 @@ HOME PAGE TITLE & HERO GALLERY
 ================================================================================
 */
 function titleHero() {
- /*
-================================================================================
-IMAGE EXCHANGE GALLERY
-================================================================================
-*/
-var imgs = $.makeArray( $('#images img') );
-imgs.reverse();
-
-function crossfade(){
-gsap.to(imgs[0], {duration:2, autoAlpha:0}) 
-gsap.to(imgs[1], {duration:2, autoAlpha:1})
-imgs.push( imgs.shift() )
-}
-
-var cycle = setInterval(crossfade,3000)
-
-
-/*
-================================================================================
-CLIPPING PATH MASK REVEAL & TEXT REVEAL
-================================================================================
-*/
-var animation = gsap.timeline({defaults:{duration:1.5, ease: "power3.inOut"}})
-animation
-.set(".hide", {autoAlpha:1}, "<")
-.from(".char", {stagger:0.02, yPercent:110}, "<0.1")
-.fromTo(".clip", {y:400, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
-{autoAlpha:1, duration:3, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "<0.1")
-
-
-
-}
-
-/*
-================================================================================
-HOME PAGE TITLE & HERO GALLERY
-================================================================================
-*/
-function titleHero() {
 
   Splitting();
   /*
@@ -860,3 +818,66 @@ function titleHero() {
  
  
  }
+
+ /*
+================================================================================
+HOME PAGE TITLE & HERO GALLERY
+================================================================================
+*/
+function titleHero() {
+  /*
+ ================================================================================
+ IMAGE EXCHANGE GALLERY
+ ================================================================================
+ */
+ var imgs = $.makeArray( $('#images img') );
+ imgs.reverse();
+ 
+ function crossfade(){
+ gsap.to(imgs[0], {duration:2, autoAlpha:0}) 
+ gsap.to(imgs[1], {duration:2, autoAlpha:1})
+ imgs.push( imgs.shift() )
+ }
+ 
+ var cycle = setInterval(crossfade,3000)
+ 
+ 
+ /*
+ ================================================================================
+HIDE MENU ON CLICK
+ ================================================================================
+ */
+function hideMenu() {
+  
+  let tl = gsap.timeline();
+
+  gsap.set(".menu-btn", {
+    pointerEvents: "none",
+  });
+
+  /*tl.fromTo(".f-img-mask", {
+    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"
+  }, {
+    autoAlpha: 1,
+    duration: 0.65,
+    y: 0,
+    clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)"
+  })
+*/
+  tl.to(".f-nav", {duration: 0.65,yPercent: -150,ease: "Expo.inOut",
+      //stagger: -0.15,
+    }, 0)
+    .fromTo(".f-foot, .arch, .copy-right", {y: 0,autoAlpha: 1}, 
+      {duration: 0.65,y: -20,autoAlpha: 0,ease: "Expo.inOut",
+      //stagger: 0.15,
+    }, "<0.1")
+    .to(".nav--transition-slide", {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
+
+    //.to(".nav-W", {scaleY: 0})
+    .set(" .menu-btn", {pointerEvents: "all",});
+	
+
+console.log("menuHiddeeeeeeeee");
+
+}
+}
