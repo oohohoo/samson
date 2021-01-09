@@ -471,8 +471,9 @@ views: [{
         initLoader();
         titleHero();
         console.log("title hero loaded");
-        fullscreenMenu();
-        console.log(">>> FULSCREEN MENU ONCE LOADED");
+        //fullscreenMenu();
+        fullscreenMenuNew(); 
+        console.log(">>> FULSCREEN MENU NEW");
         fsmenuHover();
         
        
@@ -784,6 +785,68 @@ function fullscreenMenu() {
     });
 
   });
+
+}
+
+/*
+================================================================================
+------- FULLSCREEN MENU NEW
+================================================================================
+*/
+function fullscreenMenuNew() {
+  
+
+
+// OPEN MENU FROM CLICK
+const openmenu = document.getElementById('openmenu');
+const closemenu = document.getElementById('closemenu');
+//const menuhover = document.getElementById('menuhover');
+
+
+	// OPEN MENU
+const animation = gsap.timeline({defaults:{autoAlpha:1}})
+animation.paused( true ); 
+animation
+
+.to(".open", {autoAlpha:0, rotate:360, scale: 0.1})
+.from(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
+
+.set(".menu-btn", {pointerEvents: "none",})
+
+.fromTo(".nav--transition-slide", {scaleY: 0, transformOrigin: "bottom center",}, 
+{duration: 0.5, scaleY: 1, ease: "Expo.inOut", }) 
+   
+.fromTo(".f-nav", {yPercent: 110,}, {duration: 0.65, yPercent: 0, stagger: 0.02,}, "<")
+  //.fromTo(".f-cap", {yPercent: 100,}, {duration: 0.65,yPercent: 0,stagger: 0.02,}, "<")
+.fromTo(".f-foot, .arch, .copy-right", {y: 20,autoAlpha: 0}, 
+    {duration: 0.65,y: 0,autoAlpha: 1, ease: "Expo.inOut"}, "<0.1")
+
+  .set(".menu-btn", {pointerEvents: "all",})
+
+
+
+// CLOSE MENU
+const aniout = gsap.timeline({defaults:{autoAlpha:0}})
+//aniout.paused( true ); 
+aniout
+.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
+.to(".close", {autoAlpha:1, rotate:360, scale: 0.1}, "<")
+
+.set(".menu-btn", {pointerEvents: "none",})
+
+ .to(".f-nav", {duration: 0.65,yPercent: -110,ease: "Expo.inOut"}, 0)
+ .fromTo(".f-foot, .arch, .copy-right", {y: 0,autoAlpha: 1}, 
+      {duration: 0.65,y: -20,autoAlpha: 0,ease: "Expo.inOut",}, "<0.1")
+.to(".nav--transition-slide", {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
+
+.set(" .menu-btn", {pointerEvents: "all",});
+
+
+// EVENT LISTENERS
+openmenu.addEventListener("click", function(){ animation.restart(), animation.play(); });
+closemenu.addEventListener("click", function(){aniout.restart(), aniout.play(); });
+
+
 
 }
 
