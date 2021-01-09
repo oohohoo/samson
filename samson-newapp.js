@@ -670,7 +670,7 @@ function fullscreenMenu() {
         {duration: 0.65,y: -20,autoAlpha: 0,ease: "Expo.inOut",
         //stagger: 0.15,
       }, "<0.1")
-      .to(".nav--transition-slide", {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
+      .to(".nav--transition-slide", {duration: 0.65,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
 
       //.to(".nav-W", {scaleY: 0})
       .set(" .menu-btn", {pointerEvents: "all",});
@@ -721,7 +721,7 @@ function fullscreenMenu() {
   MENU UNDERLINE
   ================================================================================
   */
-
+/*
   // Mouseenter function
   function enterAnimation(link, e, index) {
     link.tl.tweenFromTo(0, "midway");
@@ -779,7 +779,7 @@ function fullscreenMenu() {
   });
 
 }
-
+*/
 
 /*
 ================================================================================
