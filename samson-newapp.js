@@ -845,7 +845,7 @@ console.log("MENU PLAY");
 })
 
 close.addEventListener('click', () => {
-  tl2.restart(), 
+  //tl2.restart(), 
   tl2.play();
   console.log("MENU 2 PLAY aaaa");
   })
