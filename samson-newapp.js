@@ -839,11 +839,13 @@ tl2.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
 
 
 open.addEventListener('click', () => {
+tl.restart(), 
 tl.play();
 console.log("MENU PLAY");
 })
 
 close.addEventListener('click', () => {
+  tl.restart(), 
   tl2.play();
   console.log("MENU 2 PLAY");
   })
