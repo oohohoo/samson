@@ -830,7 +830,7 @@ aniout
 
 // EVENT LISTENERS
 openmenu.addEventListener("click", function(){ animation.restart(), animation.play(); });
-closemenu.addEventListener("click", function(){aniout.restart(), aniout.play(); });
+closemenu.addEventListener("click", function(){ aniout.restart(), aniout.play(); });
 
 
 
