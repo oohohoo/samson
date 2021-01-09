@@ -818,6 +818,8 @@ function fullscreenMenuNew() {
   //menuOut.to('.menu', {duration: .5, opacity: 0, y: -300})
 
   menuOut.to(".f-nav", {duration: 0.65, yPercent: -110,ease: "Expo.inOut"}, 0)
+ .to(".nav--transition-slide", {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
+
   
   // /* -----------------------------
   // // ADD EVENT LISTER
