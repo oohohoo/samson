@@ -781,7 +781,67 @@ function fullscreenMenu() {
 */
 function fullscreenMenuNew() {
 
+  let burger = document.querySelector('.open');
+  let menuIsOpen = false; // tracks state
   
+  /* -----------------------------
+  // MENU IN ANIMATION
+  ----------------------------- */
+  
+  const menuIn = gsap.timeline({paused: true});
+  
+  /*menuIn.fromTo('.menu', {opacity: 0, x: -150, y: 0}, 
+      {duration: .5, opacity: 1, x: 0, y: 0 })*/
+
+      menuIn.to(".open", {autoAlpha:0, rotate:360, scale: 0.1})
+.from(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
+
+.set(".menu-btn", {pointerEvents: "none",})
+
+.fromTo(".nav--transition-slide", {scaleY: 0, transformOrigin: "bottom center",}, 
+{duration: 0.5, scaleY: 1, ease: "Expo.inOut", }, "<") 
+   
+.fromTo(".f-nav", {yPercent: 110,}, {duration: 0.65, yPercent: 0, stagger: 0.02,}, "<0.1")
+  //.fromTo(".f-cap", {yPercent: 100,}, {duration: 0.65,yPercent: 0,stagger: 0.02,}, "<")
+.fromTo(".f-foot, .arch, .copy-right", {y: 20,autoAlpha: 0}, 
+    {duration: 0.65,y: 0,autoAlpha: 1, ease: "Expo.inOut"}, "<0.1")
+
+  .set(".menu-btn", {pointerEvents: "all",})
+
+  
+  /* -----------------------------
+  // MENU OUT  ANIMATION
+  ----------------------------- */
+  
+  let menuOut = gsap.timeline({paused: true});
+  
+  //menuOut.to('.menu', {duration: .5, opacity: 0, y: -300})
+
+  menuOut.to(".f-nav", {duration: 0.65,rotate:360, yPercent: -110,ease: "Expo.inOut"}, 0)
+  
+  // /* -----------------------------
+  // // ADD EVENT LISTER
+  // ----------------------------- */
+  
+  burger.addEventListener('click', () => {
+    menuIsOpen = !menuIsOpen; // toggle
+    if (menuIsOpen) {
+      menuIn.restart();
+    } else {
+      menuOut.restart();
+    }
+  });
+  
+
+
+
+
+
+
+
+
+// MENU 2
+  /*
 const open = document.querySelector(".open")
 const close = document.querySelector(".close")
 //const overlay = document.querySelector(".nav--transition-slide")
@@ -791,10 +851,7 @@ var tl = gsap.timeline({defaults: {duration: 1, ease:"Expo.inOut"}})
 .set(".open", {autoAlpha:1, scale: 1})
 
 tl.paused(true);
-/*
-tl.to("overlay", {fdfdfdfd})
-tl.to(".menu-container ")
-*/
+
 tl.to(".open", {autoAlpha:0, rotate:360, scale: 0.1})
 .from(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
 
@@ -818,10 +875,7 @@ tl.to(".open", {autoAlpha:0, rotate:360, scale: 0.1})
   var tl2 = gsap.timeline({defaults: {duration: 1, ease:"Expo.inOut"}})
 
 //tl2.paused(true);
-/*
-tl.to("overlay", {fdfdfdfd})
-tl.to(".menu-container ")
-*/
+
 tl2.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
 .to(".close", {autoAlpha:1, rotate:360, scale: 0.1}, "<")
 
@@ -851,10 +905,10 @@ close.addEventListener('click', () => {
   console.log("MENU 2 PLAY aaaa");
   })
 
-ž
 
 
 
+*/
 
 }
 
