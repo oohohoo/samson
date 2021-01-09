@@ -847,11 +847,11 @@ console.log("MENU PLAY");
 close.addEventListener('click', () => {
   tl.restart(), 
   tl2.play();
-  console.log("MENU 2 PLAY");
+  console.log("MENU 2 PLAY aaaa");
   })
 
 
-  
+
 
 
 
