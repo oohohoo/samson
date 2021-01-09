@@ -793,7 +793,7 @@ function fullscreenMenuNew() {
   /*menuIn.fromTo('.menu', {opacity: 0, x: -150, y: 0}, 
       {duration: .5, opacity: 1, x: 0, y: 0 })*/
 
-      menuIn.to(".open", {autoAlpha:0, rotate:360, scale: 0.1})
+      menuIn.to(".open", {autoAlpha:0, rotate:720, scale: 0.1})
 .from(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
 
 .set(".menu-btn", {pointerEvents: "none",})
