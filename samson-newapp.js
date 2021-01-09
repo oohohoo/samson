@@ -814,7 +814,7 @@ console.log("MENU PLAY");
 })
 
 close.addEventListener('click', () => {
-  tl.reverse(.7);
+  tl.reverse(.3);
   console.log("MENU REVERSE");
   })
 
