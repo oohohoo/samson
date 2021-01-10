@@ -449,7 +449,13 @@ views: [{
     resetLogo();
     simpleTickerHide();*/
   console.log("Projects JS triggered!");
-  }},{
+  },
+  once(){
+    projectAnchorScroll();
+  console.log("Projects JS triggered!");
+  }
+
+},{
     namespace: 'materials',
   beforeEnter(data) {
   //  fullscreenMenu();
