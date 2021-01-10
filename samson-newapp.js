@@ -814,9 +814,9 @@ HOME PAGE TITLE & HERO GALLERY
 */
 function killMenu() {
 
-  let menuOut = gsap.timeline({paused: true});
+  const menuKill = gsap.timeline({paused: true});
   
-  menuOut.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
+  menuKill.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
   .to(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
   
   .set(".menu-btn", {pointerEvents: "none"})
