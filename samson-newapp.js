@@ -711,7 +711,7 @@ function fullscreenMenuNew() {
   let menuIsOpen = false; // tracks state
 
     
-gsap.set(burger, {scale: 1, autoAlpha:1})
+gsap.set(".open", {scale: 1, autoAlpha:1})
 console.log("POKAŽI BURGER");
 /* -----------------------------
 // MENU IN ANIMATION
