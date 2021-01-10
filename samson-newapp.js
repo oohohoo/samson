@@ -746,7 +746,7 @@ menuOut.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
 .set(burger, {pointerEvents: "none"})
 
 .to(".f-nav", {duration: 0.65, yPercent: -110,ease: "Expo.inOut"}, 0)
-.to(".fadein", {y: 20, autoAlpha: 0, duration: 0.65, ease: "Expo.inOut"})
+.to(".fadein", {y: -20, autoAlpha: 0, duration: 0.65, ease: "Expo.inOut"})
 .to(slide, {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
 
 .set(burger, {pointerEvents: "all"})
