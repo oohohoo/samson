@@ -710,7 +710,9 @@ function fullscreenMenuNew() {
   const fnav = select('.f-nav');
   const fadein = select('.fadein');
   let menuIsOpen = false; // tracks state
-  
+
+  gsap.set(burger, {scale: 1, autoAlpha:1})
+  console.log("POKAŽI BURGER");
 /* -----------------------------
 // MENU IN ANIMATION
 ----------------------------- */
