@@ -419,6 +419,7 @@ views: [{
   namespace: 'home',
 
   beforeEnter(data) {
+    titleHero();
    // fullscreenMenu();
     //titleHero();
    // titleHero();
@@ -428,6 +429,18 @@ views: [{
     simpleTicker();
     simpleTickerShow();*/
   console.log("Home JS triggered!");
+  },
+  once(data) {
+    titleHero();
+   // fullscreenMenu();
+    //titleHero();
+   // titleHero();
+    /*bigLogo();
+    homeYoutube();
+    homeProductHover();
+    simpleTicker();
+    simpleTickerShow();*/
+  console.log("Once Home triggered!");
   },
   afterEnter(data) {
   
@@ -491,7 +504,7 @@ views: [{
       }) {
         // do something once on the initial page load
         initLoader();
-        titleHero();
+       
         fullscreenMenuNew(); 
         fsmenuHover();
         underlineMouseover();
