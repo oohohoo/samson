@@ -237,7 +237,7 @@ function initLoader() {
 
   tlLoaderIn
 
-    .set(loaderContent, {autoAlpha: 1})
+    //.set(loaderContent, {autoAlpha: 1})
     //.set(".txt", {yPercent: 100})
     .set(mask, {yPercent: 0})
     //.set(image, {yPercent: 100})
@@ -257,7 +257,7 @@ function initLoader() {
   tlLoaderOut
 
     //.to(lines, {yPercent: -500,stagger: 0.2}, 0)
-    .to([loader, loaderContent], {yPercent: -100}, 0.2)
+    .to([loader,/* loaderContent*/], {yPercent: -100}, 0.2)
     //.to('.main', {y: 0}, 0);
 
   const tlLoader = gsap.timeline();
