@@ -538,7 +538,7 @@ views: [{
       }) {
         //animationEnter();
         killMenu();
-        titleHero();
+        //titleHero();
        // fullscreenMenu();
         console.log(">>> FULSCREEN MENU AFTER ENTER LOADED");
         fsmenuHover();
