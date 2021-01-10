@@ -530,7 +530,7 @@ views: [{
       },
 
       beforeEnter({next}) {
-        
+        underlineMouseover();
 
       },
 
