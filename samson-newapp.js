@@ -902,7 +902,7 @@ $( "#tores" ).on( "click", function() {
 
 $( "#tospe" ).on( "click", function() {
   locoScroll.scrollTo( '#spe', {
-    'offset': -100,
+    'offset': -150,
     'duration': 3000,
     'easing': [0.25, 0.00, 0.35, 1.00],
     'disableLerp': true
