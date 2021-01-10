@@ -708,6 +708,7 @@ function fullscreenMenuNew() {
   const mainwrap = select('.nav-w');
   const slide = select('.nav--transition-slide');
   const fnav = select('.f-nav');
+  const fadein = select('.fadein');
   let menuIsOpen = false; // tracks state
   
 /* -----------------------------
@@ -728,7 +729,7 @@ menuIn.to(".open", {autoAlpha:0, rotate:720, scale: 0.1})
 .to(mainwrap, {scaleY: 1, duration: 0.1})
 .fromTo(slide, {scaleY: 0, transformOrigin: "bottom center"}, {duration: 0.65, scaleY: 1, ease: "Expo.inOut" }) 
 .fromTo(fnav, {yPercent: 110}, {duration: 0.65, yPercent: 0, stagger: 0.02})
-.fromTo(".fadein", {y: 20,autoAlpha: 0}, {duration: 0.65,y: 0,autoAlpha: 1, ease: "Expo.inOut"}, "<0.2")
+.fromTo(fadein, {y: 20,autoAlpha: 0}, {duration: 0.65,y: 0,autoAlpha: 1, ease: "Expo.inOut"}, "<0.2")
 
 .set(burger, {pointerEvents: "all"})
  
@@ -745,7 +746,7 @@ menuOut.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
 
 .to(fnav, {duration: 0.65, yPercent: -110,ease: "Expo.inOut"}, 0)
 .to(slide, {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
-.fromTo(".fadein", {y: 0,autoAlpha: 1}, {duration: 0.65,y: 20,autoAlpha: 0, ease: "Expo.inOut"}, "<0.2")
+.to(fadein, {y: 0,autoAlpha: 1}, {duration: 0.65,y: 20,autoAlpha: 0, ease: "Expo.inOut"}, "<0.2")
 
 .set(burger, {pointerEvents: "all"})
 //.set(fnav, {yPercent:50})
