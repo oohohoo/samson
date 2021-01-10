@@ -944,7 +944,7 @@ heroanimation
 .from(".char", {stagger:0.02, yPercent:125}, "<0.1")
 .fromTo(".clipImg", {y:400, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
 {autoAlpha:1, duration:3, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "<0.1")
-console.log("IMAGE CONTACT CLIPPED NOW")
+console.log("IMAGE CONTACT CLIPPED NOW!!!!")
 .from(".fadein", {autoAlpha:0, stagger:0.02, y:20}, "<0.1")
 
 
