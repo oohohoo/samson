@@ -243,6 +243,7 @@ function initLoader() {
     //.set(image, {yPercent: 100})
     //.set(".main", {y: 150})
 
+    
     .to(loaderInner, {scaleY: 1,transformOrigin: 'bottom',ease: 'power1.inOut'})
 
     .addLabel('revealImage')
