@@ -160,7 +160,7 @@ function initScroll(container) {
   console.log("Locomotive Updated once more");;
 
 
-
+/*
   // When window reszie, need to update locomotive scroll.
   $( window ).on( 'resize', function() {
                   locoScroll.update();
@@ -170,6 +170,7 @@ function initScroll(container) {
 
 ); 
 
+*/
   /*
   ================================================================================
   SCROLLTRIGGER TEST
@@ -196,14 +197,23 @@ function initScroll(container) {
 LOCOMOTIVE 4 SCROLL TO TOP
 ================================================================================
 */
-  /*
-  	locoScroll.scrollTo( '#top', {
-  		'offset': 0,
-  		'duration': 5000,
-  		//'easing': [0.25, 0.00, 0.35, 1.00],
-  		'disableLerp': true
-  	});
-    */
+ 
+
+
+$( "#tomain" ).on( "click", function() {
+  locoScroll.scrollTo( '#main', {
+    'offset': 0,
+    'duration': 800,
+    //'easing': [0.25, 0.00, 0.35, 1.00],
+    'disableLerp': true
+  });
+  
+  
+});
+
+
+
+  	
 }
 
 /*
