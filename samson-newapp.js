@@ -208,7 +208,7 @@ $( "#tomain" ).on( "click", function() {
     'disableLerp': true
   });
   
-  
+  console.log("SCROLLTOTOP");
 });
 
 
