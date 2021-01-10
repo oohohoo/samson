@@ -886,7 +886,7 @@ $( "#tocom" ).on( "click", function() {
   locoScroll.scrollTo( '#com', {
     'offset': 0,
     'duration': 800,
-    //'easing': [0.25, 0.00, 0.35, 1.00],
+    'easing': [0.87, 0.01, 0.8, 1.04],
     'disableLerp': true
   });
 });
@@ -894,8 +894,8 @@ $( "#tocom" ).on( "click", function() {
 $( "#tores" ).on( "click", function() {
   locoScroll.scrollTo( '#res', {
     'offset': 0,
-    'duration': 800,
-    //'easing': [0.25, 0.00, 0.35, 1.00],
+    'duration': 2000,
+    'easing': [0.87, 0.01, 0.8, 1.04],
     'disableLerp': true
   });
 });
@@ -903,8 +903,8 @@ $( "#tores" ).on( "click", function() {
 $( "#tospe" ).on( "click", function() {
   locoScroll.scrollTo( '#spe', {
     'offset': 0,
-    'duration': 800,
-    //'easing': [0.25, 0.00, 0.35, 1.00],
+    'duration': 2000,
+    'easing': [0.87, 0.01, 0.8, 1.04],
     'disableLerp': true
   });
 });
