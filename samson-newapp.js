@@ -223,76 +223,42 @@ function initLoader() {
 
   const tlLoaderIn = gsap.timeline({
     id: 'tlLoaderIn',
-    defaults: {
-      duration: 1.1,
-      ease: 'power2.out'
-    },
+    defaults: {duration: 1.1,ease: 'power2.out'},
     onComplete: () => initContent()
   });
 
-  const image = select('.loader-img-img');
+  //const image = select('.loader-img-img');
   const mask = select('.loader__image--mask');
-  const lines = selectAll('.loader__title--mask');
-  const loaderContent = select('.loader__content');
+  //const lines = selectAll('.loader__title--mask');
+  //const loaderContent = select('.loader__content');
 
   const loader = select('.loaderx');
   const loaderInner = select('.inner-loader');
 
   tlLoaderIn
 
-    .set(loaderContent, {
-      autoAlpha: 1
-    })
-    .set(".txt", {
-      yPercent: 100
-    })
-    .set(mask, {
-      yPercent: 0
-    })
-    .set(image, {
-      yPercent: 100
-    })
-    .set(".main", {
-      y: 150
-    })
+    .set(loaderContent, {autoAlpha: 1})
+    //.set(".txt", {yPercent: 100})
+    .set(mask, {yPercent: 0})
+    //.set(image, {yPercent: 100})
+    //.set(".main", {y: 150})
 
-    .to(loaderInner, {
-      scaleY: 1,
-      transformOrigin: 'bottom',
-      ease: 'power1.inOut'
-    })
+    .to(loaderInner, {scaleY: 1,transformOrigin: 'bottom',ease: 'power1.inOut'})
 
     .addLabel('revealImage')
-    .to(image, {
-      yPercent: 0
-    }, 'revealImage-=0.5')
-    .to(".txt", {
-      yPercent: 0,
-      stagger: 0.2
-    }, 'revealImage-=0.4');
+    //.to(image, {yPercent: 0}, 'revealImage-=0.5') 
+    //.to(".txt", {yPercent: 0, stagger: 0.2}, 'revealImage-=0.4');
 
   // LOADER OUT
   const tlLoaderOut = gsap.timeline({
     id: 'tlLoaderOut',
-    defaults: {
-      duration: 1.2,
-      ease: 'power2.inOut'
-    },
-    delay: 1
-  });
+    defaults: {duration: 1.2, ease: 'power2.inOut'},delay: 1});
 
   tlLoaderOut
 
-    .to(lines, {
-      yPercent: -500,
-      stagger: 0.2
-    }, 0)
-    .to([loader, loaderContent], {
-      yPercent: -100
-    }, 0.2)
-    .to('.main', {
-      y: 0
-    }, 0);
+    //.to(lines, {yPercent: -500,stagger: 0.2}, 0)
+    .to([loader, loaderContent], {yPercent: -100}, 0.2)
+    //.to('.main', {y: 0}, 0);
 
   const tlLoader = gsap.timeline();
   tlLoader
