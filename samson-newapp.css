@@ -19,7 +19,7 @@ DEFINE ROOT VARIABLES / definiraj svoje
   --bcg-loaderbluedark: #1e1e1e;
 
   --loader-width: 100vw;
-  --loader-height: 10px;
+  --loader-height: 2vw;
 
   --v-spacing: 10vh;
   --h-gutter: 6.6vw;
@@ -258,7 +258,7 @@ LOADER
   position: absolute;
   display: flex;
   justify-content: center;
-  align-items: bottom;
+  align-items: top;
   width: 100%;
   height: 100%;
   background-color: var(--bcg-loaderblue);
