@@ -719,12 +719,12 @@ const menuIn = gsap.timeline({paused: true});
 menuIn.to(".open", {autoAlpha:0, rotate:720, scale: 0.1})
 .from(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
 //.set(mainwrap, {scaleY: 0})
-//.set(fnav, {scaleY: 110})
+.set(fnav, {yPercent: 110})
 
 .set(burger, {pointerEvents: "none"})
 .to(mainwrap, {scaleY: 1, duration: 0.1})
 .fromTo(slide, {scaleY: 0, transformOrigin: "bottom center"}, {duration: 0.65, scaleY: 1, ease: "Expo.inOut" }) 
-//.fromTo(fnav, {yPercent: 110}, {duration: 0.65, yPercent: 0, stagger: 0.02,}, "<0.1")
+.fromTo(fnav, {yPercent: 110}, {duration: 0.65, yPercent: 0, stagger: 0.02,}, "<0.1")
 //.fromTo(".fadein", {y: 20,autoAlpha: 0}, {duration: 0.65,y: 0,autoAlpha: 1, ease: "Expo.inOut"}, "<0.2")
 
 .set(burger, {pointerEvents: "all"})
