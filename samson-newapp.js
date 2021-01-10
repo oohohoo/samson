@@ -762,6 +762,7 @@ menuOut.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
 burger.addEventListener('click', () => {
   menuIsOpen = !menuIsOpen; // toggle
     if (menuIsOpen) {
+      menuIn.invalidate();
       menuIn.restart();
     } else {
       menuOut.restart();
