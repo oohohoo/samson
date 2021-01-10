@@ -456,7 +456,7 @@ views: [{
 },{
   namespace: 'projects',
   beforeEnter(){
-    heroAnima();
+   // heroAnima();
     projectAnchorScroll();
    // fullscreenMenu();
    /* productsMainSwiper();
@@ -482,7 +482,7 @@ views: [{
   }},{
   namespace: 'contact',
   afterEnter(data) {
-   // heroAnima();
+    heroAnima();
    // simpleTickerHide();
   console.log("KONTAKT JEBEMTIMATER HERO ANIMA SKRIPTA triggered!");
   }},{
