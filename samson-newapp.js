@@ -814,9 +814,13 @@ HOME PAGE TITLE & HERO GALLERY
 */
 function killMenu() {
 
-  const menuKill = gsap.timeline({paused: true});
-  
-  menuKill.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
+  let tl = gsap.timeline();
+
+/*   gsap.set(".menu-btn", {
+    pointerEvents: "none",
+  }); */
+
+  tl.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
   .to(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
   
   .set(".menu-btn", {pointerEvents: "none"})
@@ -827,6 +831,9 @@ function killMenu() {
   .set(".menu-btn", {pointerEvents: "all"})
 
   
+  
+
+
  
  }
 
