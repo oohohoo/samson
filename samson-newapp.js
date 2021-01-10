@@ -707,7 +707,7 @@ function fullscreenMenuNew() {
   const burger = select('.fs-nav-butt');
   const mainwrap = select('.nav-w');
   const slide = select('.nav--transition-slide');
-  const fnav = select('.line-wrapper');
+  const fnav = select('.f-nav');
   let menuIsOpen = false; // tracks state
   
 /* -----------------------------
