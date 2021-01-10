@@ -482,7 +482,7 @@ views: [{
   }},{
   namespace: 'contact',
   afterEnter(data) {
-    heroAnima();
+    contactHeroAnima();
    // simpleTickerHide();
   console.log("KONTAKT JEBEMTIMATER HERO ANIMA SKRIPTA triggered!");
   }},{
@@ -944,12 +944,12 @@ $( "#tospe" ).on( "click", function() {
 
 /*
 ================================================================================
-HERO ANIMACIJE OSTALE STRANICE
+CONTACT - HERO ANIMACIJA
 ================================================================================
 */
 
 
-function heroAnima() {
+function contactHeroAnima() {
 
 Splitting();
 
