@@ -470,12 +470,10 @@ views: [{
         // do something once on the initial page load
         initLoader();
         titleHero();
-        console.log("title hero loaded");
-        //fullscreenMenu();
         fullscreenMenuNew(); 
-        console.log(">>> FULSCREEN MENU NEW");
         fsmenuHover();
-        
+        underlineMouseover();
+        console.log(">>> ONCE TRANS LOADED");
        
         //resetActiveLink();
         //animationEnter();
@@ -601,7 +599,10 @@ views: [{
 FULLSCREEN MENU
 ================================================================================
 */
-  /*
+
+function underlineMouseover() {
+
+/*
   ================================================================================
   MENU ICON MOUSEOVER
   ================================================================================
@@ -664,46 +665,27 @@ FULLSCREEN MENU
 
   workLinks.forEach((link, index, value) => {
 
-    let underline = link.querySelector(".underline");
-    link.tl = gsap.timeline({
-      paused: true
-    });
+  let underline = link.querySelector(".underline");
+  link.tl = gsap.timeline({paused: true});
+  link.tl.fromTo(underline, {width: "0%", left: "0%"}, {width: "100%", duration: 0.3, ease: "power1.out"});
+  link.tl.add("midway");
+  link.tl.fromTo(underline, {width: "100%",left: "0%"}, {width: "0%",left: "100%", duration: 0.3, ease: "power1.in", immediateRender: false});
 
-    link.tl.fromTo(underline, {
-      width: "0%",
-      left: "0%",
-    }, {
-      width: "100%",
-      duration: 0.3,
-      ease: "power1.out",
-    });
+  // Mouseenter
+  link.addEventListener("mouseenter", (e) => {
+       enterAnimation(link, e, index);
+  });
 
-    link.tl.add("midway");
-
-    link.tl.fromTo(underline, {
-      width: "100%",
-      left: "0%",
-    }, {
-      width: "0%",
-      left: "100%",
-      duration: 0.3,
-      ease: "power1.in",
-      immediateRender: false
-    });
-
-    // Mouseenter
-    link.addEventListener("mouseenter", (e) => {
-      enterAnimation(link, e, index);
-    });
-
-    // Mouseleave
-    link.addEventListener("mouseleave", (e) => {
-      leaveAnimation(link, e);
+  // Mouseleave
+  link.addEventListener("mouseleave", (e) => {
+    leaveAnimation(link, e);
     });
 
   });
 
-//}
+}
+
+
 
 /*
 ================================================================================
