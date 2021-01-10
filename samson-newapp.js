@@ -704,7 +704,7 @@ FULLSCREEN MENU
 */
 function fullscreenMenuNew() {
 
-  let burger = document.querySelector('.fs-nav-butt');
+  const burger = select('.fs-nav-butt');
   let menuIsOpen = false; // tracks state
   
 /* -----------------------------
