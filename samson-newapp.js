@@ -956,7 +956,7 @@ Splitting();
 var heroanimation = gsap.timeline({defaults:{duration:1.5, ease: "power3.inOut"}})
 heroanimation
 .set(".hide", {autoAlpha:1})
-.from(".char", {stagger:0.02, rotate:90, yPercent:135}, "<0.1")
+.from(".char", {stagger:0.02, yPercent:135}, "<0.1")
 .fromTo(".clipImg", {y:400, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
 {autoAlpha:1, duration:3, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "<0.1")
 .fromTo(".test", {autoAlpha:0, y:20},{autoAlpha:1, stagger:0.02, y:0}, "<0.1")
