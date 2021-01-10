@@ -456,6 +456,7 @@ views: [{
 },{
   namespace: 'projects',
   beforeEnter(){
+    projectsHeroAnima();
    // heroAnima();
     projectAnchorScroll();
    // fullscreenMenu();
