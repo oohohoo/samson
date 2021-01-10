@@ -719,7 +719,7 @@ const menuIn = gsap.timeline({paused: true});
 menuIn.to(".open", {autoAlpha:0, rotate:720, scale: 0.1})
 .from(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
 .set(mainwrap, {scaleY: 0})
-.set(fnav, {yPercent: 110})
+
 
 
 
@@ -748,7 +748,7 @@ menuOut.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
 .set(burger, {pointerEvents: "all"})
 //.set(fnav, {yPercent:50})
 .set(slide, {scaleY: 0, transformOrigin: "bottom center"})
-
+.set(fnav, {yPercent: 110})
 
 /* -----------------------------
 // ADD EVENT LISTER
