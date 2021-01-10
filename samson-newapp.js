@@ -755,9 +755,9 @@ menuOut.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
 burger.addEventListener('click', () => {
   menuIsOpen = !menuIsOpen; // toggle
     if (menuIsOpen) {
-      menuIn.restart();
+      menuIn.restart(), menuIn.play() ;
     } else {
-      menuOut.restart();
+      menuOut.restart(), menuOut.play() ;
     }
   });
   
