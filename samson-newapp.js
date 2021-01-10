@@ -715,51 +715,46 @@ function fullscreenMenuNew() {
   let burger = document.querySelector('.fs-nav-butt');
   let menuIsOpen = false; // tracks state
   
-  /* -----------------------------
-  // MENU IN ANIMATION
-  ----------------------------- */
+/* -----------------------------
+// MENU IN ANIMATION
+----------------------------- */
   
-  const menuIn = gsap.timeline({paused: true});
-  
-  /*menuIn.fromTo('.menu', {opacity: 0, x: -150, y: 0}, 
-      {duration: .5, opacity: 1, x: 0, y: 0 })*/
+const menuIn = gsap.timeline({paused: true});
 
-      menuIn.to(".open", {autoAlpha:0, rotate:720, scale: 0.1})
+menuIn.to(".open", {autoAlpha:0, rotate:720, scale: 0.1})
 .from(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
 
-.set(".menu-btn", {pointerEvents: "none",})
+.set(".menu-btn", {pointerEvents: "none"})
 
-.fromTo(".nav--transition-slide", {scaleY: 0, transformOrigin: "bottom center",}, 
-{duration: 0.5, scaleY: 1, ease: "Expo.inOut", }, "<") 
-   
+.fromTo(".nav--transition-slide", {scaleY: 0, transformOrigin: "bottom center"}, {duration: 0.5, scaleY: 1, ease: "Expo.inOut", }, "<") 
 .fromTo(".f-nav", {yPercent: 110,}, {duration: 0.65, yPercent: 0, stagger: 0.02,}, "<0.1")
-  //.fromTo(".f-cap", {yPercent: 100,}, {duration: 0.65,yPercent: 0,stagger: 0.02,}, "<")
-.fromTo(".f-foot, .arch, .copy-right", {y: 20,autoAlpha: 0}, 
-    {duration: 0.65,y: 0,autoAlpha: 1, ease: "Expo.inOut"}, "<0.1")
+.fromTo(".f-foot, .arch, .copy-right", {y: 20,autoAlpha: 0}, {duration: 0.65,y: 0,autoAlpha: 1, ease: "Expo.inOut"}, "<0.1")
 
-  .set(".menu-btn", {pointerEvents: "all",})
-
+.set(".menu-btn", {pointerEvents: "all"})
+ 
+/* -----------------------------
+// MENU OUT  ANIMATION
+----------------------------- */
   
-  /* -----------------------------
-  // MENU OUT  ANIMATION
-  ----------------------------- */
+let menuOut = gsap.timeline({paused: true});
   
-  let menuOut = gsap.timeline({paused: true});
-  
-  //menuOut.to('.menu', {duration: .5, opacity: 0, y: -300})
-
-  menuOut.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
+menuOut.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
 .to(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
-.to(".f-nav", {duration: 0.65, yPercent: -110,ease: "Expo.inOut"}, 0)
- .to(".nav--transition-slide", {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
 
+.set(".menu-btn", {pointerEvents: "none"})
+
+.to(".f-nav", {duration: 0.65, yPercent: -110,ease: "Expo.inOut"}, 0)
+.to(".nav--transition-slide", {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
+
+.set(".menu-btn", {pointerEvents: "all"})
+
+
+/* -----------------------------
+// ADD EVENT LISTER
+----------------------------- */
   
-  // /* -----------------------------
-  // // ADD EVENT LISTER
-  // ----------------------------- */
-  
-  burger.addEventListener('click', () => {
-    menuIsOpen = !menuIsOpen; // toggle
+burger.addEventListener('click', () => {
+  menuIsOpen = !menuIsOpen; // toggle
     if (menuIsOpen) {
       menuIn.restart();
     } else {
@@ -767,84 +762,6 @@ function fullscreenMenuNew() {
     }
   });
   
-
-
-
-
-
-
-
-
-// MENU 2
-  /*
-const open = document.querySelector(".open")
-const close = document.querySelector(".close")
-//const overlay = document.querySelector(".nav--transition-slide")
-
-// SHOW
-var tl = gsap.timeline({defaults: {duration: 1, ease:"Expo.inOut"}})
-.set(".open", {autoAlpha:1, scale: 1})
-
-tl.paused(true);
-
-tl.to(".open", {autoAlpha:0, rotate:360, scale: 0.1})
-.from(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
-
-.set(".menu-btn", {pointerEvents: "none",})
-
-.fromTo(".nav--transition-slide", {scaleY: 0, transformOrigin: "bottom center",}, 
-{duration: 0.3, scaleY: 1, ease: "Expo.inOut", }, "<") 
-   
-.fromTo(".f-nav", {yPercent: 110,}, {duration: 0.65, yPercent: 0, stagger: 0.02,})
-  //.fromTo(".f-cap", {yPercent: 100,}, {duration: 0.65,yPercent: 0,stagger: 0.02,}, "<")
-.fromTo(".f-foot, .arch, .copy-right", {y: 20,autoAlpha: 0}, 
-    {duration: 0.65,y: 0,autoAlpha: 1, ease: "Expo.inOut"})
-
-  .set(".menu-btn", {pointerEvents: "all",})
-
-
-
-
-  // HIDE
-
-  var tl2 = gsap.timeline({defaults: {duration: 1, ease:"Expo.inOut"}})
-
-//tl2.paused(true);
-
-tl2.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
-.to(".close", {autoAlpha:1, rotate:360, scale: 0.1}, "<")
-
-.set(".menu-btn", {pointerEvents: "none",})
-
-.to(".f-nav", {duration: 0.65,rotate:360, yPercent: -110,ease: "Expo.inOut"}, 0)
-//.fromTo(".f-foot, .arch, .copy-right", {y: 0,autoAlpha: 1}, 
-    // {duration: 0.65,y: -20,autoAlpha: 0,ease: "Expo.inOut",}, "<0.1")
-//.to(".nav--transition-slide", {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
-
-//.set(" .menu-btn", {pointerEvents: "all",});
-
-
-  //
-
-
-open.addEventListener('click', () => {
-//tl.restart(), 
-tl.play();
-console.log("MENU PLAY");
-})
-
-close.addEventListener('click', () => {
-  //tl2.restart(), 
-  tl.reverse(), 
-  //tl2.play();
-  console.log("MENU 2 PLAY aaaa");
-  })
-
-
-
-
-*/
-
 }
 
 
@@ -897,20 +814,17 @@ HOME PAGE TITLE & HERO GALLERY
 */
 function killMenu() {
 
-  let tl = gsap.timeline();
-
-  gsap.set(".menu-btn", {
-    pointerEvents: "none",
-  });
-
-  tl.to(".f-nav", {duration: 0.45,yPercent: -110,force3D:true,ease: "Expo.out",}, 0)
-    .fromTo(".f-foot, .arch, .copy-right", {y: 0, autoAlpha: 1}, 
-      {duration: 0.35,y: -20, autoAlpha: 0, ease: "none"}, "<0.1")
-    .to(".nav--transition-slide", {duration: 0.65,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
-    //.to(".nav--transition-slide", {autoAlpha:0, duration: 0.35},"<0.1")
-   // .to(".nav--transition-slide", { duration: 0.1},"<0.35")
-    //.to(".nav-W", {scaleY: 0})
-    .set(" .menu-btn", {pointerEvents: "all",});
+  let menuOut = gsap.timeline({paused: true});
+  
+  menuOut.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
+  .to(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
+  
+  .set(".menu-btn", {pointerEvents: "none"})
+  
+  .to(".f-nav", {duration: 0.65, yPercent: -110,ease: "Expo.inOut"}, 0)
+  .to(".nav--transition-slide", {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
+  
+  .set(".menu-btn", {pointerEvents: "all"})
 
   
  
