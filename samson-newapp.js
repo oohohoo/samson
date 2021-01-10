@@ -720,7 +720,7 @@ menuIn.to(".open", {autoAlpha:0, rotate:720, scale: 0.1})
 .from(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
 .set(mainwrap, {scaleY: 0})
 .set(fnav, {yPercent: 110})
-.set(slide, {scaleY: 0, transformOrigin: "bottom center"})
+
 
 
 
@@ -747,7 +747,7 @@ menuOut.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
 .to(slide, {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
 .set(burger, {pointerEvents: "all"})
 //.set(fnav, {yPercent:50})
-
+.set(slide, {scaleY: 0, transformOrigin: "bottom center"})
 
 
 /* -----------------------------
