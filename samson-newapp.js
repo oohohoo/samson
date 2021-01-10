@@ -744,7 +744,7 @@ menuOut.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
 .to(slide, {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
 .set(mainwrap, {scaleY: 0, duration: 0.1})
 .set(burger, {pointerEvents: "all"})
-.set(fnav, {yPercent:50})
+//.set(fnav, {yPercent:50})
 
 
 
