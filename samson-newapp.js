@@ -947,4 +947,5 @@ heroanimation
 console.log("IMAGE CONTACT CLIPPED NOW")
 .from(".fadein", {autoAlpha:0, stagger:0.02, y:20}, "<0.1")
 
+
 }
