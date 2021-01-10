@@ -750,10 +750,11 @@ menuOut.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
 .to(slide, {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
 
 .set(burger, {pointerEvents: "all"})
-//.set(fnav, {yPercent:50})
+
 .set(slide, {scaleY: 0, transformOrigin: "bottom center"})
 .set(".f-nav", {yPercent: 110})
 .set(mainwrap, {scaleY: 0})
+.set(".fadein", {y: 20, autoAlpha:0})
 
 menuIn.invalidate();
 /* -----------------------------
