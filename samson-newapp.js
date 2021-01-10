@@ -481,10 +481,10 @@ views: [{
   console.log("Materials JS triggered!");
   }},{
   namespace: 'contact',
-  beforeEnter(data) {
+  afterEnter(data) {
     heroAnima();
    // simpleTickerHide();
-  console.log("contact JS triggered!");
+  console.log("KONTAKT JEBEMTIMATER HERO ANIMA SKRIPTA triggered!");
   }},{
   },{
  
