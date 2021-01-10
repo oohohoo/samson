@@ -243,7 +243,7 @@ function initLoader() {
     //.set(image, {yPercent: 100})
     //.set(".main", {y: 150})
 
-    
+
     .to(loaderInner, {scaleY: 1,transformOrigin: 'bottom',ease: 'power1.inOut'})
 
     .addLabel('revealImage')
@@ -253,7 +253,7 @@ function initLoader() {
   // LOADER OUT
   const tlLoaderOut = gsap.timeline({
     id: 'tlLoaderOut',
-    defaults: {duration: 1.2, ease: 'power2.inOut'},delay: 1});
+    defaults: {duration: 1.2, ease: 'power2.inOut'},delay: 0});
 
   tlLoaderOut
 
