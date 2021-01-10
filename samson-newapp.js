@@ -723,7 +723,7 @@ const menuIn = gsap.timeline({paused: true});
 
 menuIn.to(".open", {autoAlpha:0, rotate:720, scale: 0.1})
 .from(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
-.set(".f-nav", {yPercent: 110})
+//.set(".f-nav", {yPercent: 110})
 
 .set(".menu-btn", {pointerEvents: "none"})
 .to(".nav-w", {scaleY: 1, duration: 0.1})
@@ -748,6 +748,7 @@ menuOut.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
 .to(".nav--transition-slide", {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
 .set(".nav-w", {scaleY: 0, duration: 0.1})
 .set(".menu-btn", {pointerEvents: "all"})
+.set(".f-nav", {yPercent:50})
 
 
 /* -----------------------------
