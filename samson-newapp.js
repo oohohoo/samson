@@ -780,7 +780,7 @@ HOME PAGE TITLE & HERO GALLERY
 */
 function titleHero() {
 
-  //Splitting();
+  Splitting();
   console.log("Splitting update?");
   /*
  ================================================================================
