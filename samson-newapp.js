@@ -724,8 +724,9 @@ const menuIn = gsap.timeline({paused: true});
 menuIn.to(".open", {autoAlpha:0, rotate:720, scale: 0.1})
 .from(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
 
-.set(".menu-btn", {pointerEvents: "none"})
 
+.set(".menu-btn", {pointerEvents: "none"})
+.to(".nav-w", {scaleY: 1, duration: 0.1}, 0)
 .fromTo(".nav--transition-slide", {scaleY: 0, transformOrigin: "bottom center"}, {duration: 0.5, scaleY: 1, ease: "Expo.inOut", }, "<") 
 .fromTo(".f-nav", {yPercent: 110,}, {duration: 0.65, yPercent: 0, stagger: 0.02,}, "<0.1")
 .fromTo(".f-foot, .arch, .copy-right", {y: 20,autoAlpha: 0}, {duration: 0.65,y: 0,autoAlpha: 1, ease: "Expo.inOut"}, "<0.1")
@@ -745,7 +746,7 @@ menuOut.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
 
 .to(".f-nav", {duration: 0.65, yPercent: -110,ease: "Expo.inOut"}, 0)
 .to(".nav--transition-slide", {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
-
+.set(".nav-w", {scaleY: 0, duration: 0.1})
 .set(".menu-btn", {pointerEvents: "all"})
 
 
