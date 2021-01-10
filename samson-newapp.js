@@ -550,6 +550,12 @@ views: [{
           event.preventDefault();
           event.stopPropagation();
           // automatically scroll to the top of the page on same location
+          locoScroll.scrollTo( '#top', {
+            'offset': 0,
+            'duration': 1000,
+            'easing': [0.25, 0.00, 0.35, 1.00],
+            'disableLerp': true
+          });
           //   locoScroll.scrollTo('#top')
           return true;
         }
