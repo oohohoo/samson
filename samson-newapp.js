@@ -503,6 +503,7 @@ views: [{
       }) {
         //animationEnter();
         killMenu();
+        fullscreenMenuNew();
         titleHero();
        // fullscreenMenu();
         console.log(">>> FULSCREEN MENU AFTER ENTER LOADED");
