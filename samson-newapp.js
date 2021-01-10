@@ -192,14 +192,12 @@ function initScroll(container) {
     });
     console.log("Scrolltrigger animacija loaded");
   */
-  /*
+
+/*
 ================================================================================
 LOCOMOTIVE 4 SCROLL TO TOP
 ================================================================================
 */
- 
-
-
 $( "#tomain" ).on( "click", function() {
   locoScroll.scrollTo( '#top', {
     'offset': 0,
@@ -210,10 +208,10 @@ $( "#tomain" ).on( "click", function() {
   
   console.log("SCROLLTOTOP");
 });
+  
 
 
 
-  	
 }
 
 /*
@@ -445,6 +443,7 @@ views: [{
 },{
   namespace: 'projects',
   beforeEnter(){
+    projectAnchorScroll();
    // fullscreenMenu();
    /* productsMainSwiper();
     resetLogo();
@@ -702,7 +701,7 @@ function underlineMouseover() {
 
 /*
 ================================================================================
-------- FULLSCREEN MENU NEW
+FULLSCREEN MENU
 ================================================================================
 */
 function fullscreenMenuNew() {
@@ -872,5 +871,42 @@ dev.interactions = {
   }
 };
 dev.interactions.init();
+
+}
+
+/*
+================================================================================
+PROJECTS - ANCHOR SCROLL
+================================================================================
+*/
+
+function projectAnchorScroll() {
+
+$( "#tocom" ).on( "click", function() {
+  locoScroll.scrollTo( '#com', {
+    'offset': 0,
+    'duration': 800,
+    //'easing': [0.25, 0.00, 0.35, 1.00],
+    'disableLerp': true
+  });
+});
+
+$( "#tores" ).on( "click", function() {
+  locoScroll.scrollTo( '#res', {
+    'offset': 0,
+    'duration': 800,
+    //'easing': [0.25, 0.00, 0.35, 1.00],
+    'disableLerp': true
+  });
+});
+
+$( "#tospe" ).on( "click", function() {
+  locoScroll.scrollTo( '#spe', {
+    'offset': 0,
+    'duration': 800,
+    //'easing': [0.25, 0.00, 0.35, 1.00],
+    'disableLerp': true
+  });
+});
 
 }
