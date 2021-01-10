@@ -13,10 +13,10 @@ DEFINE ROOT VARIABLES / definiraj svoje
   --header-height: 100px;
   --burger-width: 40px;
 
-  --bcg-lightblue:#23abcd;
+  --bcg-lightblue:#f5f4f1;
 
   --bcg-loaderblue: #1e1e1e;
-  --bcg-loaderbluedark: #f5f4f1;
+  --bcg-loaderbluedark: #1e1e1e;
 
   --loader-width: 100vw;
   --loader-height: 10px;
