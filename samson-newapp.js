@@ -400,6 +400,8 @@ views: [{
   once(data) {
     titleHero();
    // fullscreenMenu();
+    //titleHero();
+   // titleHero();
     /*bigLogo();
     homeYoutube();
     homeProductHover();
@@ -516,7 +518,6 @@ views: [{
       beforeEnter({next}) {
         underlineMouseover();
         killMenu();
-        fullscreenMenuNew();
 
       },
 
@@ -717,7 +718,7 @@ function fullscreenMenuNew() {
 // MENU IN ANIMATION
 ----------------------------- */
   
-const menuIn = gsap.timeline({paused: true});
+const menuIn = gsap.timeline({paused: true, reversed:true});
 
 menuIn.to(".open", {autoAlpha:0})
 .from(".close", {autoAlpha:0}, "<")
