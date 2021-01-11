@@ -825,8 +825,9 @@ function killMenu() {
   const burger = select('.fs-nav-butt');
   const mainwrap = select('.nav-w');
   const slide = select('.nav--transition-slide');
-  
+
   let tl = gsap.timeline();
+  
 
 /*   gsap.set(".menu-btn", {
     pointerEvents: "none",
