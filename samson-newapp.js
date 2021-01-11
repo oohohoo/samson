@@ -712,16 +712,17 @@ function fullscreenMenuNew() {
   let menuIsOpen = false; // tracks state
 
     
-gsap.set(".open", {autoAlpha:1})
-console.log("POKAŽI BURGER JEBEMTIMAJKU");
+/*gsap.set(".open", {autoAlpha:1})
+console.log("POKAŽI BURGER JEBEMTIMAJKU");*/
 /* -----------------------------
 // MENU IN ANIMATION
 ----------------------------- */
   
 const menuIn = gsap.timeline({paused: true});
 
-menuIn.to(".open", {autoAlpha:0})
-.from(".close", {autoAlpha:0}, "<")
+menuIn
+//.to(".open", {autoAlpha:0})
+//.from(".close", {autoAlpha:0}, "<")
 
 
 
@@ -742,8 +743,9 @@ menuIn.to(".open", {autoAlpha:0})
   
 let menuOut = gsap.timeline({paused: true});
   
-menuOut.from(".open", {autoAlpha:0})
-.to(".close", {autoAlpha:0}, "<")
+menuOut
+//.from(".open", {autoAlpha:0})
+//.to(".close", {autoAlpha:0}, "<")
 
 .set(burger, {pointerEvents: "none"}, "<")
 
@@ -835,8 +837,8 @@ function killMenu() {
     pointerEvents: "none",
   }); */
 tl
-  .from(".open", {autoAlpha:0})
-  .to(".close", {autoAlpha:0}, "<")
+  //.from(".open", {autoAlpha:0})
+  //.to(".close", {autoAlpha:0}, "<")
   
   .set(burger, {pointerEvents: "none"}, "<")
   
