@@ -845,10 +845,13 @@ tl
   .to(slide, {duration: 0.65,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut"}, "<0.1")
   
   .set(burger, {pointerEvents: "all"})
+
+  .set(mainwrap, {scaleY: 0})
+  
 /*
 .set(slide, {scaleY: 0, transformOrigin: "bottom center"})
 .set(".f-nav", {yPercent: 110})
-.set(mainwrap, {scaleY: 0})
+
 .set(".fadein", {y: 20, autoAlpha:0})
 .set(".open", {autoAlpha:1})
 
