@@ -721,8 +721,8 @@ console.log("POKAŽI BURGER JEBEMTIMAJKU");*/
 const menuIn = gsap.timeline({paused: true});
 
 menuIn
-.from(".open", {autoAlpha:1})
-//.from(".close", {autoAlpha:0}, "<")
+.to(".open", {autoAlpha:0})
+.from(".close", {autoAlpha:0}, "<")
 
 
 
@@ -744,8 +744,8 @@ menuIn
 let menuOut = gsap.timeline({paused: true});
   
 menuOut
-.from(".open", {autoAlpha:0})
-.to(".close", {autoAlpha:0}, "<")
+//.from(".open", {autoAlpha:0})
+//.to(".close", {autoAlpha:0}, "<")
 
 .set(burger, {pointerEvents: "none"}, "<")
 
