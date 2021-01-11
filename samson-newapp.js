@@ -720,7 +720,7 @@ function fullscreenMenuNew() {
   
 const menuIn = gsap.timeline({paused: true, reversed:true});
 
-menuIn.to(".open", {autoAlpha:1, rotate:720, scale: 0.1})
+menuIn.to(".open", {autoAlpha:1, rotate:720, scale: 1})
 .from(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
 
 
