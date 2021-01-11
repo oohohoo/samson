@@ -400,8 +400,6 @@ views: [{
   once(data) {
     titleHero();
    // fullscreenMenu();
-    //titleHero();
-   // titleHero();
     /*bigLogo();
     homeYoutube();
     homeProductHover();
@@ -518,6 +516,7 @@ views: [{
       beforeEnter({next}) {
         underlineMouseover();
         killMenu();
+        fullscreenMenuNew();
 
       },
 
