@@ -732,7 +732,7 @@ menuIn
 .set(burger, {pointerEvents: "none"}, "<")
 .to(mainwrap, {scaleY: 1, duration: 0.1}, "<0.1")
 .fromTo(slide, {scaleY: 0, transformOrigin: "bottom center"}, {duration: 0.65, scaleY: 1, ease: "Expo.inOut" }, "<0.2") 
-.fromTo(".f-nav", {yPercent: 110}, {duration: 0.65, yPercent: 0, stagger: 0.02}, "<0.3")
+.fromTo(".f-nav", {yPercent: 185}, {duration: 0.65, yPercent: 0, stagger: 0.02}, "<0.3")
 .fromTo(".fadein", {y: 20, autoAlpha: 0}, {duration: 0.65, y: 0, stagger: 0.02, autoAlpha: 1, ease: "Expo.inOut"}, "<0.4")
 
 .set(burger, {pointerEvents: "all"})
@@ -756,7 +756,7 @@ menuOut
 .set(burger, {pointerEvents: "all"})
 
 .set(slide, {scaleY: 0, transformOrigin: "bottom center"})
-.set(".f-nav", {yPercent: 110})
+.set(".f-nav", {yPercent: 185})
 .set(mainwrap, {scaleY: 0})
 .set(".fadein", {y: 20, autoAlpha:0})
 
@@ -972,7 +972,7 @@ Splitting();
 var heroanimation = gsap.timeline({defaults:{duration:1.5, ease: "power3.inOut"}})
 heroanimation
 //.set(".hide", {autoAlpha:1})
-.from(".char", {stagger:0.02, yPercent:180})
+.from(".char", {stagger:0.02, yPercent:185})
 /*.fromTo(".clipImg", {y:400, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
 {autoAlpha:1, duration:3, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "<0.1")*/
 .fromTo(".fadein", {autoAlpha:0, y:40},{duration:0.8, autoAlpha:1, stagger:0.05, y:0}, "<1.2")
@@ -993,7 +993,7 @@ function projectsHeroAnima() {
   var heroanimation = gsap.timeline({defaults:{duration:1.5, ease: "power3.inOut"}})
   heroanimation
   //.set(".hide", {autoAlpha:1})
-  .from(".char", {stagger:0.02, yPercent:180})
+  .from(".char", {stagger:0.02, yPercent:185})
   .fromTo(".inmask", {y:400, autoAlpha:0, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
   {autoAlpha:1, duration:3, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "<0.2")
   .fromTo(".fadein", {autoAlpha:0, y:40},{duration:0.6, autoAlpha:1, stagger:0.2, y:0}, "<0.1")
@@ -1013,7 +1013,7 @@ function materialsHeroAnima() {
   var heroanimation = gsap.timeline({defaults:{duration:1.5, ease: "power3.inOut"}})
   heroanimation
   //.set(".hide", {autoAlpha:1})
-  .from(".char", {stagger:0.02, yPercent:180})
+  .from(".char", {stagger:0.02, yPercent:185})
   .fromTo(".fadein", {autoAlpha:0, y:40},{duration:0.8, autoAlpha:1, stagger:0.05, y:0}, "<0.1")
   .fromTo(".inmask", {y:400, autoAlpha:0, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
   {autoAlpha:1, duration:3, stagger:0.02, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "<0.1")
