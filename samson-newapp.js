@@ -740,7 +740,7 @@ menuIn.to(".open", {autoAlpha:1, rotate:720, scale: 0.1})
   
 let menuOut = gsap.timeline({paused: true});
   
-menuOut.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
+menuOut.from(".open", {autoAlpha:0, scale: 0.1})
 .to(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
 
 .set(burger, {pointerEvents: "none"})
