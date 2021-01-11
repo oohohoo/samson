@@ -718,7 +718,7 @@ console.log("POKAŽI BURGER JEBEMTIMAJKU");
 // MENU IN ANIMATION
 ----------------------------- */
   
-const menuIn = gsap.timeline({paused: true, reversed:true});
+const menuIn = gsap.timeline({paused: true});
 
 menuIn.to(".open", {autoAlpha:0})
 .from(".close", {autoAlpha:0}, "<")
