@@ -506,7 +506,8 @@ views: [{
         next
       }) {
         //animationEnter();
-        fullscreenMenuNew(); 
+        
+        
         //titleHero();
        // fullscreenMenu();
         console.log(">>> FULSCREEN MENU AFTER ENTER LOADED");
@@ -840,7 +841,7 @@ tl
   //.from(".open", {autoAlpha:0})
   //.to(".close", {autoAlpha:0}, "<")
   
-
+  
   .to(".open", {autoAlpha:1})
 .to(".close", {autoAlpha:0}, "<")
 
