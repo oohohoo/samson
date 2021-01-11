@@ -756,7 +756,7 @@ menuOut.from(".open", {autoAlpha:0, scale: 0.1})
 .set(mainwrap, {scaleY: 0})
 .set(".fadein", {y: 20, autoAlpha:0})
 
-menuIn.invalidate();
+///////////////////////menuIn.invalidate();
 /* -----------------------------
 // ADD EVENT LISTER
 ----------------------------- */
