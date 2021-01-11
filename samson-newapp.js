@@ -743,11 +743,11 @@ let menuOut = gsap.timeline({paused: true});
 menuOut.from(".open", {autoAlpha:0, scale: 0.1})
 .to(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
 
-.set(burger, {pointerEvents: "none"})
+.set(burger, {pointerEvents: "none"}, "<")
 
-.to(".f-nav", {duration: 0.65, yPercent: -110, stagger: 0.02, force3D: true}, 0)
-.to(".fadein", {y: -20, autoAlpha: 0, duration: 0.65, ease: "Expo.inOut"})
-.to(slide, {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
+.to(".f-nav", {duration: 0.65, yPercent: -110, stagger: 0.02, force3D: true}, "<0.1")
+.to(".fadein", {y: -20, autoAlpha: 0, duration: 0.65, ease: "Expo.inOut"}, "<0.2")
+.to(slide, {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut"}, "<0.3")
 
 .set(burger, {pointerEvents: "all"})
 
