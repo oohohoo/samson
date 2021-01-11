@@ -712,8 +712,8 @@ function fullscreenMenuNew() {
   let menuIsOpen = false; // tracks state
 
     
-//gsap.set(".open", {scale: 1, autoAlpha:1})
-//console.log("POKAŽI BURGER");
+gsap.set(".open", {autoAlpha:1})
+console.log("POKAŽI BURGER JEBEMTIMAJKU");
 /* -----------------------------
 // MENU IN ANIMATION
 ----------------------------- */
@@ -847,7 +847,7 @@ tl
   .set(burger, {pointerEvents: "all"})
 
   .set(mainwrap, {scaleY: 0})
-  
+
 /*
 .set(slide, {scaleY: 0, transformOrigin: "bottom center"})
 .set(".f-nav", {yPercent: 110})
