@@ -32,8 +32,8 @@ DEFINE ROOT VARIABLES / definiraj svoje
 
 
  /* VISIBILITY NONE */
- .hide, .fadein {
-    visibility: hidden;
+ .hide, .fadein, .menufade{
+    visibility:, hidden;
 }
  
 
