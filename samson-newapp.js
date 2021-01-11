@@ -720,8 +720,8 @@ function fullscreenMenuNew() {
   
 const menuIn = gsap.timeline({paused: true, reversed:true});
 
-menuIn.to(".open", {autoAlpha:1, rotate:720, scale: 1})
-.from(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
+menuIn.to(".open", {autoAlpha:0})
+.from(".close", {autoAlpha:0}, "<")
 
 
 
@@ -742,8 +742,8 @@ menuIn.to(".open", {autoAlpha:1, rotate:720, scale: 1})
   
 let menuOut = gsap.timeline({paused: true});
   
-menuOut.from(".open", {autoAlpha:0, scale: 0.1})
-.to(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
+menuOut.from(".open", {autoAlpha:0})
+.to(".close", {autoAlpha:0}, "<")
 
 .set(burger, {pointerEvents: "none"}, "<")
 
@@ -835,8 +835,8 @@ function killMenu() {
     pointerEvents: "none",
   }); */
 tl
-  .from(".open", {autoAlpha:0, scale: 0.1})
-  .to(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
+  .from(".open", {autoAlpha:0})
+  .to(".close", {autoAlpha:0}, "<")
   
   .set(burger, {pointerEvents: "none"}, "<")
   
