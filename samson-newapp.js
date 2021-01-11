@@ -507,7 +507,6 @@ views: [{
       }) {
         //animationEnter();
         
-
         //titleHero();
        // fullscreenMenu();
         console.log(">>> FULSCREEN MENU AFTER ENTER LOADED");
@@ -812,9 +811,9 @@ function titleHero() {
  var animation = gsap.timeline({defaults:{duration:1.3, ease: "power3.inOut"}})
  animation
  .set(".hide", {autoAlpha:1}, "<")
- .from(".char", {stagger:0.02, yPercent:115, force3D: true}, "<")
+ .from(".char", {stagger:0.02, yPercent:115}, "<")
  .fromTo(".clip", {y:200, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
- {force3D: true, autoAlpha:1, duration:2.3, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "<0.1")
+ {autoAlpha:1, duration:2.3, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "<0.1")
  
  
  }
@@ -841,15 +840,14 @@ tl
   //.from(".open", {autoAlpha:0})
   //.to(".close", {autoAlpha:0}, "<")
   
-  
   .to(".open", {autoAlpha:1})
 .to(".close", {autoAlpha:0}, "<")
 
   .set(burger, {pointerEvents: "none"}, "<")
   
-  .to(".f-nav", {duration: 0.65, yPercent: -110, stagger: 0.1, force3D: true}, "<0.1")
-.to(".fadein", {y: -20, autoAlpha: 0, duration: 0.35, ease: "Expo.inOut"}, "<0.2")
-.to(slide, {duration: 0.65,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut"}, "<0.5")
+  .to(".f-nav", {duration: 0.4, yPercent: -110, force3D: true}, "<0.1")
+  .to(".fadein", {y: -20, autoAlpha: 0, duration: 0.3}, "<0.2")
+  .to(slide, {duration: 0.65,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut"}, "<0.1")
   
   .set(burger, {pointerEvents: "all"})
 
@@ -974,7 +972,7 @@ Splitting();
 var heroanimation = gsap.timeline({defaults:{duration:1.5, ease: "power3.inOut"}})
 heroanimation
 //.set(".hide", {autoAlpha:1})
-.from(".char", {stagger:0.02, yPercent:180})
+.from(".char", {stagger:0.02, yPercent:170})
 /*.fromTo(".clipImg", {y:400, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
 {autoAlpha:1, duration:3, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "<0.1")*/
 .fromTo(".fadein", {autoAlpha:0, y:40},{duration:0.8, autoAlpha:1, stagger:0.05, y:0}, "<1.2")
@@ -995,10 +993,10 @@ function projectsHeroAnima() {
   var heroanimation = gsap.timeline({defaults:{duration:1.5, ease: "power3.inOut"}})
   heroanimation
   //.set(".hide", {autoAlpha:1})
-  .from(".char", {stagger:0.02, yPercent:180}, 0)
-  .fromTo(".fadein", {autoAlpha:0, y:40},{duration:0.8, autoAlpha:1, stagger:0.05, y:0}, 0.1)
+  .from(".char", {stagger:0.02, yPercent:170})
+  .fromTo(".fadein", {autoAlpha:0, y:40},{duration:0.8, autoAlpha:1, stagger:0.05, y:0}, "<0.1")
   .fromTo(".inmask", {y:400, autoAlpha:0, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
-  {autoAlpha:1, duration:3, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, 0.2)
+  {autoAlpha:1, duration:3, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "<0.2")
   
   console.log("PROJECT INTRO ANIMA HERO LOADED!!!!")
   
@@ -1016,7 +1014,7 @@ function materialsHeroAnima() {
   var heroanimation = gsap.timeline({defaults:{duration:1.5, ease: "power3.inOut"}})
   heroanimation
   //.set(".hide", {autoAlpha:1})
-  .from(".char", {stagger:0.02, yPercent:180})
+  .from(".char", {stagger:0.02, yPercent:170})
   .fromTo(".fadein", {autoAlpha:0, y:40},{duration:0.8, autoAlpha:1, stagger:0.05, y:0}, "<0.1")
   .fromTo(".inmask", {y:400, autoAlpha:0, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
   {autoAlpha:1, duration:3, stagger:0.02, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "<0.1")
