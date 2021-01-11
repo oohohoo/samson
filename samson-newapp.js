@@ -840,6 +840,9 @@ tl
   //.from(".open", {autoAlpha:0})
   //.to(".close", {autoAlpha:0}, "<")
   
+  .to(".open", {autoAlpha:1})
+.to(".close", {autoAlpha:0}, "<")
+
   .set(burger, {pointerEvents: "none"}, "<")
   
   .to(".f-nav", {duration: 0.4, yPercent: -110, force3D: true}, "<0.1")
