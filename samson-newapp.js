@@ -744,8 +744,8 @@ menuIn
 let menuOut = gsap.timeline({paused: true});
   
 menuOut
-//.from(".open", {autoAlpha:0})
-//.to(".close", {autoAlpha:0}, "<")
+.from(".open", {autoAlpha:0})
+.to(".close", {autoAlpha:0}, "<")
 
 .set(burger, {pointerEvents: "none"}, "<")
 
