@@ -847,7 +847,7 @@ tl
   
   .to(".f-nav", {duration: 0.4, yPercent: -110, force3D: true}, "<0.1")
   .to(".fadein", {y: -20, autoAlpha: 0, duration: 0.3}, "<0.2")
-  .to(slide, {duration: 0.65,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut"}, "<0.1")
+  .to(slide, {duration: 0.65,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut"}, "<0.5")
   
   .set(burger, {pointerEvents: "all"})
 
