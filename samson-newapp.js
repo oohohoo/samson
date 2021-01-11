@@ -838,8 +838,8 @@ tl
   
   .set(burger, {pointerEvents: "none"}, "<")
   
-  .to(".f-nav", {duration: 0.65, yPercent: -110, stagger: 0.1, force3D: true}, "<0.1")
-  .to(".fadein", {y: -20, autoAlpha: 0, duration: 0.65, ease: "Expo.inOut"}, "<0.2")
+  .to(".f-nav", {duration: 0.65, yPercent: -110, stagger: 0.2, force3D: true}, "<0.1")
+  .to(".fadein", {y: -20, autoAlpha: 0, duration: 0.65}, "<0.2")
   .to(slide, {duration: 0.65,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut"}, "<0.3")
   
   .set(burger, {pointerEvents: "all"})
@@ -848,7 +848,7 @@ tl
 .set(".f-nav", {yPercent: 110})
 .set(mainwrap, {scaleY: 0})
 .set(".fadein", {y: 20, autoAlpha:0})
-
+.set(".open", {autoAlpha:1})
   /*
   tl.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
   .to(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
