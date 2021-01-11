@@ -811,9 +811,9 @@ function titleHero() {
  var animation = gsap.timeline({defaults:{duration:1.3, ease: "power3.inOut"}})
  animation
  .set(".hide", {autoAlpha:1}, "<")
- .from(".char", {stagger:0.02, yPercent:115}, "<")
+ .from(".char", {stagger:0.02, yPercent:115, force3D: true}, "<")
  .fromTo(".clip", {y:200, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
- {autoAlpha:1, duration:2.3, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "<0.1")
+ {force3D: true, autoAlpha:1, duration:2.3, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "<0.1")
  
  
  }
@@ -994,7 +994,7 @@ function projectsHeroAnima() {
   heroanimation
   //.set(".hide", {autoAlpha:1})
   .from(".char", {stagger:0.02, yPercent:180})
-  .fromTo(".fadein", {autoAlpha:0, y:40},{duration:0.4, autoAlpha:1, stagger:0.05, y:0}, "<0.1")
+  .fromTo(".fadein", {autoAlpha:0, y:40},{duration:0.8, autoAlpha:1, stagger:0.05, y:0}, "<0.1")
   .fromTo(".inmask", {y:400, autoAlpha:0, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
   {autoAlpha:1, duration:3, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "<0.2")
   
