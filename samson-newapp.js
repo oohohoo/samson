@@ -168,6 +168,7 @@ function initScroll(container) {
                   console.log("JEBOTE RESIZED JEBOTE LOCOSCROLL I SCROLLTRIGGER UPDATED!");
 } 
 
+
 ); 
 
 */
@@ -209,6 +210,24 @@ $( "#tomain" ).on( "click", function() {
   console.log("SCROLLTOTOP");
 });
 
+
+/*
+================================================================================
+REFRESH PAGE ON SCREEN ROTATE / novoubačeno
+================================================================================
+*/
+
+jQuery(document).ready(function($){
+  orientationChange();
+  });
+  function orientationChange() {
+  if(window.addEventListener) {
+  window.addEventListener("orientationchange", function() {
+  location.reload();
+  });
+  }
+  }
+  
 
 
 }
@@ -1022,20 +1041,5 @@ function materialsHeroAnima() {
   
   }
 
-  /*
-================================================================================
-REFRESH PAGE ON SCREEN ROTATE / novoubačeno, if somethings wrong
-================================================================================
-*/
 
-jQuery(document).ready(function($){
-  orientationChange();
-  });
-  function orientationChange() {
-  if(window.addEventListener) {
-  window.addEventListener("orientationchange", function() {
-  location.reload();
-  });
-  }
-  }
   
