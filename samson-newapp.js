@@ -1021,3 +1021,21 @@ function materialsHeroAnima() {
   console.log("MATERIALLLLLSSSSSS!!!!")
   
   }
+
+  /*
+================================================================================
+REFRESH PAGE ON SCREEN ROTATE / novoubačeno, if somethings wrong
+================================================================================
+*/
+
+jQuery(document).ready(function($){
+  orientationChange();
+  });
+  function orientationChange() {
+  if(window.addEventListener) {
+  window.addEventListener("orientationchange", function() {
+  location.reload();
+  });
+  }
+  }
+  
