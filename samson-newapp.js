@@ -810,11 +810,11 @@ function titleHero() {
  CLIPPING PATH MASK REVEAL & TEXT REVEAL
  ================================================================================
  */
- var animation = gsap.timeline({defaults:{duration:1.3, ease: "power3.inOut"}})
+ var animation = gsap.timeline({defaults:{duration:0.8, ease: "power3.inOut"}})
  animation
  .set(".hide", {autoAlpha:1}, "<")
  .from(".char", {stagger:0.02, yPercent:115}, "<")
- .fromTo(".clip", {y:200, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
+ .fromTo(".clip", {y:400, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
  {autoAlpha:1, duration:2.3, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "<0.1")
  
  
