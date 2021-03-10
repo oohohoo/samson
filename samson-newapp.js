@@ -733,8 +733,8 @@ menuIn
 
 .set(burger, {pointerEvents: "none"}, "<")
 .to(mainwrap, {scaleY: 1, duration: 0.1}, "<0.1")
-.fromTo(slide, {scaleY: 0, transformOrigin: "bottom center"}, {duration: 0.3, scaleY: 1, ease: "Expo.inOut" }, "<0.2") 
-.fromTo(".f-nav", {yPercent: 185}, {duration: 0.65, yPercent: 0, stagger: 0.02}, "<0.3")
+.fromTo(slide, {scaleY: 0, transformOrigin: "bottom center"}, {duration: 0.45, scaleY: 1, ease: "Expo.inOut" }, "<0.2") 
+.fromTo(".f-nav", {yPercent: 185}, {duration: 0.65, yPercent: 0, stagger: 0.01}, "<0.3")
 .fromTo(".fadein", {y: 20, autoAlpha: 0}, {duration: 0.65, y: 0, stagger: 0.02, autoAlpha: 1, ease: "Expo.inOut"}, "<0.4")
 
 .set(burger, {pointerEvents: "all"})
@@ -751,9 +751,9 @@ menuOut
 
 .set(burger, {pointerEvents: "none"}, "<")
 
-.to(".f-nav", {duration: 0.65, yPercent: -110, stagger: 0.1, force3D: true}, "<0.1")
+.to(".f-nav", {duration: 0.45, yPercent: -110, stagger: 0.1, force3D: true}, "<0.1")
 .to(".fadein", {y: -20, autoAlpha: 0, duration: 0.35, ease: "Expo.inOut"}, "<0.2")
-.to(slide, {duration: 0.3,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut"}, "<0.5")
+.to(slide, {duration: 0.45,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut"}, "<0.5")
 
 .set(burger, {pointerEvents: "all"})
 
