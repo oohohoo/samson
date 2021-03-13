@@ -507,6 +507,7 @@ views: [{
       afterEnter({
         next
       }) {
+        killMenu();
         fullscreenMenuNew(); 
         //animationEnter();
         
