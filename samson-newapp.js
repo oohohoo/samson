@@ -740,7 +740,7 @@ menuIn
 // MENU OUT  ANIMATION
 ----------------------------- */
   
-let menuOut = gsap.timeline({paused: true});
+let menuOut = gsap.timeline({paused: true, reversed: true});
   
 menuOut
 .to(".open", {autoAlpha:1})
