@@ -786,14 +786,14 @@ burger.onclick = function() {
 
 
 
- burger.addEventListener('click', () => {
+/*  burger.addEventListener('click', () => {
   menuIsOpen = !menuIsOpen; // toggle
     if (menuIsOpen) {
       menuIn.restart();
     } else {
       menuOut.restart();
     }
-  });
+  }); */
   
 }
 
