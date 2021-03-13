@@ -508,11 +508,11 @@ views: [{
         next
       }) {
         
-
+        
         //animationEnter();
         
         //titleHero();
-        fullscreenMenuNew(); 
+       // fullscreenMenu();
         console.log(">>> FULSCREEN MENU AFTER ENTER LOADED");
         fsmenuHover();
         console.log("AFTER ENTER");
@@ -734,12 +734,6 @@ var toggle = true;
 //menuIn
 
 menuAnimation
- .set(slide, {scaleY: 0, transformOrigin: "bottom center"})
-.set(".f-nav", {yPercent: 185})
-.set(mainwrap, {scaleY: 0})
-.set(".fadein", {y: 20, autoAlpha:0}) 
-
-
 .to(".open", {rotate:-45, autoAlpha:0})
 .from(".close", {autoAlpha:0, rotate:0}, "<")
   /* .to(navMain, {xPercent: 100, duration: 0.8, ease: "Expo.inOut"},0) */
@@ -775,7 +769,10 @@ menuAnimationBack
 
 .set(burger, {pointerEvents: "all"})
 
-
+.set(slide, {scaleY: 0, transformOrigin: "bottom center"})
+.set(".f-nav", {yPercent: 185})
+.set(mainwrap, {scaleY: 0})
+.set(".fadein", {y: 20, autoAlpha:0})
 
 ///////////////////////menuIn.invalidate();
 /* -----------------------------
