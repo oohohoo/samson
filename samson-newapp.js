@@ -717,7 +717,7 @@ function fullscreenMenuNew() {
 var menuAnimation = gsap.timeline({paused:true});
 var menuAnimationBack = gsap.timeline({paused:true});
 var navMain = document.getElementById("nav-main");
-var menuButton = document.getElementById("menu-button");
+/* var menuButton = document.getElementById("menu-button"); */
 const burger = select('.fs-nav-butt')
 var toggle = true;
 /*///////*/    
