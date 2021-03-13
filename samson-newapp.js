@@ -781,7 +781,7 @@ menuAnimationBack
 burger.onclick = function() {
 
   toggle = !toggle;
-  toggle == false ? menuAnimation.play(0) : menuAnimationBack.restart(0);
+  toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
 };
 
 
