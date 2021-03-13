@@ -508,6 +508,7 @@ views: [{
         next
       }) {
         
+        
         //animationEnter();
         
         //titleHero();
