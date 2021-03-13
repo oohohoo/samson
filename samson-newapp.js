@@ -728,9 +728,6 @@ menuIn
 
 
 
-
-
-
 .set(burger, {pointerEvents: "none"}, "<")
 .to(mainwrap, {scaleY: 1, duration: 0.1}, "<0.1")
 .fromTo(slide, {scaleY: 0, transformOrigin: "bottom center"}, {duration: 0.45, scaleY: 1, ease: "Expo.inOut" }, "<0.2") 
