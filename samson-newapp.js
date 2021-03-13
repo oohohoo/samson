@@ -874,7 +874,7 @@ tl
   
   .set(burger, {pointerEvents: "all"})
 
-/*   .set(mainwrap, {scaleY: 0}) */
+  .set(mainwrap, {scaleY: 0}) 
 
 /*
 .set(slide, {scaleY: 0, transformOrigin: "bottom center"})
