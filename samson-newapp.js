@@ -720,7 +720,7 @@ console.log("POKAŽI BURGER JEBEMTIMAJKU");*/
 // MENU IN ANIMATION
 ----------------------------- */
   
-const menuIn = gsap.timeline({paused: true, reversed: true});
+const menuIn = gsap.timeline({});
 
 menuIn
 .to(".open", {autoAlpha:0})
@@ -740,7 +740,7 @@ menuIn
 // MENU OUT  ANIMATION
 ----------------------------- */
   
-let menuOut = gsap.timeline({paused: true, reversed: true});
+let menuOut = gsap.timeline({});
   
 menuOut
 .to(".open", {autoAlpha:1})
@@ -767,9 +767,9 @@ menuOut
 burger.addEventListener('click', () => {
   menuIsOpen = !menuIsOpen; // toggle
     if (menuIsOpen) {
-      menuIn.restart();
+      menuIn.play();
     } else {
-      menuOut.restart();
+      menuOut.play();
     }
   });
   
