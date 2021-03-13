@@ -507,7 +507,8 @@ views: [{
       afterEnter({
         next
       }) {
-       /*  fullscreenMenuNew(); */ 
+        killMenu();
+        fullscreenMenuNew(); 
         //animationEnter();
         
         //titleHero();
@@ -520,7 +521,7 @@ views: [{
 
       beforeEnter({next}) {
         underlineMouseover();
-       /* killMenu();*/
+        
 
       },
 
