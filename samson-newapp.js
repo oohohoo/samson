@@ -718,7 +718,7 @@ var menuAnimation = gsap.timeline({paused:true});
 var menuAnimationBack = gsap.timeline({paused:true});
 var navMain = document.getElementById("nav-main");
 var menuButton = document.getElementById("menu-button");
-const burger = select('.fs-nav-buttx+')
+const burger = select('.fs-nav-butt')
 var toggle = true;
 /*///////*/    
 
@@ -776,7 +776,7 @@ menuAnimationBack
 ----------------------------- */
   
 
-burger.onclick = function() {
+menuButton.onclick = function() {
 
   toggle = !toggle;
   toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
@@ -784,14 +784,14 @@ burger.onclick = function() {
 
 
 
- /* burger.addEventListener('click', () => {
+ burger.addEventListener('click', () => {
   menuIsOpen = !menuIsOpen; // toggle
     if (menuIsOpen) {
       menuIn.restart();
     } else {
       menuOut.restart();
     }
-  }); */
+  });
   
 }
 
