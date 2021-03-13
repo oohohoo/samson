@@ -778,7 +778,7 @@ menuAnimationBack
 ----------------------------- */
   
 
-burger.onclick = function() {
+burgerx.onclick = function() {
 
   toggle = !toggle;
   toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
