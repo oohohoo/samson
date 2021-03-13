@@ -507,7 +507,7 @@ views: [{
       afterEnter({
         next
       }) {
-        fullscreenMenuNew(); 
+       // fullscreenMenuNew(); 
         //animationEnter();
         
         //titleHero();
