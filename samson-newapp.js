@@ -512,7 +512,7 @@ views: [{
         //animationEnter();
         
         //titleHero();
-       // fullscreenMenu();
+        fullscreenMenuNew(); 
         console.log(">>> FULSCREEN MENU AFTER ENTER LOADED");
         fsmenuHover();
         console.log("AFTER ENTER");
