@@ -769,7 +769,7 @@ burger.addEventListener('click', () => {
     if (menuIsOpen) {
       menuIn.restart();
     } else {
-      menuOut.restart();
+      menuOut.reverse();
     }
   });
   
