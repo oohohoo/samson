@@ -508,7 +508,7 @@ views: [{
         next
       }) {
         
-        
+
         //animationEnter();
         
         //titleHero();
@@ -769,10 +769,10 @@ menuAnimationBack
 
 .set(burger, {pointerEvents: "all"})
 
-.set(slide, {scaleY: 0, transformOrigin: "bottom center"})
+/* .set(slide, {scaleY: 0, transformOrigin: "bottom center"})
 .set(".f-nav", {yPercent: 185})
 .set(mainwrap, {scaleY: 0})
-.set(".fadein", {y: 20, autoAlpha:0})
+.set(".fadein", {y: 20, autoAlpha:0}) */
 
 ///////////////////////menuIn.invalidate();
 /* -----------------------------
