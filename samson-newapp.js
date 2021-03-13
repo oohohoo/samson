@@ -713,20 +713,26 @@ function fullscreenMenuNew() {
   //const fnav = select('.f-nav');
   let menuIsOpen = false; // tracks state
 
-    
-/*gsap.set(".open", {autoAlpha:1})
-console.log("POKAŽI BURGER JEBEMTIMAJKU");*/
+/*/////*/
+var menuAnimation = gsap.timeline({paused:true});
+var menuAnimationBack = gsap.timeline({paused:true});
+var navMain = document.getElementById("nav-main");
+var menuButton = document.getElementById("menu-button");
+var toggle = true;
+/*///////*/    
+
 /* -----------------------------
 // MENU IN ANIMATION
 ----------------------------- */
   
-const menuIn = gsap.timeline({paused: true, reversed: true});
+//const menuIn = gsap.timeline({paused: true, reversed: true});
 
-menuIn
+//menuIn
+
+menuAnimation
+  /* .to(navMain, {xPercent: 100, duration: 0.8, ease: "Expo.inOut"},0) */
 .to(".open", {autoAlpha:0})
 .from(".close", {autoAlpha:0}, "<")
-
-
 
 .set(burger, {pointerEvents: "none"}, "<")
 .to(mainwrap, {scaleY: 1, duration: 0.1}, "<0.1")
@@ -740,9 +746,13 @@ menuIn
 // MENU OUT  ANIMATION
 ----------------------------- */
   
-let menuOut = gsap.timeline({paused: true });
+/* let menuOut = gsap.timeline({paused: true });
   
-menuOut
+menuOut */
+
+menuAnimationBack
+  /* .to(navMain, {xPercent: 0, duration: 0.5,  ease: "Expo.inOut"},0) */
+
 .to(".open", {autoAlpha:1})
 .to(".close", {autoAlpha:0}, "<")
 
@@ -764,17 +774,26 @@ menuOut
 // ADD EVENT LISTER
 ----------------------------- */
   
-burger.addEventListener('click', () => {
+
+menuButton.onclick = function() {
+
+  toggle = !toggle;
+  toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
+};
+
+
+
+/* burger.addEventListener('click', () => {
   menuIsOpen = !menuIsOpen; // toggle
     if (menuIsOpen) {
       menuIn.restart();
     } else {
-      menuOut.reverse();
+      menuOut.restart();
     }
   });
   
 }
-
+ */
 
 /*
 ================================================================================
