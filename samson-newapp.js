@@ -708,10 +708,10 @@ FULLSCREEN MENU
 function fullscreenMenuNew() {
 
  /* const burger = select('.fs-nav-butt');*/
-  /*const mainwrap = select('.nav-w');
+  const mainwrap = select('.nav-w');
   const slide = select('.nav--transition-slide');
   //const fnav = select('.f-nav');
- /* let menuIsOpen = false; // tracks state*/
+  let menuIsOpen = false; // tracks state
 
 /*/////*/
 var menuAnimation = gsap.timeline({paused:true});
@@ -783,7 +783,7 @@ menuButton.onclick = function() {
 
 
 
-/*  burger.addEventListener('click', () => {
+ burger.addEventListener('click', () => {
   menuIsOpen = !menuIsOpen; // toggle
     if (menuIsOpen) {
       menuIn.restart();
@@ -793,7 +793,7 @@ menuButton.onclick = function() {
   });
   
 }
- */
+
 
 /*
 ================================================================================
