@@ -512,7 +512,7 @@ views: [{
         //animationEnter();
         
         //titleHero();
-        fullscreenMenuNew(); 
+       /*  fullscreenMenuNew();  */
         console.log(">>> FULSCREEN MENU AFTER ENTER LOADED");
         fsmenuHover();
         console.log("AFTER ENTER");
@@ -521,7 +521,7 @@ views: [{
 
       beforeEnter({next}) {
         underlineMouseover();
-        /* killMenu(); */
+        killMenu();
 
       },
 
