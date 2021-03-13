@@ -707,7 +707,7 @@ FULLSCREEN MENU
 */
 function fullscreenMenuNew() {
 
-  const burger = select('.fs-nav-butt');
+ /* const burger = select('.fs-nav-butt');*/
   const mainwrap = select('.nav-w');
   const slide = select('.nav--transition-slide');
   //const fnav = select('.f-nav');
@@ -783,7 +783,7 @@ menuButton.onclick = function() {
 
 
 
- burger.addEventListener('click', () => {
+/*  burger.addEventListener('click', () => {
   menuIsOpen = !menuIsOpen; // toggle
     if (menuIsOpen) {
       menuIn.restart();
@@ -793,7 +793,7 @@ menuButton.onclick = function() {
   });
   
 }
-
+ */
 
 /*
 ================================================================================
