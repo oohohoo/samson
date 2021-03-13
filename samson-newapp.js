@@ -783,7 +783,7 @@ menuButton.onclick = function() {
 
 
 
-/* burger.addEventListener('click', () => {
+ burger.addEventListener('click', () => {
   menuIsOpen = !menuIsOpen; // toggle
     if (menuIsOpen) {
       menuIn.restart();
@@ -793,7 +793,7 @@ menuButton.onclick = function() {
   });
   
 }
- */
+
 
 /*
 ================================================================================
