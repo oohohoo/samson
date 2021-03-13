@@ -508,7 +508,7 @@ views: [{
         next
       }) {
         killMenu();
-        fullscreenMenuNew(); 
+       // fullscreenMenuNew(); 
         //animationEnter();
         
         //titleHero();
