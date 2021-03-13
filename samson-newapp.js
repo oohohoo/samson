@@ -776,7 +776,7 @@ menuAnimationBack
 ----------------------------- */
   
 
-menuButton.onclick = function() {
+burger.onclick = function() {
 
   toggle = !toggle;
   toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
@@ -784,14 +784,14 @@ menuButton.onclick = function() {
 
 
 
- burger.addEventListener('click', () => {
+ /* burger.addEventListener('click', () => {
   menuIsOpen = !menuIsOpen; // toggle
     if (menuIsOpen) {
       menuIn.restart();
     } else {
       menuOut.restart();
     }
-  });
+  }); */
   
 }
 
