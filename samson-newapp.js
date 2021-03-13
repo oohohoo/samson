@@ -722,7 +722,7 @@ const burger = select('.fs-nav-butt')
 var toggle = true;
 /*///////*/    
 
-
+/*/
 /* -----------------------------
 // MENU IN ANIMATION
 ----------------------------- */
