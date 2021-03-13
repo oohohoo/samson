@@ -521,7 +521,7 @@ views: [{
 
       beforeEnter({next}) {
         underlineMouseover();
-        //killMenu();
+        killMenu();
 
       },
 
