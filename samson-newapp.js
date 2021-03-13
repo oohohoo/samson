@@ -711,7 +711,7 @@ function fullscreenMenuNew() {
   const mainwrap = select('.nav-w');
   const slide = select('.nav--transition-slide');
   //const fnav = select('.f-nav');
-  let menuIsOpen = false; // tracks state
+ /* let menuIsOpen = false; // tracks state*/
 
 /*/////*/
 var menuAnimation = gsap.timeline({paused:true});
