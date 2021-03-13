@@ -732,9 +732,10 @@ var toggle = true;
 //menuIn
 
 menuAnimation
+.to(".open", {rotate:-45, autoAlpha:0})
+.from(".close", {autoAlpha:0, rotate:0}, "<")
   /* .to(navMain, {xPercent: 100, duration: 0.8, ease: "Expo.inOut"},0) */
-.to(".open", {autoAlpha:0})
-.from(".close", {autoAlpha:0}, "<")
+
 
 .set(burger, {pointerEvents: "none"}, "<")
 .to(mainwrap, {scaleY: 1, duration: 0.1}, "<0.1")
@@ -755,8 +756,8 @@ menuOut */
 menuAnimationBack
   /* .to(navMain, {xPercent: 0, duration: 0.5,  ease: "Expo.inOut"},0) */
 
-.to(".open", {autoAlpha:1})
-.to(".close", {autoAlpha:0}, "<")
+  .to(".open", {rotate:0, autoAlpha:1})
+  .to(".close", {autoAlpha:0, rotate:0}, "<")
 
 .set(burger, {pointerEvents: "none"}, "<")
 
