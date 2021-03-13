@@ -720,7 +720,7 @@ console.log("POKAŽI BURGER JEBEMTIMAJKU");*/
 // MENU IN ANIMATION
 ----------------------------- */
   
-const menuIn = gsap.timeline({paused: true});
+const menuIn = gsap.timeline({paused: true, reversed: true});
 
 menuIn
 .to(".open", {autoAlpha:0})
@@ -743,7 +743,7 @@ menuIn
 // MENU OUT  ANIMATION
 ----------------------------- */
   
-let menuOut = gsap.timeline({paused: true});
+let menuOut = gsap.timeline({paused: true, reversed: true});
   
 menuOut
 .to(".open", {autoAlpha:1})
