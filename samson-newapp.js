@@ -746,7 +746,7 @@ menuAnimation
 .fromTo(".fadein", {y: 20, autoAlpha: 0}, {duration: 0.65, y: 0, stagger: 0.02, autoAlpha: 1, ease: "Expo.inOut"}, "<0.4")
 
 .set(burger, {pointerEvents: "all"})
- .set(".f-nav"), {yPercent: 0}
+ 
 /* -----------------------------
 // MENU OUT  ANIMATION
 ----------------------------- */
