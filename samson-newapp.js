@@ -791,7 +791,7 @@ burger.onclick = function() {
 linko.onclick = function() {
 menuAnimationBack.play(0);
 };
-
+r
 
 /*  burger.addEventListener('click', () => {
   menuIsOpen = !menuIsOpen; // toggle
