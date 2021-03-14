@@ -789,7 +789,11 @@ burger.onclick = function() {
 
 
 linko.onclick = function() {
-menuAnimationBack.play(0);
+ toggle = !toggle;
+  toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
+};
+
+/* tl.reversed() ? tl.play() : tl.reverse(); */
 
 
 /*  burger.addEventListener('click', () => {
