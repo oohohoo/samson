@@ -521,7 +521,7 @@ views: [{
 
       beforeEnter({next}) {
         underlineMouseover();
-        /* killMenu(); */
+         killMenu(); 
 
       },
 
@@ -800,6 +800,67 @@ burger.onclick = function() {
 }
 
 
+ /*
+================================================================================
+KILL MENU
+================================================================================
+*/
+function killMenu() {
+
+  const burger = select('.fs-nav-butt');
+  const mainwrap = select('.nav-w');
+  const slide = select('.nav--transition-slide');
+
+  let tl = gsap.timeline();
+  
+
+/*   gsap.set(".menu-btn", {
+    pointerEvents: "none",
+  }); */
+tl
+.to(".open", {autoAlpha:1})
+.to(".close", {autoAlpha:0}, "<")
+
+.set(burger, {pointerEvents: "none"}, "<")
+
+.to(".f-nav", {duration: 0.3, yPercent: -110, stagger: 0.05, force3D: true}, "<0.1")
+.to(".fadein", {y: -20, autoAlpha: 0, duration: 0.35, ease: "Expo.inOut"}, "<0.2")
+.to(slide, {duration: 0.8,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut"}, "<0.3")
+
+.set(burger, {pointerEvents: "all"})
+
+.set(slide, {scaleY: 0, transformOrigin: "bottom center"})
+.set(".f-nav", {yPercent: 185})
+.set(mainwrap, {scaleY: 0})
+.set(".fadein", {y: 20, autoAlpha:0})
+
+/*
+.set(slide, {scaleY: 0, transformOrigin: "bottom center"})
+.set(".f-nav", {yPercent: 110})
+
+.set(".fadein", {y: 20, autoAlpha:0})
+.set(".open", {autoAlpha:1})
+
+
+*/
+  /*
+  tl.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
+  .to(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
+  
+  .set(".menu-btn", {pointerEvents: "none"})
+  
+  .to(".f-nav", {duration: 0.65, yPercent: -110,ease: "Expo.inOut"}, 0)
+  .to(".nav--transition-slide", {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
+  
+  .set(".menu-btn", {pointerEvents: "all"})
+
+  */
+  
+
+
+ 
+ }
+ 
 /*
 ================================================================================
 HOME PAGE TITLE & HERO GALLERY
@@ -842,66 +903,7 @@ function titleHero() {
  }
 
 
- /*
-================================================================================
-KILL MENU
-================================================================================
-*/
-function killMenu() {
 
-  const burger = select('.fs-nav-butt');
-  const mainwrap = select('.nav-w');
-  const slide = select('.nav--transition-slide');
-
-  let tl = gsap.timeline();
-  
-
-/*   gsap.set(".menu-btn", {
-    pointerEvents: "none",
-  }); */
-tl
-  //.from(".open", {autoAlpha:0})
-  //.to(".close", {autoAlpha:0}, "<")
-  
-  .to(".open", {autoAlpha:1})
-.to(".close", {autoAlpha:0}, "<")
-
-  .set(burger, {pointerEvents: "none"}, "<")
-  
-  .to(".f-nav", {duration: 0.4, yPercent: -110, force3D: true}, "<0.1")
-  .to(".fadein", {y: -20, autoAlpha: 0, duration: 0.3}, "<0.2")
-  .to(slide, {duration: 0.65,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut"}, "<0.1")
-  
-  .set(burger, {pointerEvents: "all"})
-
-  .set(mainwrap, {scaleY: 0}) 
-
-/*
-.set(slide, {scaleY: 0, transformOrigin: "bottom center"})
-.set(".f-nav", {yPercent: 110})
-
-.set(".fadein", {y: 20, autoAlpha:0})
-.set(".open", {autoAlpha:1})
-
-
-*/
-  /*
-  tl.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
-  .to(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
-  
-  .set(".menu-btn", {pointerEvents: "none"})
-  
-  .to(".f-nav", {duration: 0.65, yPercent: -110,ease: "Expo.inOut"}, 0)
-  .to(".nav--transition-slide", {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
-  
-  .set(".menu-btn", {pointerEvents: "all"})
-
-  */
-  
-
-
- 
- }
 
 
  /*
