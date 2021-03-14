@@ -806,7 +806,10 @@ KILL MENU
 */
 function killMenu() {
 
-menuAnimationBack.play(0);/* 
+
+
+menuAnimationBack
+/* 
   const burger = select('.fs-nav-butt');
   const mainwrap = select('.nav-w');
   const slide = select('.nav--transition-slide');
