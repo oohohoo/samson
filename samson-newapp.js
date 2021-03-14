@@ -787,11 +787,10 @@ burger.onclick = function() {
   toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
 };
 
-
 linko.onclick = function() {
-menuAnimationBack.reversed() ? menuAnimationBack.play() : tmenuAnimationBackreverse();
+menuAnimationBack.reversed() ? menuAnimationBack.play() : menuAnimationBack.reverse();
 };
-
+r
 
 /*  burger.addEventListener('click', () => {
   menuIsOpen = !menuIsOpen; // toggle
