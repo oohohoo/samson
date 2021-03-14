@@ -721,6 +721,7 @@ var menuAnimationBack = gsap.timeline({paused:true});
 var navMain = document.getElementById("nav-main");
 var menuButton = document.getElementById("menu-button");
 const burger = select('.fs-nav-butt')
+const linko = select('.line-wrapper')
 var toggle = true;
 /*///////*/    
 
@@ -787,6 +788,12 @@ burger.onclick = function() {
 };
 
 
+linko.onclick = function() {
+
+  toggle = !toggle;
+  toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
+};
+
 
 /*  burger.addEventListener('click', () => {
   menuIsOpen = !menuIsOpen; // toggle
@@ -808,7 +815,7 @@ function killMenu() {
 
 
 
-menuAnimationBack
+
 /* 
   const burger = select('.fs-nav-butt');
   const mainwrap = select('.nav-w');
