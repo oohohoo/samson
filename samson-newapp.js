@@ -721,7 +721,7 @@ var menuAnimationBack = gsap.timeline({paused:true});
 var navMain = document.getElementById("nav-main");
 var menuButton = document.getElementById("menu-button");
 const burger = select('.fs-nav-butt')
-const linko = select('.link-wrapper')
+const linko = select('.f-nav-wrap')
 var toggle = true;
 /*///////*/    
 
