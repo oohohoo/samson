@@ -806,17 +806,18 @@ KILL MENU
 */
 function killMenu() {
 
+menuAnimationBack.play(0);/* 
   const burger = select('.fs-nav-butt');
   const mainwrap = select('.nav-w');
   const slide = select('.nav--transition-slide');
 
   let tl = gsap.timeline({paused:true, reversed:true});
-  
+   */
 
 /*   gsap.set(".menu-btn", {
     pointerEvents: "none",
   }); */
-tl
+/* tl
 .to(".open", {autoAlpha:1})
 .to(".close", {autoAlpha:0}, "<")
 
@@ -831,7 +832,7 @@ tl
 .set(slide, {scaleY: 0, transformOrigin: "bottom center"})
 .set(".f-nav", {yPercent: 185})
 .set(mainwrap, {scaleY: 0})
-.set(".fadein", {y: 20, autoAlpha:0})
+.set(".fadein", {y: 20, autoAlpha:0}) */
 
 /*
 .set(slide, {scaleY: 0, transformOrigin: "bottom center"})
