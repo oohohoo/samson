@@ -799,7 +799,6 @@ burger.onclick = function() {
   
 }
 
-
  /*
 ================================================================================
 KILL MENU
@@ -811,9 +810,9 @@ function killMenu() {
   const mainwrap = select('.nav-w');
   const slide = select('.nav--transition-slide');
 
-/* var tl = gsap.timeline({paused:true}); */
-   let tl = gsap.timeline({paused:true}); 
+  let tl = gsap.timeline();
   
+
 
 /*   gsap.set(".menu-btn", {
     pointerEvents: "none",
