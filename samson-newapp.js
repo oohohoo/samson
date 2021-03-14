@@ -810,7 +810,7 @@ function killMenu() {
   const mainwrap = select('.nav-w');
   const slide = select('.nav--transition-slide');
 
-  let tl = gsap.timeline();
+  let tl = gsap.timeline({paused:true});
   
 
 /*   gsap.set(".menu-btn", {
