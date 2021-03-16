@@ -177,7 +177,7 @@ function initScroll(container) {
   SCROLLTRIGGER TEST
   ================================================================================
   */
- 
+ /*
     gsap.utils.toArray('.pro-mask').forEach((el, i) => {
       gsap.from(el, {
         scrollTrigger: {
@@ -193,6 +193,14 @@ function initScroll(container) {
     });
     console.log("Scrolltrigger animacija loaded");
   
+*/
+
+ScrollTrigger.create({
+  trigger: ".project-anchor-wrap",
+  start: "top top", 
+  end: "bottom 150px",
+  pin: ".project-anchor"
+});
 
 
 /*
