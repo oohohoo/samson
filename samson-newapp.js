@@ -508,7 +508,7 @@ views: [{
         next
       }) {
         
-        
+        killMenu(); 
         //animationEnter();
         
         //titleHero();
@@ -521,7 +521,7 @@ views: [{
 
       beforeEnter({next}) {
         underlineMouseover();
-         killMenu(); 
+         
 
       },
 
