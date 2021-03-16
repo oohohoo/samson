@@ -761,7 +761,7 @@ menuAnimationBack
   /* .to(navMain, {xPercent: 0, duration: 0.5,  ease: "Expo.inOut"},0) */
 //.set(".open", {rotate:0})
 .to(".close", {duration: 0.01, autoAlpha:0})
-.to(".open", {duration: 0.2, autoAlpha:1})
+.to(".open", {duration: 0.01, autoAlpha:1})
 
 
 .to(".open", {duration: 0.2, rotate:0})
