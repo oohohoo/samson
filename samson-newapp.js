@@ -759,7 +759,7 @@ menuOut */
 
 menuAnimationBack
   /* .to(navMain, {xPercent: 0, duration: 0.5,  ease: "Expo.inOut"},0) */
-.set(".open", {rotate:0})
+//.set(".open", {rotate:0})
 .to(".close", {autoAlpha:1, rotate:22.5})
 //.to(".open", {autoAlpha:1}, "<")
 .to(".close", {autoAlpha:0})
