@@ -823,7 +823,9 @@ KILL MENU
 const klll = select('.killlink')
 
 klll.onclick = function() {
-menuAnimationBack.play(0);
+ toggle = !toggle;
+  toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
+};
 
 };
 
@@ -831,8 +833,8 @@ menuAnimationBack.play(0);
 
 function killMenu() {
 
-menuAnimationBack.play(0);
-console.log("KILLLINK TRIGGERED");
+/* menuAnimationBack.play(0);
+console.log("KILLLINK TRIGGERED"); */
  
 
 /* 
