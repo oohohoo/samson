@@ -804,8 +804,7 @@ linko.onclick = function() {
 };
 
 klll.onclick = function() {
- toggle = !toggle;
-  toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
+ menuAnimationBack.play(0);
 };
 
 /* tl.reversed() ? tl.play() : tl.reverse(); */
