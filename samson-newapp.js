@@ -201,7 +201,7 @@ ScrollTrigger.create({
   trigger: ".project-anchor",
   start: "top 10%", 
    end: "+=100%"
-   pin: true,
+   //pin: true,
  
 });
 /* 
