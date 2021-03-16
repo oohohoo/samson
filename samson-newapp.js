@@ -177,8 +177,8 @@ function initScroll(container) {
   SCROLLTRIGGER TEST
   ================================================================================
   */
-  /*
-    gsap.utils.toArray('.block1').forEach((el, i) => {
+ 
+    gsap.utils.toArray('.project-images').forEach((el, i) => {
       gsap.from(el, {
         scrollTrigger: {
           trigger: el,
@@ -192,7 +192,7 @@ function initScroll(container) {
       })
     });
     console.log("Scrolltrigger animacija loaded");
-  */
+  
 
 /*
 ================================================================================
