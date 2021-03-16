@@ -194,6 +194,31 @@ GSAP PERFORMANCE FIX
   backface-visibility: hidden;
 }
 
+
+/*
+================================================================================
+OHOHO ANIMACIJA
+================================================================================
+*/
+
+.ohohoone {
+  display: block;
+}
+
+.ohohotwo {
+  display:none;
+  }
+  
+ .ohohowrap:hover .ohohoone {
+  display: none;
+}
+
+.ohohowrap:hover .ohohotwo {
+  display: block;
+} 
+
+
+
 /*
 ================================================================================
 MAIN Z-INDEX
