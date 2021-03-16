@@ -824,19 +824,20 @@ const klll = select('.killlink')
 
 klll.onclick = function() {
 menuAnimationBack.play(0);
-console.log("KILLLINK TRIGGERED");
+
 };
 
 
 
 function killMenu() {
 
-/* const mainwrap = select('.nav-w');
+ const mainwrap = select('.nav-w');
 
 let kilmenu = gsap.timeline({paused:true});
 kilmenu
-.to(mainwrap, {scaleY: 0});
- */
+.to(mainwrap, {autoAlpha: 0});
+console.log("KILLLINK TRIGGERED");
+ 
 
 /* 
   const burger = select('.fs-nav-butt');
