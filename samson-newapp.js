@@ -188,12 +188,13 @@ function initScroll(container) {
           end: "top top",
         },
         y: 200,
-        scale: 0.8,
+        clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
         opacity: 0
       })
     });
     console.log("Scrolltrigger animacija loaded");
   
+
 
 /*
 ================================================================================
