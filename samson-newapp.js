@@ -200,10 +200,24 @@ ScrollTrigger.create({
    markers: true,
   trigger: ".project-anchor",
   start: "top 10%", 
-  end: "bottom 500",
-  pin: ".project-anchor-wrap",
-  pinType: "fixed" 
+   end: "+=100%"
+   pin: true,
+ 
 });
+/* 
+gsap.from(".line-2", {
+  scrollTrigger: {
+    trigger: ".orange",
+    scroller: ".smooth-scroll",
+    scrub: true,
+    pin: true,
+    start: "top top",
+    end: "+=100%"
+  },
+  scaleX: 0, 
+  transformOrigin: "left center", 
+  ease: "none"
+}); */
 
 
 /*
