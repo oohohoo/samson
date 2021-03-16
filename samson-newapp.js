@@ -802,10 +802,10 @@ linko.onclick = function() {
   toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
 };
 
-const klll = select('.killlink')
+const klll = select('.f-nav')
 
 klll.onclick = function() {
-menuAnimation.play(0);
+menuAnimationBack.play(0);
   console.log("KILLKILLKILL");
 };
 
