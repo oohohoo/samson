@@ -199,7 +199,7 @@ ScrollTrigger.create({
    scroller: ".smooth-scroll",
   trigger: ".project-anchor-wrap",
   start: "top top", 
-  end: "bottom 150px",
+  end: "bottom 10000000000px",
   pin: ".project-anchor"
 });
 
