@@ -178,7 +178,7 @@ function initScroll(container) {
   ================================================================================
   */
  
-    gsap.utils.toArray('.project-images').forEach((el, i) => {
+    gsap.utils.toArray('.pro-mask').forEach((el, i) => {
       gsap.from(el, {
         scrollTrigger: {
           trigger: el,
