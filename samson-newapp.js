@@ -761,7 +761,7 @@ menuAnimationBack
   /* .to(navMain, {xPercent: 0, duration: 0.5,  ease: "Expo.inOut"},0) */
 
   .to(".open", {autoAlpha:1})
-  .to(".close", {autoAlpha:0})
+  .to(".close", {autoAlpha:0, rotate:22.5})
 
 .set(burger, {pointerEvents: "none"}, "<")
 
