@@ -197,10 +197,12 @@ function initScroll(container) {
 
 ScrollTrigger.create({
    scroller: ".smooth-scroll",
+   markers: true,
   trigger: ".project-anchor-wrap",
   start: "top 10%", 
-  end: "bottom 10000000000px",
-  pin: ".project-anchor"
+  end: "bottom 500",
+  pin: ".project-anchor",
+  pinType: "fixed" 
 });
 
 
