@@ -762,7 +762,7 @@ menuAnimationBack
 //.set(".open", {rotate:0})
 .to(".close", {autoAlpha:0})
 .to(".open", {autoAlpha:1}, "<")
-.to(".open", {duration: 0.2, rotate:-22.5})
+.to(".open", {duration: 0.2, rotate:0})
 //.to(".close", {autoAlpha:0})
 
 
