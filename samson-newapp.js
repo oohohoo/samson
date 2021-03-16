@@ -196,6 +196,7 @@ function initScroll(container) {
 */
 
 ScrollTrigger.create({
+   scroller: ".smooth-scroll",
   trigger: ".project-anchor-wrap",
   start: "top top", 
   end: "bottom 150px",
