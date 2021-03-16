@@ -184,7 +184,7 @@ function initScroll(container) {
           trigger: el,
          // markers: true,
           scroller: ".smooth-scroll",
-          start: 'top center',
+          start: 'top 80%',
           end: "top top",
         },
         y: 200,
