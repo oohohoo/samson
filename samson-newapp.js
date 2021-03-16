@@ -825,6 +825,7 @@ const klll = select('.killlink')
 klll.onclick = function() {
  toggle = !toggle;
   toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
+  console.log("KILLKILLKILL");
 };
 
 
