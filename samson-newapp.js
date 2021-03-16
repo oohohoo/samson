@@ -184,7 +184,7 @@ function initScroll(container) {
           trigger: el,
          // markers: true,
           scroller: ".smooth-scroll",
-          start: 'top bottom',
+          start: 'top center',
           end: "top top",
         },
           opacity: 0
