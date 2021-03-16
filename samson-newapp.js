@@ -802,6 +802,15 @@ linko.onclick = function() {
   toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
 };
 
+const klll = select('.killlink')
+
+klll.onclick = function() {
+ toggle = !toggle;
+  toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
+  console.log("KILLKILLKILL");
+};
+
+
 /* tl.reversed() ? tl.play() : tl.reverse(); */
 
 /*  burger.addEventListener('click', () => {
@@ -811,6 +820,7 @@ linko.onclick = function() {
     } else {
       menuOut.restart();
     }
+    
   }); */
   
 }
@@ -820,13 +830,6 @@ linko.onclick = function() {
 KILL MENU
 ================================================================================
 */
-const klll = select('.killlink')
-
-klll.onclick = function() {
- toggle = !toggle;
-  toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
-  console.log("KILLKILLKILL");
-};
 
 
 
