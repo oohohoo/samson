@@ -508,7 +508,7 @@ views: [{
         next
       }) {
         
-        killMenu(); 
+       /*  killMenu();  */
         //animationEnter();
         
         //titleHero();
@@ -722,7 +722,6 @@ var navMain = document.getElementById("nav-main");
 var menuButton = document.getElementById("menu-button");
 const burger = select('.fs-nav-butt')
 const linko = select('.f-nav-wrap')
-const klll = select('.killlink')
 var toggle = true;
 /*///////*/    
 
@@ -803,10 +802,6 @@ linko.onclick = function() {
   toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
 };
 
-klll.onclick = function() {
- menuAnimationBack.play(0);
-};
-
 /* tl.reversed() ? tl.play() : tl.reverse(); */
 
 /*  burger.addEventListener('click', () => {
@@ -825,9 +820,12 @@ klll.onclick = function() {
 KILL MENU
 ================================================================================
 */
+const klll = select('.killlink')
 
-
-
+klll.onclick = function() {
+ toggle = !toggle;
+  toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
+};
 
 
 
