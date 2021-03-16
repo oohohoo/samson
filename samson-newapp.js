@@ -187,9 +187,7 @@ function initScroll(container) {
           start: 'top bottom',
           end: "top top",
         },
-        y: 200,
-        clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-        opacity: 0
+          opacity: 0
       })
     });
     console.log("Scrolltrigger animacija loaded");
