@@ -820,10 +820,22 @@ linko.onclick = function() {
 KILL MENU
 ================================================================================
 */
+const klll = select('.killlink')
+
+klll.onclick = function() {
+menuAnimationBack.play(0);
+};
+
+
+
 function killMenu() {
 
+/* const mainwrap = select('.nav-w');
 
-
+let kilmenu = gsap.timeline({paused:true});
+kilmenu
+.to(mainwrap, {scaleY: 0});
+ */
 
 /* 
   const burger = select('.fs-nav-butt');
