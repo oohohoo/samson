@@ -805,7 +805,7 @@ linko.onclick = function() {
 const klll = select('.killlink')
 
 klll.onclick = function() {
-menuAnimationBack.play(0);
+menuAnimation.play(0);
   console.log("KILLKILLKILL");
 };
 
