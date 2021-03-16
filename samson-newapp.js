@@ -736,7 +736,7 @@ var toggle = true;
 
 menuAnimation
 .to(".open", {autoAlpha:1, rotate:-45})
-.from(".close", {autoAlpha:0 }, "<")
+.from(".close", {autoAlpha:0 })
   /* .to(navMain, {xPercent: 100, duration: 0.8, ease: "Expo.inOut"},0) */
 
 
@@ -760,7 +760,7 @@ menuAnimationBack
   /* .to(navMain, {xPercent: 0, duration: 0.5,  ease: "Expo.inOut"},0) */
 
   .to(".open", {autoAlpha:1})
-  .to(".close", {autoAlpha:0}, "<")
+  .to(".close", {autoAlpha:0})
 
 .set(burger, {pointerEvents: "none"}, "<")
 
