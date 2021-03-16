@@ -188,6 +188,7 @@ function initScroll(container) {
           end: "top top",
         },
         y: 200,
+        scale: 0.8,
         opacity: 0
       })
     });
