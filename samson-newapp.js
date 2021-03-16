@@ -831,11 +831,7 @@ menuAnimationBack.play(0);
 
 function killMenu() {
 
- const mainwrap = select('.nav-w');
-
-let kilmenu = gsap.timeline({paused:true});
-kilmenu
-.to(mainwrap, {autoAlpha: 0});
+menuAnimationBack.play(0);
 console.log("KILLLINK TRIGGERED");
  
 
