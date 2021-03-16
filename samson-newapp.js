@@ -735,7 +735,7 @@ var toggle = true;
 //menuIn
 
 menuAnimation
-.to(".open", {autoAlpha:1, rotate:-90})
+.to(".open", {autoAlpha:1, rotate:-30})
 .from(".close", {autoAlpha:0 })
   /* .to(navMain, {xPercent: 100, duration: 0.8, ease: "Expo.inOut"},0) */
 
