@@ -187,7 +187,8 @@ function initScroll(container) {
           start: 'top center',
           end: "top top",
         },
-          opacity: 0
+        y: 200,
+        opacity: 0
       })
     });
     console.log("Scrolltrigger animacija loaded");
