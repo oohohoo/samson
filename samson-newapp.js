@@ -195,15 +195,15 @@ function initScroll(container) {
   
 */
 
-ScrollTrigger.create({
+/* ScrollTrigger.create({
    scroller: ".smooth-scroll",
    markers: true,
   trigger: ".project-anchor",
   start: "top 10%", 
    end: "+=100%"
-   pin: "#pinny",
+   //pin: "#pinny",
  
-});
+}); */
 /* 
 gsap.from(".line-2", {
   scrollTrigger: {
