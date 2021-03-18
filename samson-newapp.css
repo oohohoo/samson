@@ -386,6 +386,15 @@ TRICK TO UNIT PORTS ON MOBILE - VH
   height: calc(var(--vh, 1vh) * 100)
 }
 
+/*
+================================================================================
+INPUT FIELD FIX
+================================================================================
+*/
+
+input:-internal-autofill-selected {
+  background-color:transparent !important;
+}
 
 
 
