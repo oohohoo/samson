@@ -393,7 +393,7 @@ INPUT FIELD FIX
 */
 
 input:-internal-autofill-selected {
-  background-color:transparent !important;
+  background-color:#f5f4f1 !important;
 }
 
 
