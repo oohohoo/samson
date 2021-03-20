@@ -498,6 +498,8 @@ views: [{
       afterEnter({
         next
       }) {
+
+
       fullscreenMenuNew(); 
         fsmenuHover();
      
@@ -706,7 +708,7 @@ function fullscreenMenuNew() {
   const linko = select('.line-wrapper')
 
 /*GREENSOCK*/
-var menuAnimation = gsap.timeline({paused:true, reversed:true});
+var menuAnimation = gsap.timeline({paused:true});
 var menuAnimationBack = gsap.timeline({paused:true});
 
 //var navMain = document.getElementById("nav-main");
