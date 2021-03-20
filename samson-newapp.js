@@ -786,12 +786,12 @@ burger.onclick = function() {
   toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
 };
 
-/*
+
 linko.onclick = function() {
  toggle = !toggle;
   toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
 };
-
+/*
 const klll = select('.line-wrapper')
 
 klll.onclick = function() {
