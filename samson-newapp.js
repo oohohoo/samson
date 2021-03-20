@@ -469,7 +469,7 @@ views: [{
         // do something once on the initial page load
         initLoader();
        
-        
+        fullscreenMenuNew(); 
         fsmenuHover();
         underlineMouseover();
         console.log("FULLSCREEN MENU LOADED --- loaded");
@@ -498,9 +498,7 @@ views: [{
       afterEnter({
         next
       }) {
-
-
-      fullscreenMenuNew(); 
+      
         fsmenuHover();
      
 
@@ -708,7 +706,7 @@ function fullscreenMenuNew() {
   const linko = select('.line-wrapper')
 
 /*GREENSOCK*/
-var menuAnimation = gsap.timeline({paused:true});
+var menuAnimation = gsap.timeline({paused:true, reversed:true});
 var menuAnimationBack = gsap.timeline({paused:true});
 
 //var navMain = document.getElementById("nav-main");
