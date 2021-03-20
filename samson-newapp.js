@@ -702,7 +702,8 @@ function fullscreenMenuNew() {
 
   const mainwrap = select('.nav-w');
   const slide = select('.nav--transition-slide');
-  const burger = select('.fs-nav-butt')
+  const burger = select('.fs-nav-butt');
+  const linko = select('.f-nav-wrap')
 
 /*GREENSOCK*/
 var menuAnimation = gsap.timeline({paused:true, reversed:true});
@@ -711,7 +712,7 @@ var menuAnimationBack = gsap.timeline({paused:true});
 //var navMain = document.getElementById("nav-main");
 //var menuButton = document.getElementById("menu-button");
 
-//const linko = select('.f-nav-wrap')
+
 var toggle = true;
 
 
