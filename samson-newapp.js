@@ -705,10 +705,11 @@ function fullscreenMenuNew() {
   const burger = select('.fs-nav-butt');
   const klll = select('.f-nav-wrap')
   const linko = select('.line-wrapper')
+ /*   const test = select('.link-wrapper') */
 
 /*GREENSOCK*/
-var menuAnimation = gsap.timeline({paused:true, reversed:true});
-var menuAnimationBack = gsap.timeline({paused:true, reversed:true});
+var menuAnimation = gsap.timeline({paused:true});
+var menuAnimationBack = gsap.timeline({paused:true});
 
 //var navMain = document.getElementById("nav-main");
 //var menuButton = document.getElementById("menu-button");
@@ -800,8 +801,11 @@ burger.onclick = function() {
   toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
 }; 
 
-
-
+/*  test.onclick = function() {
+ toggle = !toggle;
+  toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
+}; 
+ */
 /* klll.onclick = function() {
 
 
