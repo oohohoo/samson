@@ -750,17 +750,9 @@ menuAnimation
 menuOut */
 
 menuAnimationBack
-  /* .to(navMain, {xPercent: 0, duration: 0.5,  ease: "Expo.inOut"},0) */
-//.set(".open", {rotate:0})
 .to(".close", {duration: 0.01, autoAlpha:0},0)
 .to(".open", {duration: 0.01, autoAlpha:1},0)
-
-
 .to(".open", {duration: 0.2, rotate:0}, "<")
-//.to(".close", {autoAlpha:0})
-
-
-
 
 
 .set(burger, {pointerEvents: "none"}, "<")
@@ -772,12 +764,12 @@ menuAnimationBack
 .set(burger, {pointerEvents: "all"})
 
 
-
 .set(slide, {scaleY: 0, transformOrigin: "bottom center"})
 .set(mainwrap, {scaleY: 0})
+.set(".fadein", {autoAlpha:0})
 /* 
 .set(".f-nav", {yPercent: 185})
-.set(".fadein", {autoAlpha:0}) */
+ */
 
 
 
