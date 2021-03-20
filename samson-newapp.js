@@ -706,8 +706,8 @@ function fullscreenMenuNew() {
   //const linko = select('.line-wrapper')
 
 /*GREENSOCK*/
-var menuAnimation = gsap.timeline({paused:true});
-var menuAnimationBack = gsap.timeline({paused:true});
+var menuAnimation = gsap.timeline({paused:true, reversed:true});
+var menuAnimationBack = gsap.timeline({paused:true, reversed:true});
 
 //var navMain = document.getElementById("nav-main");
 //var menuButton = document.getElementById("menu-button");
