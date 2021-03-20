@@ -393,7 +393,6 @@ function initPageTransitions() {
   */
 
   barba.use(barbaPrefetch);
-  console.log("Prefetch loaded");
   /*
 
 
@@ -414,37 +413,16 @@ views: [{
   namespace: 'home',
 
   beforeEnter(data) {
-    titleHero();
-   // fullscreenMenu();
-    //titleHero();
-   // titleHero();
-    /*bigLogo();
-    homeYoutube();
-    homeProductHover();
-    simpleTicker();
-    simpleTickerShow();*/
-  console.log("Home JS triggered!");
+  titleHero();
+
   },
   once(data) {
     titleHero();
-   // fullscreenMenu();
-    //titleHero();
-   // titleHero();
-    /*bigLogo();
-    homeYoutube();
-    homeProductHover();
-    simpleTicker();
-    simpleTickerShow();*/
-  console.log("Once Home triggered!");
+
   },
   afterEnter(data) {
   
-    /*bigLogo();
-    homeYoutube();
-    homeProductHover();
-    simpleTicker();
-    simpleTickerShow();*/
-  console.log("Home JS triggered!");
+  
   }
 
 
@@ -452,36 +430,25 @@ views: [{
   namespace: 'projects',
   beforeEnter(){
     projectsHeroAnima();
-   // heroAnima();
     projectAnchorScroll();
-   // fullscreenMenu();
-   /* productsMainSwiper();
-    resetLogo();
-    simpleTickerHide();*/
-  console.log("Projects JS triggered!");
+  
   },
   once(){
     projectsHeroAnima();
     projectAnchorScroll();
-  console.log("Projects JS triggered!");
+  
   }
 
 },{
     namespace: 'materials',
   beforeEnter(data) {
     materialsHeroAnima();
-   
-  //  fullscreenMenu();
-    //soloProductsLottie(container);
-   /* simpleTickerHide();
-    productsoloAccordion();*/
-  console.log("Materials JS triggered!");
+ 
   }},{
   namespace: 'contact',
   afterEnter(data) {
     contactHeroAnima();
-   // simpleTickerHide();
-  console.log("KONTAKT JEBEMTIMATER HERO ANIMA SKRIPTA triggered!");
+
   }},{
   },{
  
@@ -505,11 +472,8 @@ views: [{
         fullscreenMenuNew(); 
         fsmenuHover();
         underlineMouseover();
-        console.log(">>> ONCE TRANS LOADED");
-       
-        //resetActiveLink();
-        //animationEnter();
-        //homeanimations();
+        console.log("FULLSCREEN MENU LOADED --- loaded");
+      
         
       },
 
@@ -517,10 +481,9 @@ views: [{
         current
       }) {
 
-       /*  killMenu(); */
-        // animate loading screen in
+          // animate loading screen in
         await pageTransitionIn(current);
-        console.log("LEAVE");
+        
 
 
       },
@@ -529,21 +492,15 @@ views: [{
       }) {
         // animate loading screen away
         pageTransitionOut(next);
-        console.log("NEXT");
+        
       },
 
       afterEnter({
         next
       }) {
-        
-       /*  killMenu();  */
-        //animationEnter();
-        
-        //titleHero();
-       /*  fullscreenMenuNew();  */
-        console.log(">>> FULSCREEN MENU AFTER ENTER LOADED");
+      
         fsmenuHover();
-        console.log("AFTER ENTER");
+     
 
       },
 
@@ -858,22 +815,18 @@ KILL MENU
 ================================================================================
 */
 
-
-
-
-
 function killMenu() {
 
 
-const tlkill = gsap.timeline({defaults: {duration: 0.3, ease: 'power1.inOut'},
+/* const tlkill = gsap.timeline({defaults: {duration: 0.3, ease: 'power1.inOut'},
     // OVDJE SE INICIRA PONOVO SAV JS CONTENT / AKO ZATREBA
     onComplete: () => initContent()
   });
-  tlkill
+  tlkill */
     /*.to(loader, {yPercent: 100})
     .to(loaderMask, {yPercent: -80}, 0)*/
-    .to(".naw-w", {autoAlpha:0, force3D: true}, 0);
-  return tlkill;
+    /* .to(".naw-w", {autoAlpha:0, force3D: true}, 0);
+  return tlkill; */
 
 
 
