@@ -770,8 +770,10 @@ menuAnimationBack
 .set(burger, {pointerEvents: "all"})
 
 
-/* 
+
 .set(slide, {scaleY: 0, transformOrigin: "bottom center"})
+
+/* 
 .set(".f-nav", {yPercent: 185})
 .set(mainwrap, {scaleY: 0})
 .set(".fadein", {autoAlpha:0}) */
