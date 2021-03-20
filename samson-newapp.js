@@ -696,16 +696,14 @@ function fullscreenMenuNew() {
 
 /*OLD MENU*/
  /* const burger = select('.fs-nav-butt');*/
-   
+   //const fnav = select('.f-nav');
 //  let menuIsOpen = false; // tracks state
 
 
   const mainwrap = select('.nav-w');
   const slide = select('.nav--transition-slide');
-  const burger = select('.fs-nav-butt');
-  const fnav = select('.f-nav');
+  const burger = select('.fs-nav-butt')
 
-  
 /*GREENSOCK*/
 var menuAnimation = gsap.timeline({paused:true, reversed:true});
 var menuAnimationBack = gsap.timeline({paused:true});
@@ -736,7 +734,7 @@ menuAnimation
 .set(burger, {pointerEvents: "none"}, "<")
 .to(mainwrap, {scaleY: 1, duration: 0.1}, "<0.1")
 .fromTo(slide, {scaleY: 0, transformOrigin: "bottom center"}, {duration: 0.45, scaleY: 1, ease: "Expo.inOut" }, "<0.2") 
-.fromTo(fnav, {yPercent: 185}, {duration: 0.45, yPercent: 0, stagger: 0.05}, "<0.3")
+.fromTo(".f-nav", {yPercent: 185}, {duration: 0.45, yPercent: 0, stagger: 0.05}, "<0.3")
 .fromTo(".fadein", {y: 20, autoAlpha: 0}, {duration: 0.65, autoAlpha: 1, ease: "Expo.inOut"}, "<0.8")
 
 .set(burger, {pointerEvents: "all"})
@@ -765,14 +763,14 @@ menuAnimationBack
 
 .set(burger, {pointerEvents: "none"}, "<")
 
-.to(fnav, {duration: 0.3, yPercent: -110, stagger: 0.05, force3D: true}, "<0.1")
+.to(".f-nav", {duration: 0.3, yPercent: -110, stagger: 0.05, force3D: true}, "<0.1")
 .to(".fadein", {autoAlpha: 0, duration: 0.3, ease: "Expo.out"}, "<0.2")
 .to(slide, {duration: 0.8,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut"}, "<0.3")
 
 .set(burger, {pointerEvents: "all"})
 
 .set(slide, {scaleY: 0, transformOrigin: "bottom center"})
-.set(fnav, {yPercent: 185})
+.set(".f-nav", {yPercent: 185})
 .set(mainwrap, {scaleY: 0})
 .set(".fadein", {y: 20, autoAlpha:0})
 
