@@ -434,7 +434,7 @@ views: [{
   
   },
   once(){
-    projectsHeroAnima();
+   // projectsHeroAnima();
     projectAnchorScroll();
   
   }
