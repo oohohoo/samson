@@ -703,7 +703,7 @@ function fullscreenMenuNew() {
   const mainwrap = select('.nav-w');
   const slide = select('.nav--transition-slide');
   const burger = select('.fs-nav-butt');
-  const klll = select('.line-wrapper')
+  const klll = select('.f-nav-wrap')
   //const linko = select('.line-wrapper')
 
 /*GREENSOCK*/
@@ -795,17 +795,17 @@ burger.onclick = function() {
 };
 
 
-linko.onclick = function() {
+/* linko.onclick = function() {
  toggle = !toggle;
   toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
-};
+}; */
 
 
 
 klll.onclick = function() {
 
 
-var killAnimation = gsap.timeline({paused:true, reversed:true});
+var killAnimation = gsap.timeline({});
 
 killAnimation
 .to(mainwrap, {duration: 0.6, autoAlpha:0, rotate:22.5})
