@@ -936,7 +936,7 @@ function titleHero() {
 
  /*
 ================================================================================
-HOME PAGE TITLE & HERO GALLERY
+FULLSCREEEN MENU HOVER GRAY
 ================================================================================
 */
 function fsmenuHover() {
