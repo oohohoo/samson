@@ -696,7 +696,7 @@ function fullscreenMenuNew() {
 
 /*OLD MENU*/
  /* const burger = select('.fs-nav-butt');*/
-   //const fnav = select('.f-nav');
+   const fnav = select('.f-nav');
 //  let menuIsOpen = false; // tracks state
 
 
