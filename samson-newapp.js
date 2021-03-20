@@ -944,7 +944,7 @@ function titleHero() {
  var animation = gsap.timeline({defaults:{duration:1.3, ease: "power3.inOut"}})
  animation
  .set(".hide", {autoAlpha:1}, "<")
- .from(".char", {stagger:0.02, yPercent:115}, "<")
+ .from(".char", {stagger:0.02, yPercent:120}, "<")
  .fromTo(".clip", {y:400, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
  {autoAlpha:1, duration:2.3, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "<0.1")
  
