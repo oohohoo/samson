@@ -562,7 +562,7 @@ views: [{
     PREVENT / CLICKS DURRING TRANSITION AND CURRENT LINK + SCROLL TO TOP
     ================================================================================
     */
-  /*   prevent: ({
+    prevent: ({
       event,
       href
     }) => {
@@ -589,7 +589,7 @@ views: [{
           return true;
         }
       }
-    } */
+    }
   });
 
 
