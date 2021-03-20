@@ -725,7 +725,8 @@ var toggle = true;
 
 //menuIn
 
-menuAnimation
+
+.set(mainwrap, {autoAlpha:1})
 .to(".open", {duration: 0.2, autoAlpha:1, rotate:22.5})
 .from(".close", {duration: 0.2, autoAlpha:0 })
 .to(".open", {autoAlpha:0}, "<")
@@ -808,7 +809,7 @@ klll.onclick = function() {
 var killAnimation = gsap.timeline({});
 
 killAnimation
-.to(mainwrap, {duration: 0.6, autoAlpha:0, rotate:22.5})
+.to(mainwrap, {duration: 0.6, autoAlpha:0})
 
 
 
