@@ -742,7 +742,7 @@ function fullscreenMenuNew() {
 //  let menuIsOpen = false; // tracks state
 
 /*/////*/
-var menuAnimation = gsap.timeline({paused:true, reversed:true});
+var menuAnimation = gsap.timeline({paused:true});
 var menuAnimationBack = gsap.timeline({paused:true});
 var navMain = document.getElementById("nav-main");
 var menuButton = document.getElementById("menu-button");
