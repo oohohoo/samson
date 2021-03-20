@@ -793,6 +793,14 @@ burger.onclick = function() {
   toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
 }; 
 
+
+
+$('nav li a').on('click', function(){
+    $(burger).trigger('click');
+});
+
+
+
 /*  test.onclick = function() {
  toggle = !toggle;
   toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
