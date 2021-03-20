@@ -703,8 +703,8 @@ function fullscreenMenuNew() {
   const mainwrap = select('.nav-w');
   const slide = select('.nav--transition-slide');
   const burger = select('.fs-nav-butt');
-  const klll = select('.f-nav-wrap')
-  const linko = select('.line-wrapper')
+  /* const klll = select('.f-nav-wrap')
+  const linko = select('.line-wrapper') */
  /*   const test = select('.link-wrapper') */
 
 /*GREENSOCK*/
@@ -787,14 +787,8 @@ burger.onclick = function() {
   toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
 };
 
-
- linko.onclick = function() {
- toggle = !toggle;
-  toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
-}; 
-
-
-
+/* CLICK ON LINK CLOSE MENU*/
+ 
 $('nav li a').on('click', function(){
     $(burger).trigger('click');
 });
