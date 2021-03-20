@@ -469,7 +469,7 @@ views: [{
         // do something once on the initial page load
         initLoader();
        
-       /*  fullscreenMenuNew();  */
+        
         fsmenuHover();
         underlineMouseover();
         console.log("FULLSCREEN MENU LOADED --- loaded");
@@ -498,7 +498,7 @@ views: [{
       afterEnter({
         next
       }) {
-      
+      fullscreenMenuNew(); 
         fsmenuHover();
      
 
