@@ -828,7 +828,7 @@ linko.onclick = function() {
   toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
 };
 
-const klll = select('.f-nav')
+const klll = select('.line-wrapper')
 
 klll.onclick = function() {
 menuAnimationBack.play(0);
