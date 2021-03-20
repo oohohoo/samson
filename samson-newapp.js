@@ -733,10 +733,10 @@ menuAnimation
 
 
 .set(burger, {pointerEvents: "none"}, "<")
-.to(mainwrap, {autoAlpha:1, scaleY: 1, duration: 0.1}, "<0.1")
+.to(mainwrap, {scaleY: 1, duration: 0.1}, "<0.1")
 .fromTo(slide, {scaleY: 0, transformOrigin: "bottom center"}, {duration: 0.45, scaleY: 1, ease: "Expo.inOut" }, "<0.2") 
 .fromTo(".f-nav", {yPercent: 185}, {duration: 0.45, yPercent: 0, stagger: 0.05}, "<0.3")
-.fromTo(".fadein", {autoAlpha: 0}, {duration: 0.65, autoAlpha: 1, ease: "Expo.inOut"}, "<0.8")
+.fromTo(".fadeinnav", {autoAlpha: 0}, {duration: 0.65, autoAlpha: 1, ease: "Expo.inOut"}, "<0.8")
 
 .set(burger, {pointerEvents: "all"})
  
@@ -765,7 +765,7 @@ menuAnimationBack
 .set(burger, {pointerEvents: "none"}, "<")
 
 .to(".f-nav", {duration: 0.3, yPercent: -110, stagger: 0.05, force3D: true}, "<0.1")
-.to(".fadein", {autoAlpha: 0, duration: 0.3, ease: "Expo.out"}, "<0.2")
+.to(".fadeinnav", {autoAlpha: 0, duration: 0.3, ease: "Expo.out"}, "<0.2")
 .to(slide, {duration: 0.8,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut"}, "<0.3")
 
 .set(burger, {pointerEvents: "all"})
@@ -798,11 +798,11 @@ burger.onclick = function() {
 /* linko.onclick = function() {
  toggle = !toggle;
   toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
-}; */
+}; 
+*/
 
 
-
-klll.onclick = function() {
+/* klll.onclick = function() {
 
 
 var killAnimation = gsap.timeline({});
@@ -816,7 +816,7 @@ killAnimation
 
   console.log("KILLKILLKILL");
 };
-
+ */
 
 /* tl.reversed() ? tl.play() : tl.reverse(); */
 
