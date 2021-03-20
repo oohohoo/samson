@@ -704,7 +704,7 @@ function fullscreenMenuNew() {
   const slide = select('.nav--transition-slide');
   const burger = select('.fs-nav-butt');
   const klll = select('.f-nav-wrap')
-  //const linko = select('.line-wrapper')
+  const linko = select('.line-wrapper')
 
 /*GREENSOCK*/
 var menuAnimation = gsap.timeline({paused:true, reversed:true});
@@ -795,11 +795,11 @@ burger.onclick = function() {
 };
 
 
-/* linko.onclick = function() {
+ linko.onclick = function() {
  toggle = !toggle;
   toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
 }; 
-*/
+
 
 
 /* klll.onclick = function() {
