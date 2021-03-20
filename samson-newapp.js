@@ -397,6 +397,7 @@ function initPageTransitions() {
   /*
 
 
+
   ================================================================================
   BARBA INIT 
   ================================================================================
@@ -518,7 +519,7 @@ views: [{
       }) {
 
         killMenu();
-        
+
         // animate loading screen in
         await pageTransitionIn(current);
         console.log("LEAVE");
