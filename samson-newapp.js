@@ -516,6 +516,9 @@ views: [{
       async leave({
         current
       }) {
+
+        killMenu();
+        
         // animate loading screen in
         await pageTransitionIn(current);
         console.log("LEAVE");
@@ -742,7 +745,7 @@ function fullscreenMenuNew() {
 //  let menuIsOpen = false; // tracks state
 
 /*/////*/
-var menuAnimation = gsap.timeline({paused:true});
+var menuAnimation = gsap.timeline({paused:true, reversed:true});
 var menuAnimationBack = gsap.timeline({paused:true});
 var navMain = document.getElementById("nav-main");
 var menuButton = document.getElementById("menu-button");
@@ -861,6 +864,19 @@ KILL MENU
 
 
 function killMenu() {
+
+
+const tlkill = gsap.timeline({defaults: {duration: 0.3, ease: 'power1.inOut'},
+    // OVDJE SE INICIRA PONOVO SAV JS CONTENT / AKO ZATREBA
+    onComplete: () => initContent()
+  });
+  tlkill
+    /*.to(loader, {yPercent: 100})
+    .to(loaderMask, {yPercent: -80}, 0)*/
+    .to(".naw-w", {autoAlpha:0, force3D: true}, 0);
+  return tlkill;
+
+
 
 /* menuAnimationBack.play(0);
 console.log("KILLLINK TRIGGERED"); */
