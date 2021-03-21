@@ -177,6 +177,23 @@ function initScroll(container) {
   SCROLLTRIGGER TEST
   ================================================================================
   */
+
+  // --- ORANGE PANEL ---
+gsap.from(".project-anchor-wrap", {
+  scrollTrigger: {
+    trigger: ".the-grid",
+    scroller: ".smooth-scroll",
+    //scrub: true,
+    pin: true,
+    start: "top top",
+    end: "+=100%"
+  },
+ /*  scaleX: 0,  */
+  /* transformOrigin: "left center",  */
+  ease: "none"
+});
+
+
  /*
     gsap.utils.toArray('.pro-mask').forEach((el, i) => {
       gsap.from(el, {
