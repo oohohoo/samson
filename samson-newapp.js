@@ -184,7 +184,7 @@ gsap.from(".in2", {
     trigger: ".project-anchor-wrap",
     scroller: ".smooth-scroll",
     //scrub: true,
-    pin: true,
+   /*  pin: true, */
     start: "top top",
     end: "+=100%"
   },
