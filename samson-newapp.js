@@ -178,21 +178,17 @@ function initScroll(container) {
   ================================================================================
   */
 
-let tl = gsap.timeline({
-    // yes, we can add it to an entire timeline!
-    scrollTrigger: {
-     
-      trigger: ".stop",
-       scroller: ".smooth-scroll",
-       markers: true,
-      pin: ".stop",   // pin the trigger element while active
-      /* anticipatePin: 1, */
-      start: "top 5%", // when the top of the trigger hits the top of the viewport
-      end: "+=1000000", // end after scrolling 500px beyond the start
-      //scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-     
-    }
-  });
+ScrollTrigger.create({
+  trigger: "#stickywrap",
+  scroller: ".smooth-scroll",
+  start: "top 20%",
+  end:"bottom 80%",
+pin: ".true", 
+ /*  onEnter: () => gsap.set('#sticky', {autoAlpha:1, rotate:45}),
+  onLeaveBack: () => gsap.set('#sticky', {autoAlpha:0, rotate: 270}), */
+});
+
+
 
 /*  */
  /*
