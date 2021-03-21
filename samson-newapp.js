@@ -178,23 +178,20 @@ function initScroll(container) {
   ================================================================================
   */
 
-  // --- ORANGE PANEL ---
-gsap.from(".in2", {
-  scrollTrigger: {
-    trigger: ".project-anchor-wrap",
-    scroller: ".smooth-scroll",
-    //scrub: true,
-   /*  pin: true,  */
-   pin: "#ddd",
-    start: "top top",
-    end: "+=100%"
-  },
- /*  scaleX: 0,  */
-  /* transformOrigin: "left center",  */
-  ease: "none"
-});
+let tl = gsap.timeline({
+    // yes, we can add it to an entire timeline!
+    scrollTrigger: {
+      scroller: ".smooth-scroll",
+      trigger: ".projektiheader",
+      pin: true,   // pin the trigger element while active
+      start: "top top", // when the top of the trigger hits the top of the viewport
+      end: "+=200", // end after scrolling 500px beyond the start
+      scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+     
+    }
+  });
 
-
+/*  */
  /*
     gsap.utils.toArray('.pro-mask').forEach((el, i) => {
       gsap.from(el, {
