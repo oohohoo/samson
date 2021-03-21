@@ -939,9 +939,9 @@ function tailoredHeroAnima() {
   heroanimation
   //.set(".hide", {autoAlpha:1})
   .from(".char", {stagger:0.02, yPercent:125})
-   .fromTo(".clip", {y:400, autoAlpha:0, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
+  .fromTo(".t1", {autoAlpha:0, y:40},{duration:0.8, autoAlpha:1, stagger:0.05, y:0}, "<0.1")
+  .fromTo(".clip", {y:400, autoAlpha:0, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
   {autoAlpha:1, duration:3, stagger:0.02, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "<0.1")
-  .fromTo(".fadein", {autoAlpha:0, y:40},{duration:0.8, autoAlpha:1, stagger:0.05, y:0}, "<0.1")
 
   console.log("MATERIALLLLLSSSSSS!!!!")
   
