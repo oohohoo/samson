@@ -830,6 +830,7 @@ function titleHero() {
  animation
  .set(".hide", {autoAlpha:1}, "<")
  .from(".char", {stagger:0.02, yPercent:125}, "<")
+ .fromTo(".since", {autoAlpha:0, y:40},{duration:0.8,autoAlpha:1, y:0}, "<0.6")
  .fromTo(".clip", {y:200, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
  {autoAlpha:1, duration:2, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "-=1.8")
  }
