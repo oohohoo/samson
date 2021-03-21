@@ -179,9 +179,9 @@ function initScroll(container) {
   */
 
   // --- ORANGE PANEL ---
-gsap.from(".project-anchor-wrap", {
+gsap.from(".in2", {
   scrollTrigger: {
-    trigger: ".the-grid",
+    trigger: ".project-anchor-wrap",
     scroller: ".smooth-scroll",
     //scrub: true,
     pin: true,
