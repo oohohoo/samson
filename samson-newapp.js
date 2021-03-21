@@ -185,7 +185,7 @@ let tl = gsap.timeline({
       trigger: ".stop",
        scroller: ".smooth-scroll",
        markers: true,
-      pin: true,   // pin the trigger element while active
+      pin: ".stop",   // pin the trigger element while active
       /* anticipatePin: 1, */
       start: "top 5%", // when the top of the trigger hits the top of the viewport
       end: "+=1000000", // end after scrolling 500px beyond the start
