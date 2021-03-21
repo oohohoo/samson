@@ -937,7 +937,7 @@ function projectsHeroAnima() {
   heroanimation
   .set(".hide", {autoAlpha:1})
   .from(".char", {stagger:0.02, yPercent:125})
-  .fromTo(".in1", {autoAlpha:0, y:40},{autoAlpha:0.8, y:0}, "<1.2")
+  .fromTo(".in1", {autoAlpha:0, y:40},{duration:0.5,autoAlpha:1, y:0}, "<1.2")
   .fromTo(".in2", {autoAlpha:0, y:40},{duration:0.5, autoAlpha:1, stagger:0.2, y:0}, "<0.1")
  /*  .fromTo(".fadein", {autoAlpha:0, y:40},{duration:0.6, autoAlpha:1, stagger:0.2, y:0}, "<0.1") */
   .fromTo(".clip", {y:200, autoAlpha:0, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
