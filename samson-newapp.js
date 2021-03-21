@@ -187,7 +187,7 @@ let tl = gsap.timeline({
        markers: true,
       pin: true,   // pin the trigger element while active
       /* anticipatePin: 1, */
-      start: "top 5em", // when the top of the trigger hits the top of the viewport
+      start: "top 5%", // when the top of the trigger hits the top of the viewport
       end: "+=60", // end after scrolling 500px beyond the start
       //scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
      
