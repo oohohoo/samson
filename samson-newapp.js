@@ -335,7 +335,7 @@ function pageTransitionIn({
 }) {
   // console.log('pageTransitionIn');
   // timeline to stretch the loader over the whole screen
-  const tl = gsap.timeline({defaults: {duration: 2,ease: 'power3.inOut'}});
+  const tl = gsap.timeline({defaults: {duration: 0.5,ease: 'power3.inOut'}});
   tl
    /* .set(loaderInner, {autoAlpha: 0})
     .fromTo(loader, {yPercent: -100}, {yPercent: 0})
@@ -356,7 +356,7 @@ function pageTransitionOut({
 }) {
   //console.log('pageTransitionOut');
   // timeline to move loader away down
-  const tl = gsap.timeline({defaults: {duration: 2, ease: 'power3.inOut'},
+  const tl = gsap.timeline({defaults: {duration: 1, ease: 'power3.inOut'},
     // OVDJE SE INICIRA PONOVO SAV JS CONTENT / AKO ZATREBA
     onComplete: () => initContent()
   });
