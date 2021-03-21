@@ -933,7 +933,7 @@ function projectsHeroAnima() {
 
   Splitting();
   
-  var heroanimation = gsap.timeline({defaults:{duration:0.6, ease: "power3.inOut"}})
+  var heroanimation = gsap.timeline({defaults:{duration:1.3, ease: "power3.inOut"}})
   heroanimation
   //.set(".hide", {autoAlpha:1})
   .from(".char", {stagger:0.02, yPercent:125})
