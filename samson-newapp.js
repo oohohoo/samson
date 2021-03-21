@@ -1008,7 +1008,7 @@ function projectAnchorScroll() {
 $( "#tocom" ).on( "click", function() {
   locoScroll.scrollTo( '#com', {
     'offset': -120,
-    'duration': 3000,
+    'duration': 2000,
     'easing': [0.25, 0.00, 0.35, 1.00],
     'disableLerp': true
   });
