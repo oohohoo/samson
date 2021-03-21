@@ -440,7 +440,7 @@ views: [{
   }
 
 },{
-    namespace: 'materials',
+    namespace: 'tailored',
   beforeEnter(data) {
     tailoredHeroAnima();
  
