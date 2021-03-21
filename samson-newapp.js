@@ -793,122 +793,8 @@ $('nav li a').on('click', function(){
     $(burger).trigger('click');
 });
 
-
-
-/*  test.onclick = function() {
- toggle = !toggle;
-  toggle == false ? menuAnimation.play(0) : menuAnimationBack.play(0);
-}; 
- */
-/* klll.onclick = function() {
-
-
-var killAnimation = gsap.timeline({});
-
-killAnimation
-.to(mainwrap, {duration: 0.6, autoAlpha:0})
-
-
-
-
-
-  console.log("KILLKILLKILL");
-};
- */
-
-/* tl.reversed() ? tl.play() : tl.reverse(); */
-
-/*  burger.addEventListener('click', () => {
-  menuIsOpen = !menuIsOpen; // toggle
-    if (menuIsOpen) {
-      menuIn.restart();
-    } else {
-      menuOut.restart();
-    }
-    
-  }); */
   
 }
-
- /*
-================================================================================
-KILL MENU
-================================================================================
-*/
-
-function killMenu() {
-
-
-/* const tlkill = gsap.timeline({defaults: {duration: 0.3, ease: 'power1.inOut'},
-    // OVDJE SE INICIRA PONOVO SAV JS CONTENT / AKO ZATREBA
-    onComplete: () => initContent()
-  });
-  tlkill */
-    /*.to(loader, {yPercent: 100})
-    .to(loaderMask, {yPercent: -80}, 0)*/
-    /* .to(".naw-w", {autoAlpha:0, force3D: true}, 0);
-  return tlkill; */
-
-
-
-/* menuAnimationBack.play(0);
-console.log("KILLLINK TRIGGERED"); */
- 
-
-/* 
-  const burger = select('.fs-nav-butt');
-  const mainwrap = select('.nav-w');
-  const slide = select('.nav--transition-slide');
-
-  let tl = gsap.timeline({paused:true, reversed:true});
-   */
-
-/*   gsap.set(".menu-btn", {
-    pointerEvents: "none",
-  }); */
-/* tl
-.to(".open", {autoAlpha:1})
-.to(".close", {autoAlpha:0}, "<")
-
-.set(burger, {pointerEvents: "none"}, "<")
-
-.to(".f-nav", {duration: 0.3, yPercent: -110, stagger: 0.05, force3D: true}, "<0.1")
-.to(".fadein", {y: -20, autoAlpha: 0, duration: 0.35, ease: "Expo.inOut"}, "<0.2")
-.to(slide, {duration: 0.8,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut"}, "<0.3")
-
-.set(burger, {pointerEvents: "all"})
-
-.set(slide, {scaleY: 0, transformOrigin: "bottom center"})
-.set(".f-nav", {yPercent: 185})
-.set(mainwrap, {scaleY: 0})
-.set(".fadein", {y: 20, autoAlpha:0}) */
-
-/*
-.set(slide, {scaleY: 0, transformOrigin: "bottom center"})
-.set(".f-nav", {yPercent: 110})
-
-.set(".fadein", {y: 20, autoAlpha:0})
-.set(".open", {autoAlpha:1})
-
-
-*/
-  /*
-  tl.from(".open", {autoAlpha:0, rotate:360, scale: 0.1})
-  .to(".close", {autoAlpha:0, rotate:360, scale: 0.1}, "<")
-  
-  .set(".menu-btn", {pointerEvents: "none"})
-  
-  .to(".f-nav", {duration: 0.65, yPercent: -110,ease: "Expo.inOut"}, 0)
-  .to(".nav--transition-slide", {duration: 0.35,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut",})
-  
-  .set(".menu-btn", {pointerEvents: "all"})
-
-  */
-  
-
-
- 
- }
  
 /*
 ================================================================================
@@ -952,9 +838,6 @@ function titleHero() {
  }
 
 
-
-
-
  /*
 ================================================================================
 FULLSCREEEN MENU HOVER GRAY
@@ -982,7 +865,7 @@ dev.interactions = {
 
   filtersOnEnter: function(e) {
     // fade out all anchors
-    gsap.to("[data-filters] a", {color: "#9D9C9B"});
+    gsap.to("[data-filters] a", {duration:2, color: "#9D9C9B"});
     
     // keep hovered anchor the same
     gsap.to(e.target, {color: "#1e1e1e", overwrite: true});
@@ -990,7 +873,7 @@ dev.interactions = {
 
   filtersOnLeave: function(e) {
     // animate all anchors to normal calue
-    gsap.to("[data-filters] a", {color: "#1e1e1e"});
+    gsap.to("[data-filters] a", {duration:2, color: "#1e1e1e"});
   }
 };
 dev.interactions.init();
