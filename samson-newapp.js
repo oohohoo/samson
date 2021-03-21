@@ -185,7 +185,7 @@ gsap.from(".in2", {
     scroller: ".smooth-scroll",
     //scrub: true,
    /*  pin: true,  */
-   pin: "#pinny",
+   pin: "#ddd",
     start: "top top",
     end: "+=100%"
   },
