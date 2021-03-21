@@ -183,7 +183,7 @@ ScrollTrigger.create({
   scroller: ".smooth-scroll",
   start: "top 20%",
   end:"bottom 80%",
-pin: ".true", 
+pin: true, 
  /*  onEnter: () => gsap.set('#sticky', {autoAlpha:1, rotate:45}),
   onLeaveBack: () => gsap.set('#sticky', {autoAlpha:0, rotate: 270}), */
 });
