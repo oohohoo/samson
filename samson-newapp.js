@@ -182,7 +182,7 @@ let tl = gsap.timeline({
     // yes, we can add it to an entire timeline!
     scrollTrigger: {
       scroller: ".smooth-scroll",
-      trigger: ".project-anchor",
+      trigger: ".contact-header",
        markers: true,
       pin: true,   // pin the trigger element while active
       anticipatePin: 1,
