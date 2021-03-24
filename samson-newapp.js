@@ -1021,7 +1021,12 @@ slidesPerView: 1,
   observeParents: true,
   observeSlideChildren: true,
   longSwipes: false,
-  grabCursor: true
+  grabCursor: true,
+  	autoplay: {
+				delay: 5000,
+				disableOnInteraction: true,
+},
+
 });
 
 }
