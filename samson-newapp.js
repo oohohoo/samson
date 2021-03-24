@@ -443,11 +443,13 @@ views: [{
   beforeEnter(data) {
   titleHero();
    heroSwiper();
+   console.log("SWIPPPPPPPP 1");
 
   },
   once(data) {
     titleHero();
     heroSwiper();
+    console.log("SWIPPPPPPPP 2");
 
   },
   afterEnter(data) {
