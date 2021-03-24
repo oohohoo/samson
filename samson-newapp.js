@@ -741,6 +741,7 @@ var toggle = true;
 //menuIn
 
 menuAnimation
+locoScroll.stop();
 .to(".open", {duration: 0.2, autoAlpha:1, rotate:22.5})
 .from(".close", {duration: 0.2, autoAlpha:0 })
 .to(".open", {autoAlpha:0}, "<")
@@ -754,7 +755,7 @@ menuAnimation
 .fromTo(".fadeinnav", {autoAlpha: 0}, {duration: 0.65, autoAlpha: 1, ease: "Expo.inOut"}, "<0.8")
 
 .set(burger, {pointerEvents: "all"})
- locoScroll.stop();
+ 
 /* -----------------------------
 // MENU OUT  ANIMATION
 ----------------------------- */
@@ -764,6 +765,7 @@ menuAnimation
 menuOut */
 
 menuAnimationBack
+locoScroll.start();
 .to(".close", {duration: 0.01, autoAlpha:0},0)
 .to(".open", {duration: 0.01, autoAlpha:1},0)
 .to(".open", {duration: 0.2, rotate:0}, "<")
@@ -781,7 +783,7 @@ menuAnimationBack
 .set(slide, {scaleY: 0, transformOrigin: "bottom center"})
 .set(mainwrap, {scaleY: 0})
 .set(".fadein", {autoAlpha:0})
-locoScroll.start();
+
 /* 
 .set(".f-nav", {yPercent: 185})
  */
