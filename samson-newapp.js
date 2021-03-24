@@ -1009,7 +1009,6 @@ SWIPER - HERO ANIMACIJA
 function heroSwiper() {
 
 var swiper = new Swiper('.swiper-container', {
-  direction: 'vertical',
   slidesPerView: 1,
  loop: true,
 		speed: 1000,
