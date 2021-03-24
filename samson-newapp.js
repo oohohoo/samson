@@ -741,7 +741,7 @@ var toggle = true;
 //menuIn
 
 menuAnimation
-locoScroll.stop();
+locoScroll.stop()
 .to(".open", {duration: 0.2, autoAlpha:1, rotate:22.5})
 .from(".close", {duration: 0.2, autoAlpha:0 })
 .to(".open", {autoAlpha:0}, "<")
@@ -765,7 +765,7 @@ locoScroll.stop();
 menuOut */
 
 menuAnimationBack
-locoScroll.start();
+locoScroll.start()
 .to(".close", {duration: 0.01, autoAlpha:0},0)
 .to(".open", {duration: 0.01, autoAlpha:1},0)
 .to(".open", {duration: 0.2, rotate:0}, "<")
