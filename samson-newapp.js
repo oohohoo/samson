@@ -185,9 +185,9 @@ function initScroll(container) {
   end:"bottom 80%",
 pin: ".stop", 
  /*  onEnter: () => gsap.set('#sticky', {autoAlpha:1, rotate:45}),
-  onLeaveBack: () => gsap.set('#sticky', {autoAlpha:0, rotate: 270}), */
-}); */
-
+  onLeaveBack: () => gsap.set('#sticky', {autoAlpha:0, rotate: 270}),
+}); 
+ */
 
 
 /*  */
