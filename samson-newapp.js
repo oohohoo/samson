@@ -1012,10 +1012,7 @@ var swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
  loop: true,
 		speed: 1000,
-     	autoplay: {
-				delay: 5000,
-				disableOnInteraction: false,
-},
+     
 autoHeight: false,
 updateOnWindowResize: true,
 effect: 'fade',
