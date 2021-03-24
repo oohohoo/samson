@@ -178,7 +178,7 @@ function initScroll(container) {
   ================================================================================
   */
 
-ScrollTrigger.create({
+/* ScrollTrigger.create({
   trigger: "#stickywrap",
   scroller: ".smooth-scroll",
   start: "top 20%",
@@ -186,7 +186,7 @@ ScrollTrigger.create({
 pin: ".stop", 
  /*  onEnter: () => gsap.set('#sticky', {autoAlpha:1, rotate:45}),
   onLeaveBack: () => gsap.set('#sticky', {autoAlpha:0, rotate: 270}), */
-});
+}); */
 
 
 
