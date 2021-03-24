@@ -932,8 +932,8 @@ function titleHero() {
  animation
  /* .set(".hide", {autoAlpha:1}, "<") */
  .from(".char", {stagger:0.02, yPercent:130, duration:1.5})
- .fromTo(".clip", {y:200, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
- {autoAlpha:1, duration:2, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "-=1.8")
+ .fromTo(".clip", {autoAlpha:1, y:200, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
+ { autoAlpha:1, duration:2, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "-=1.8")
  }
 
 /*
