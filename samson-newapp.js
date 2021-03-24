@@ -442,6 +442,7 @@ views: [{
 
   beforeEnter(data) {
   titleHero();
+   heroSwiper();
 
   },
   once(data) {
@@ -1008,17 +1009,24 @@ function heroSwiper() {
 var swiper = new Swiper('.swiper-container', {
   direction: 'vertical',
   slidesPerView: 1,
-  // watchSlidesVisibility: true,
-  loop: true,
-  autoplay: {
-      delay: 3000,
-      disableOnInteraction: false
-  },
-  
+ loop: true,
+		speed: 1000,
+     	autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+},
+autoHeight: false,
+updateOnWindowResize: true,
+effect: 'fade',
+slidesPerView: 1,
+    observer: true,
+  observeParents: true,
+  observeSlideChildren: true,
+  longSwipes: false,
+  grabCursor: true
 });
 
 }
-
 
 
   
