@@ -485,7 +485,7 @@ views: [{
        
         fullscreenMenuNew(); 
         fsmenuHover();
-        /* underlineMouseover(); */
+        underlineMouseover();
         console.log("FULLSCREEN MENU LOADED --- loaded");
       
         
@@ -519,7 +519,7 @@ views: [{
       },
 
       beforeEnter({next}) {
-       /*  underlineMouseover(); */
+        underlineMouseover();
          
 
       },
