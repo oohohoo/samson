@@ -446,6 +446,7 @@ views: [{
   },
   once(data) {
     titleHero();
+    heroSwiper();
 
   },
   afterEnter(data) {
@@ -1001,6 +1002,9 @@ heroanimation
 SWIPER - HERO ANIMACIJA
 ================================================================================
 */
+
+function heroSwiper() {
+
 var swiper = new Swiper('.swiper-container', {
   direction: 'vertical',
   slidesPerView: 1,
@@ -1013,6 +1017,7 @@ var swiper = new Swiper('.swiper-container', {
   
 });
 
+}
 
 
 
