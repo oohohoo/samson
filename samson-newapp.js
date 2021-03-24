@@ -885,7 +885,7 @@ $( "#tocom" ).on( "click", function() {
 
 $( "#tores" ).on( "click", function() {
   locoScroll.scrollTo( '#res', {
-    'offset': -100,
+    'offset': 0,
     'duration': 800,
     'easing': [0.25, 0.00, 0.35, 1.00],
     'disableLerp': true
