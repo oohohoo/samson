@@ -172,6 +172,19 @@ $('.fs-nav-butt').click(function() {
   $(this).data("clicks", !clicks);
 });
 
+
+function handler1() {
+   locoScroll.stop();
+    $(this).one("click", handler2);
+}
+
+function handler2() {
+   locoScroll.start();
+    $(this).one("click", handler1);
+}
+$(".fs-nav-butt").one("click", handler1);
+
+
 // Click on the hamburger icon whenever you click on the greyed out part
 /* $( ".c-nav_background" ).click(function() {
   $( ".c-nav_button" ).click();
