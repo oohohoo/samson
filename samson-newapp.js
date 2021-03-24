@@ -855,7 +855,7 @@ dev.interactions = {
 
   filtersOnEnter: function(e) {
     // fade out all anchors
-    gsap.to("[data-filters] a", {duration:0.5, autoAlpha:0.4, color: "#9D9C9B"});
+    gsap.to("[data-filters] a", {duration:0.5, color: "#D0D0CE"});
     
     // keep hovered anchor the same
     gsap.to(e.target, {color: "#1e1e1e", overwrite: true});
