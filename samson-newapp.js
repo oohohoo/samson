@@ -968,7 +968,7 @@ function tailoredHeroAnima() {
 
   Splitting();
   
-  var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
+  var heroanimation = gsap.timeline({defaults:{ease: "power3.Out"}})
   heroanimation
   //.set(".hide", {autoAlpha:1})
   .from(".char", {duration:1.5, stagger:0.02, yPercent:125})
