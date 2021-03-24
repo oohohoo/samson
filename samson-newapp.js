@@ -818,7 +818,7 @@ burger.onclick = function() {
 
 /* CLICK ON LINK CLOSE MENU*/
  
-$('nav li a').on('click', function(){
+$('nav li a, .menutrig').on('click', function(){
     $(burger).trigger('click');
 });
 
