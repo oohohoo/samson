@@ -996,8 +996,22 @@ heroanimation
 
 }
  
-
-
+/*
+================================================================================
+SWIPER - HERO ANIMACIJA
+================================================================================
+*/
+var swiper = new Swiper('.swiper-container', {
+  direction: 'vertical',
+  slidesPerView: 1,
+  // watchSlidesVisibility: true,
+  loop: true,
+  autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+  },
+  
+});
 
 
 
