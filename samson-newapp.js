@@ -912,7 +912,7 @@ function titleHero() {
  IMAGE EXCHANGE GALLERY
  ================================================================================
  */
- var imgs = $.makeArray( $('#images img') );
+ /* var imgs = $.makeArray( $('#images img') );
  imgs.reverse();
  
  function crossfade(){
@@ -921,7 +921,7 @@ function titleHero() {
  imgs.push( imgs.shift() )
  }
  
- var cycle = setInterval(crossfade,3000)
+ var cycle = setInterval(crossfade,3000) */
   
  /*
  ================================================================================
