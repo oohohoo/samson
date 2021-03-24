@@ -161,17 +161,7 @@ function initScroll(container) {
 
 
 
-// Sent body to overflow hidden on first click of hamburger icon
-$('.fs-nav-butt').click(function() {
-  var clicks = $(this).data('clicks');
-  if (clicks) {
-     locoScroll.stop();
-  } else {
-     locoScroll.start();
-  }
-  $(this).data("clicks", !clicks);
-});
-
+/* PREVENT SCROLL UNDER FS MENU*/
 
 function handler1() {
    locoScroll.stop();
@@ -184,12 +174,6 @@ function handler2() {
 }
 $(".fs-nav-butt").one("click", handler1);
 
-
-// Click on the hamburger icon whenever you click on the greyed out part
-/* $( ".c-nav_background" ).click(function() {
-  $( ".c-nav_button" ).click();
-});
- */
 /*
   // When window reszie, need to update locomotive scroll.
   $( window ).on( 'resize', function() {
