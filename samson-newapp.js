@@ -160,6 +160,23 @@ function initScroll(container) {
   console.log("Locomotive Updated once more");;
 
 
+
+// Sent body to overflow hidden on first click of hamburger icon
+$('.fs-nav-butt').click(function() {
+  var clicks = $(this).data('clicks');
+  if (clicks) {
+     locoScroll.stop();
+  } else {
+     locoScroll.start();
+  }
+  $(this).data("clicks", !clicks);
+});
+
+// Click on the hamburger icon whenever you click on the greyed out part
+/* $( ".c-nav_background" ).click(function() {
+  $( ".c-nav_button" ).click();
+});
+ */
 /*
   // When window reszie, need to update locomotive scroll.
   $( window ).on( 'resize', function() {
@@ -741,7 +758,6 @@ var toggle = true;
 //menuIn
 
 menuAnimation
-locoScroll.stop()
 .to(".open", {duration: 0.2, autoAlpha:1, rotate:22.5})
 .from(".close", {duration: 0.2, autoAlpha:0 })
 .to(".open", {autoAlpha:0}, "<")
@@ -765,7 +781,6 @@ locoScroll.stop()
 menuOut */
 
 menuAnimationBack
-locoScroll.start()
 .to(".close", {duration: 0.01, autoAlpha:0},0)
 .to(".open", {duration: 0.01, autoAlpha:1},0)
 .to(".open", {duration: 0.2, rotate:0}, "<")
