@@ -950,7 +950,6 @@ function projectsHeroAnima() {
 
 const mq = window.matchMedia('(min-width: 999px)')
 if (mq.matches) {
- alert('Media Query Matched!')
   var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
   heroanimation
   /* .set(".hide", {autoAlpha:1}) */
