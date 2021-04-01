@@ -921,15 +921,14 @@ if (mq.matches) {
  .from(".char", {stagger:0.02, yPercent:130, duration:1.5})
  .fromTo(".clip", {autoAlpha:1, y:200, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
  { autoAlpha:1, duration:2, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "-=1.8")
- }
+
 
 }
 else {
 var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
   heroanimation
-.set(".char", {yPercent:0} ); 
+.set(".char", {autoAlpha:1} ); 
 }
-
 
 
 
