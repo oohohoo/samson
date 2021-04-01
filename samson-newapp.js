@@ -269,7 +269,7 @@ $( "#tomain" ).on( "click", function() {
 RELOAD ON MOBILE ORIENTATION CHANGE
 ================================================================================
 */
-jQuery(document).ready(function($){
+/* jQuery(document).ready(function($){
 orientationChange();
 });
 function orientationChange() {
@@ -279,7 +279,7 @@ location.reload();
 });
 }
 }
-
+ */
 }
 
 /*
