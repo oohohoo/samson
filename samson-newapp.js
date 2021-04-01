@@ -945,6 +945,9 @@ function projectsHeroAnima() {
 
   Splitting();
   
+var mq = window.matchMedia( "(max-width: 999px)" );
+if (mq.matches) {
+
   var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
   heroanimation
   /* .set(".hide", {autoAlpha:1}) */
@@ -954,6 +957,23 @@ function projectsHeroAnima() {
  /*  .fromTo(".fadein", {autoAlpha:0, y:40},{duration:0.6, autoAlpha:1, stagger:0.2, y:0}, "<0.1") */
   .fromTo(".clip", {y:200, autoAlpha:0, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
   {autoAlpha:1, duration:2, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "-=2")
+
+}
+else {
+
+  var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
+  heroanimation
+  /* .set(".hide", {autoAlpha:1}) */
+  .set(".char", {yPercent:0})
+  .set(".in1", {autoAlpha:1, y:0} )
+  .set(".in2", {autoAlpha:1, y:0} )
+  .set(".clip", {autoAlpha:1, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"})
+  
+}
+
+
+
+
 
   
   }
@@ -1031,4 +1051,19 @@ slidesPerView: 1,
 }
 
 
-  
+ 
+ 
+var mq = window.matchMedia( "(max-width: 999px)" );
+if (mq.matches) {
+
+var tl = gsap.timeline({defaults:{duration:0.3, autoAlpha:0, ease: "power2.Out"}});
+	tl.from(".h2, .h1, .h3, .h4", {})
+
+}
+else {
+
+var tl = gsap.timeline({defaults:{duration:0.5, y:100, autoAlpha:0, ease: "power2.Out"}});
+	tl.from(".h2, .h1, .h3, .h4", {stagger:0.1})
+
+}
+    
