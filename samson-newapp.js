@@ -945,9 +945,15 @@ function projectsHeroAnima() {
 
   Splitting();
   
-var mq = window.matchMedia( "(max-width: 999px)" );
-if (mq.matches) {
 
+  // Create a media condition that targets viewports at least 768px wide
+
+
+
+
+const mq = window.matchMedia('(min-width: 768px)')
+if (mq.matches) {
+ alert('Media Query Matched!')
   var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
   heroanimation
   /* .set(".hide", {autoAlpha:1}) */
