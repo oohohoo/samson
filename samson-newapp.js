@@ -966,12 +966,12 @@ if (mq.matches) {
 
 }
 else {
-
+.set(".in1", {autoAlpha:1} )
 /*   var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
   heroanimation
   /* .set(".hide", {autoAlpha:1}) */
  /*  .set(".char", {yPercent:0})
-  .set(".in1", {autoAlpha:1, y:0} )
+  
   .set(".in2", {autoAlpha:1, y:0} )
   .set(".clip", {autoAlpha:1, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"})  */
   
