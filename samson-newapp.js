@@ -264,8 +264,21 @@ $( "#tomain" ).on( "click", function() {
   console.log("SCROLLTOTOP");
 });
 
-
-
+/*
+================================================================================
+RELOAD ON MOBILE ORIENTATION CHANGE
+================================================================================
+*/
+jQuery(document).ready(function($){
+orientationChange();
+});
+function orientationChange() {
+if(window.addEventListener) {
+window.addEventListener("orientationchange", function() {
+location.reload();
+});
+}
+}
 
 }
 
