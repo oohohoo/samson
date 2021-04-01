@@ -930,7 +930,7 @@ var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
 .set(".char", {autoAlpha:1} ); 
 }
 
-
+}
 
 
 /*
