@@ -1075,18 +1075,3 @@ slidesPerView: 1,
 
 
  
- 
-var mq = window.matchMedia( "(max-width: 999px)" );
-if (mq.matches) {
-
-var tl = gsap.timeline({defaults:{duration:0.3, autoAlpha:0, ease: "power2.Out"}});
-	tl.from(".h2, .h1, .h3, .h4", {})
-
-}
-else {
-
-var tl = gsap.timeline({defaults:{duration:0.5, y:100, autoAlpha:0, ease: "power2.Out"}});
-	tl.from(".h2, .h1, .h3, .h4", {stagger:0.1})
-
-}
-    
