@@ -998,7 +998,7 @@ else {
   var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
   heroanimation
 .set(".t1", {autoAlpha:1} )
-.set(".clip", {autoAlpha:1, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"} )
+.set(".clip", {autoAlpha:1} )
 }
 
 
