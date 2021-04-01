@@ -966,7 +966,7 @@ if (mq.matches) {
 
 }
 else {
-.set(".in1", {autoAlpha:1} )
+.set(".in1", {autoAlpha:1} );
 /*   var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
   heroanimation
   /* .set(".hide", {autoAlpha:1}) */
