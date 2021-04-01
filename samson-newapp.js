@@ -907,34 +907,32 @@ function titleHero() {
 
   Splitting();
   console.log("Splitting update?");
-/*
- ================================================================================
- IMAGE EXCHANGE GALLERY
- ================================================================================
- */
- /* var imgs = $.makeArray( $('#images img') );
- imgs.reverse();
- 
- function crossfade(){
- gsap.to(imgs[0], {duration:2, autoAlpha:0}) 
- gsap.to(imgs[1], {duration:2, autoAlpha:1})
- imgs.push( imgs.shift() )
- }
- 
- var cycle = setInterval(crossfade,3000) */
   
  /*
  ================================================================================
  CLIPPING PATH MASK REVEAL & TEXT REVEAL
  ================================================================================
  */
+
+ const mq = window.matchMedia('(min-width: 999px)')
+if (mq.matches) {
  var animation = gsap.timeline({defaults:{ease: "power3.inOut"}})
  animation
- /* .set(".hide", {autoAlpha:1}, "<") */
  .from(".char", {stagger:0.02, yPercent:130, duration:1.5})
  .fromTo(".clip", {autoAlpha:1, y:200, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
  { autoAlpha:1, duration:2, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "-=1.8")
  }
+
+}
+else {
+ /*  var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
+  heroanimation
+.set(".in1, .in2", {autoAlpha:1} ); */
+}
+
+
+
+
 
 /*
 ================================================================================
