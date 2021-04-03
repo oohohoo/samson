@@ -159,7 +159,7 @@ function initScroll(container) {
   //locoScroll.update();
   console.log("Locomotive Updated once more");;
 
-scroll.on('scroll', (instance) => {
+locoScroll.on('scroll', (instance) => {
     document.documentElement.setAttribute('data-direction', instance.direction)
 });
 
