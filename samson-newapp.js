@@ -108,7 +108,7 @@ function initScroll(container) {
     touchMultiplier: 4,
     // scrollbarContainer: document.querySelector('#primary'),
     smartphone: {
-      smooth: true,
+      smooth: false,
     },
     tablet: {
       smooth: true,
