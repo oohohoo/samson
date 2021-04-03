@@ -162,10 +162,10 @@ IS TRANSITIONING / BLUE PROGRESS CURSOR & POINTER EVENTS
 GSAP PERFORMANCE FIX
 ================================================================================
 */
-.smooth-scroll {
+/* .smooth-scroll {
   will-change: transform;
   backface-visibility: hidden;
-}
+} */
 
 /*
 ================================================================================
