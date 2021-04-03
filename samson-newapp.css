@@ -438,7 +438,10 @@ input:-webkit-autofill:active {
 .w-input:focus, .w-select:focus {
   border-color: #1e1e1e;
   outline: 0;
+  border-radius:0;
 }
+
+
 
 
 /*
