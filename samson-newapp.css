@@ -85,6 +85,8 @@ html.has-scroll-dragging {
   -ms-user-select: none;
   user-select: none; }
 
+  
+
 .has-scroll-smooth body {
   overflow: hidden; }
 
@@ -92,10 +94,11 @@ html.has-scroll-dragging {
   min-height: 100vh; }
 
 [data-scroll-direction="horizontal"] [data-scroll-container] {
-  white-space: nowrap;
   height: 100vh;
   display: inline-block;
   white-space: nowrap; }
+
+  
 
 [data-scroll-direction="horizontal"] [data-scroll-section] {
   display: inline-block;
@@ -142,6 +145,7 @@ html.has-scroll-dragging {
   [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
     right: auto;
     bottom: 0; }
+
 
 /*
 ================================================================================
