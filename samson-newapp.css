@@ -204,17 +204,29 @@ GSAP PERFORMANCE FIX
 SHOW HIDE MENU
 ================================================================================
 */
-#header, #second {
+#header {
   /* position: fixed;
    top: 0; left: 0; */
    transform: translate3d(0,0,0);
    transition: transform .5s ease-in-out;
  }
  
- html[data-direction="down"] #header, #second {
+ html[data-direction="down"] #header {
    transform: translate3d(0,-100%,0);
  }
 
+ #second {
+  /* position: fixed;
+   top: 0; left: 0; */
+   transform: translate3d(0,0,0);
+   transition: transform .5s ease-in-out;
+ }
+ 
+ html[data-direction="down"] #second {
+   transform: translate3d(0,-100%,0);
+ }
+
+ 
 
 
 /*
