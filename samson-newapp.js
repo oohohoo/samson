@@ -105,7 +105,7 @@ function initScroll(container) {
     smooth: true,
     getDirection: true,
     scrollFromAnywhere: true,
-    touchMultiplier: 2,
+    touchMultiplier: 1,
     // scrollbarContainer: document.querySelector('#primary'),
     smartphone: {
       smooth: true,
