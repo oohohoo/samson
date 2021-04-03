@@ -156,9 +156,12 @@ function initScroll(container) {
   console.log("Scrolltrigger refreshed!");
 
   /* ===== */
-  locoScroll.update();
+  //locoScroll.update();
   console.log("Locomotive Updated once more");;
 
+scroll.on('scroll', (instance) => {
+    document.documentElement.setAttribute('data-direction', instance.direction)
+});
 
 
 /* PREVENT SCROLL UNDER FS MENU*/
