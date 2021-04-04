@@ -65,6 +65,7 @@ html {
 
 /* KILL WEBFLOW BADGE */
 .w-webflow-badge {
+  display:none!important;
     position: relative !important;
     right: 1000px !important;
 }

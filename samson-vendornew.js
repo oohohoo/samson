@@ -67,17 +67,6 @@ return g(e[M],function(n,t){i[t%r].push(n)}),i}),j=n("cells",["cellRows","cellCo
 return t(r),t(w),t(T),t(L),t(k),t(A),t(C),t(S),t(H),t(O),t(j),b})
 
 /**
- * Swiper 6.1.2
- * Most modern mobile touch slider and framework with hardware accelerated transitions
- * http://swiperjs.com
- *
- * Copyright 2014-2020 Vladimir Kharlampidi
- *
- * Released under the MIT License
- *
- * Released on: August 17, 2020
- */
-/**
  * Swiper 6.5.3
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
