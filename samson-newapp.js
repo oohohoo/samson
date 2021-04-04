@@ -1012,7 +1012,7 @@ function projectsHeroAnima() {
 
 const mq = window.matchMedia('(min-width: 999px)')
 if (mq.matches) {
-  var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
+  var heroanimation = gsap.timeline({defaults:{force3d: true, ease: "power3.inOut"}})
   heroanimation
   /* .set(".hide", {autoAlpha:1}) */
   .from(".char", {duration:1.5, stagger:0.02, yPercent:130},"<")
@@ -1046,7 +1046,7 @@ function tailoredHeroAnima() {
   
 const mq = window.matchMedia('(min-width: 999px)')
 if (mq.matches) {
-var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
+var heroanimation = gsap.timeline({defaults:{force3d: true, ease: "power3.inOut"}})
   heroanimation
   //.set(".hide", {autoAlpha:1})
   .from(".char", {duration:1.5, stagger:0.02, yPercent:130})
