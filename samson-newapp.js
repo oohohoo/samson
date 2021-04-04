@@ -957,7 +957,6 @@ $( "#tores" ).on( "click", function() {
     'disableLerp': true
   });
 });
-
 }
 
 /*
@@ -981,7 +980,7 @@ if (mq.matches) {
  var animation = gsap.timeline({defaults:{force3d: true, ease: "power3.inOut"}})
  animation
  .from(".char", {stagger:0.02, yPercent:130, duration:1.5})
- .fromTo(".clip", {autoAlpha:1, y:200, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
+ .fromTo(".clip", {autoAlpha:0, y:200, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
  { autoAlpha:1, duration:2, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "-=1.8")
 
 
