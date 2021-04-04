@@ -105,7 +105,7 @@ function initScroll(container) {
     smooth: true,
     getDirection: true,
     scrollFromAnywhere: true,
-    touchMultiplier: 4,
+    touchMultiplier: 3,
     // scrollbarContainer: document.querySelector('#primary'),
     smartphone: {
       smooth: true,
@@ -156,7 +156,7 @@ function initScroll(container) {
   console.log("Scrolltrigger refreshed!");
 
   /* ===== */
-  //locoScroll.update();
+  locoScroll.update();
   console.log("Locomotive Updated once more");;
 
 locoScroll.on('scroll', (instance) => {
@@ -978,7 +978,7 @@ function titleHero() {
 
  const mq = window.matchMedia('(min-width: 999px)')
 if (mq.matches) {
- var animation = gsap.timeline({defaults:{ease: "power3.inOut"}})
+ var animation = gsap.timeline({defaults:{force3d: true, ease: "power3.inOut"}})
  animation
  .from(".char", {stagger:0.02, yPercent:130, duration:1.5})
  .fromTo(".clip", {autoAlpha:1, y:200, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
