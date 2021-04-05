@@ -31,9 +31,7 @@ IMAGES LOADED
 function init() {
 
   // show loader on page load
-  gsap.set(loader, {
-    autoAlpha: 1
-  });
+  gsap.set(loader, {autoAlpha: 1});
 
   // scale loader down
   gsap.set(loaderInner, {
@@ -119,6 +117,13 @@ function initScroll(container) {
   // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
   locoScroll.on("scroll", ScrollTrigger.update);
 
+// data direction ubačeno naknadno
+locoScroll.on('scroll', (instance) => {
+    document.documentElement.setAttribute('data-direction', instance.direction)
+});
+
+
+
   // tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
   ScrollTrigger.scrollerProxy(".smooth-scroll", {
     scrollTop(value) {
@@ -156,12 +161,9 @@ function initScroll(container) {
   console.log("Scrolltrigger refreshed!");
 
   /* ===== */
-  locoScroll.update();
-  console.log("Locomotive Updated once more");;
+/*   locoScroll.update();
+  console.log("Locomotive Updated once more");; */
 
-locoScroll.on('scroll', (instance) => {
-    document.documentElement.setAttribute('data-direction', instance.direction)
-});
 
 
 /* PREVENT SCROLL UNDER FS MENU*/
@@ -344,28 +346,28 @@ function initLoader() {
     onComplete: () => initContent()
   });
 
-  //const image = select('.loader-img-img');
+  const image = select('.loader-img-img');
   const mask = select('.loader__image--mask');
-  //const lines = selectAll('.loader__title--mask');
-  //const loaderContent = select('.loader__content');
+  const lines = selectAll('.loader__title--mask');
+  const loaderContent = select('.loader__content');
 
   const loader = select('.loaderx');
   const loaderInner = select('.inner-loader');
 
   tlLoaderIn
 
-    //.set(loaderContent, {autoAlpha: 1})
-    //.set(".txt", {yPercent: 100})
+    .set(loaderContent, {autoAlpha: 1})
+    .set(".txt", {yPercent: 100})
     .set(mask, {yPercent: 0})
-    //.set(image, {yPercent: 100})
+    .set(image, {yPercent: 100})
     //.set(".main", {y: 150})
 
 
     .to(loaderInner, {scaleY: 1,transformOrigin: 'bottom',ease: 'power1.inOut'})
 
     .addLabel('revealImage')
-    //.to(image, {yPercent: 0}, 'revealImage-=0.5') 
-    //.to(".txt", {yPercent: 0, stagger: 0.2}, 'revealImage-=0.4');
+    .to(image, {yPercent: 0}, 'revealImage-=0.5') 
+    .to(".txt", {yPercent: 0, stagger: 0.2}, 'revealImage-=0.4');
 
   // LOADER OUT
   const tlLoaderOut = gsap.timeline({
@@ -374,8 +376,8 @@ function initLoader() {
 
   tlLoaderOut
 
-    //.to(lines, {yPercent: -500,stagger: 0.2}, 0)
-    .to([loader/*, loaderContent*/], {yPercent: -100})
+    .to(lines, {yPercent: -500,stagger: 0.2}, 0)
+    .to([loader, loaderContent], {yPercent: -100}, 0.2)
     //.to('.main', {y: 0}, 0);
 
   const tlLoader = gsap.timeline();
