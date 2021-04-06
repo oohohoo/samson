@@ -985,7 +985,7 @@ function titleHero() {
 
  const mq = window.matchMedia('(min-width: 999px)')
 if (mq.matches) {
- var animation = gsap.timeline({defaults:{force3d: true, ease: "power3.inOut"}})
+ var animation = gsap.timeline({defaults:{ease: "power3.inOut"}})
  animation
  .from(".char", {stagger:0.02, yPercent:130, duration:1.5})
  .fromTo(".clip", {autoAlpha:0, y:200, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
@@ -1019,7 +1019,7 @@ function projectsHeroAnima() {
 
 const mq = window.matchMedia('(min-width: 999px)')
 if (mq.matches) {
-  var heroanimation = gsap.timeline({defaults:{force3d: true, ease: "power3.inOut"}})
+  var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
   heroanimation
   /* .set(".hide", {autoAlpha:1}) */
   .from(".char", {duration:1.5, stagger:0.02, yPercent:130})
