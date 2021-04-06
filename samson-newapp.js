@@ -380,7 +380,7 @@ function initLoader() {
 
   tlLoaderOut
 
-    .to(lines, {yPercent: -1000, stagger: 0.02}, 0)
+    .to(lines, {yPercent: -1000, stagger: 0.2}, 0)
     .to([loader, loaderContent], {yPercent: -100}, '-=0.2')
     //.to('.main', {y: 0}, 0);
 
