@@ -382,7 +382,7 @@ function initLoader() {
 
   tlLoaderOut
 .to(".imgg", {autoAlpha:0})
-    .to(lines, {stagger: 0.3, autoAlpha:0})
+    .to(lines, {stagger: 0.3, autoAlpha:0}, '-=0.5')
     .to([loader, loaderContent], {yPercent: -100}, '-=0.5')
     //.to('.main', {y: 0}, 0);
 
