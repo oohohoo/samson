@@ -381,6 +381,7 @@ function initLoader() {
   tlLoaderOut
 .to(".loggo", {autoAlpha:0}, 0)
     .to(lines, {stagger: 0.2, autoAlpha:0})
+    .to(".since", {autoAlpha:0})
     .to([loader, loaderContent], {yPercent: -100}, '-=0.5')
     //.to('.main', {y: 0}, 0);
 
