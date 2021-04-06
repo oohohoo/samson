@@ -342,7 +342,7 @@ function initLoader() {
 
   const tlLoaderIn = gsap.timeline({
     id: 'tlLoaderIn',
-    defaults: {duration: 0.8, ease: 'power2.inOut'},
+    defaults: {duration: 0.8, ease: 'power2.out'},
     onComplete: () => initContent()
   });
 
@@ -376,12 +376,12 @@ function initLoader() {
   // LOADER OUT
   const tlLoaderOut = gsap.timeline({
     id: 'tlLoaderOut',
-    defaults: {duration: 0.8, ease: 'power2.inOut'},delay: 0});
+    defaults: {duration: 1.1, ease: 'power2.inOut'},delay: 0});
 
   tlLoaderOut
 
-    .to(lines, {yPercent: -500,stagger: 0.02}, 0)
-    .to([loader, loaderContent], {yPercent: -100}, '-=0.8')
+    .to(lines, {yPercent: -500,stagger: 0.05}, 0)
+    .to([loader, loaderContent], {yPercent: -100}, '-=0.6')
     //.to('.main', {y: 0}, 0);
 
   const tlLoader = gsap.timeline();
