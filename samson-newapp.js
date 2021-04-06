@@ -359,7 +359,7 @@ function initLoader() {
     .set(loaderContent, {autoAlpha: 1})
     .set(".txt", {yPercent: 100}) 
     .set(".imgg", {yPercent: 100})
-    .set(".smallprint", {yPercent: 105})
+    .set(".smallprint", {yPercent: 120})
     /* .set(".char", {yPercent: 100}) */
    /*  .set(mask, {yPercent: 0}) */
     //.set(image, {yPercent: 100})
@@ -859,7 +859,7 @@ menuAnimationBack
 
 .set(burger, {pointerEvents: "none"}, "<")
 
-.to(".f-nav", {duration: 0.3, yPercent: -110, stagger: 0.05, force3D: true}, "<0.1")
+.to(".f-nav", {duration: 0.3, yPercent: -110, stagger: 0.05, ease: "Expo.out"}, "<0.1")
 .to(".fadeinnav", {autoAlpha: 0, duration: 0.3, ease: "Expo.out"}, "<0.2")
 .to(slide, {duration: 0.8,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut"}, "<0.3")
 
