@@ -357,7 +357,7 @@ function initLoader() {
   tlLoaderIn
 
     .set(loaderContent, {autoAlpha: 1})
-     .set(".txt", {yPercent: 100}) 
+    .set(".txt", {yPercent: 100}) 
     .set(".imgg", {yPercent: 100})
     /* .set(".char", {yPercent: 100}) */
    /*  .set(mask, {yPercent: 0}) */
@@ -365,7 +365,7 @@ function initLoader() {
     //.set(".main", {y: 150})
 
 
-     .to(loaderInner, {scaleX: 0,transformOrigin: 'bottom',ease: 'power1.inOut'}) 
+    .to(loaderInner, {scaleX: 0,transformOrigin: 'left bottom',ease: 'power1.inOut'}) 
 
     .addLabel('revealImage')
     //.to(image, {yPercent: 0}, 'revealImage-=0.5') 
