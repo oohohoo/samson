@@ -359,6 +359,7 @@ function initLoader() {
     .set(loaderContent, {autoAlpha: 1})
     .set(".txt", {yPercent: 100}) 
     .set(".imgg", {yPercent: 100})
+    .set(".since", {yPercent: 100})
     /* .set(".char", {yPercent: 100}) */
    /*  .set(mask, {yPercent: 0}) */
     //.set(image, {yPercent: 100})
@@ -372,11 +373,12 @@ function initLoader() {
     .to(".imgg", {yPercent: 0})
     /* .to(".txt", {yPercent: 0}) */
     .to(".txt", {yPercent: 0, stagger: 0.3}, 'revealImage-=0.4');
+    .to(".since", {yPercent: 0})
 
   // LOADER OUT
   const tlLoaderOut = gsap.timeline({
     id: 'tlLoaderOut',
-    defaults: {duration: 1.1, ease: 'power2.inOut'},delay: 1});
+    defaults: {duration: 0.8, ease: 'power2.inOut'},delay: 1});
 
   tlLoaderOut
 .to(".imgg", {autoAlpha:0})
