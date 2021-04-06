@@ -348,7 +348,7 @@ function initLoader() {
 
   const image = select('.loader-img-img');
   const mask = select('.loader__image--mask');
-  const lines = selectAll('.teksto');
+  const lines = selectAll('.loader__title--mask');
   const loaderContent = select('.loader__content');
 
   const loader = select('.loaderx');
