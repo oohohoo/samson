@@ -28,8 +28,139 @@ DEFINE ROOT VARIABLES / definiraj svoje
   --easing: cubic-bezier(0.5, 0.7, 0.4, 1);
 }
 
+/*
+================================================================================
+HIDE PAGE CONTENT BY DEFAULT
+================================================================================
+*/
+.is-loading #main,
+/* .is-loading .logo,
+.is-loading .burger, */
+.is-loading .header-container,
+.is-loading .fill-background {
+  display: none;
+}
 
+/*
+================================================================================
+IS LOADING BACKGROUND COLOR
+================================================================================
+*/
+.is-loading {
+  background-color: var(--bcg-loaderblue);
+}
 
+/*
+================================================================================
+IS TRANSITIONING / BLUE PROGRESS CURSOR & POINTER EVENTS
+================================================================================
+*/
+.is-transitioning {
+  pointer-events: none;
+  cursor: progress;
+}
+
+/*
+================================================================================
+LOADER
+================================================================================
+*/
+.loaderx,
+.loader__content {
+  min-height: 100vh;
+  position: fixed;
+  flex-direction: column;
+  z-index: 5; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.loader__mask {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bcg-loaderblue);
+  overflow: hidden;
+}
+
+.inner-loader {
+  width: var(--loader-width);
+  height: var(--loader-height);
+}
+
+.inner-loader {
+  background-color: var(--bcg-loaderbluedark);
+}
+.loader__content {
+  visibility: hidden;
+   z-index: 6; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.loader__title {
+  font-size: 7vw;
+  line-height: 8vw;
+  margin: 0;
+  font-family: var(--font-headings);
+  color: var(--text-color);
+  font-weight: normal;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* z-index: 5; */
+}
+
+.loader__image {
+  width: var(--loader-width);
+  padding-bottom: 50vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.loader__image img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.loader__title--mask {
+  overflow: hidden;
+}
+
+.loader__title--mask span {
+  display: block;
+}
+
+.loader__image--mask {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.progress {
+  background-color: var(--bcg-lightblue);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--loader-width);
+  height: var(--loader-height);
+}
 
 
  /* VISIBILITY NONE */
@@ -147,15 +278,6 @@ html.has-scroll-dragging {
     bottom: 0; }
 
 
-/*
-================================================================================
-IS TRANSITIONING / BLUE PROGRESS CURSOR & POINTER EVENTS
-================================================================================
-*/
-.is-transitioning {
-  pointer-events: none;
-  cursor: progress;
-}
 
 /*
 ================================================================================
@@ -167,27 +289,7 @@ GSAP PERFORMANCE FIX
   backface-visibility: hidden;
 } */
 
-/*
-================================================================================
-HIDE PAGE CONTENT BY DEFAULT
-================================================================================
-*/
-.is-loading #main,
-/* .is-loading .logo,
-.is-loading .burger, */
-.is-loading .header-container,
-.is-loading .fill-background {
-  display: none;
-}
 
-/*
-================================================================================
-IS LOADING BACKGROUND COLOR
-================================================================================
-*/
-.is-loading {
-  background-color: var(--bcg-loaderblue);
-}
 /*
 ================================================================================
 GSAP PERFORMANCE FIX
@@ -338,107 +440,6 @@ header a.nav-link .w-inline-block .w--current span {
 
 */
 
-/*
-================================================================================
-LOADER
-================================================================================
-*/
-.loaderx,
-.loader__content {
-  min-height: 100vh;
-  position: fixed;
-  flex-direction: column;
-   z-index: 5; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  visibility: hidden;
-  overflow: hidden;
-}
-
-.loader__mask {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: var(--bcg-loaderblue);
-  overflow: hidden;
-}
-
-.inner-loader {
-  width: var(--loader-width);
-  height: var(--loader-height);
-}
-
-.inner-loader {
-  background-color: var(--bcg-loaderbluedark);
-}
-.loader__content {
-  visibility: hidden;
-   z-index: 6; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
-}
-
-.loader__title {
-  font-size: 7vw;
-  line-height: 8vw;
-  margin: 0;
-  font-family: var(--font-headings);
-  color: var(--text-color);
-  font-weight: normal;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* z-index: 5; */
-}
-
-.loader__image {
-  width: var(--loader-width);
-  padding-bottom: 50vh;
-  overflow: hidden;
-  position: relative;
-}
-
-.loader__image img {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  object-fit: cover;
-  object-position: 50% 50%;
-}
-
-.loader__title--mask {
-  overflow: hidden;
-}
-
-.loader__title--mask span {
-  display: block;
-}
-
-.loader__image--mask {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
-.progress {
-  background-color: var(--bcg-lightblue);
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: var(--loader-width);
-  height: var(--loader-height);
-}
 
 
 
