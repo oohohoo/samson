@@ -371,7 +371,7 @@ function initLoader() {
     //.to(image, {yPercent: 0}, 'revealImage-=0.5') 
     .to(".imgg", {yPercent: 0})
     /* .to(".txt", {yPercent: 0}) */
-    .to(".txt", {yPercent: 0, stagger: 0.5}, 'revealImage-=0.4');
+    .to(".txt", {yPercent: 0, stagger: 0.3}, 'revealImage-=0.4');
 
   // LOADER OUT
   const tlLoaderOut = gsap.timeline({
@@ -380,7 +380,7 @@ function initLoader() {
 
   tlLoaderOut
 
-    .to(lines, {yPercent: -20, autoAlpha:0}, 0)
+    .to(lines, {yPercent: -50, autoAlpha:0}, 0)
     .to([loader, loaderContent], {yPercent: -100}, '-=0.3')
     //.to('.main', {y: 0}, 0);
 
