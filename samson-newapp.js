@@ -359,7 +359,7 @@ function initLoader() {
     .set(loaderContent, {autoAlpha: 1})
     .set(".txt", {yPercent: 100}) 
     .set(".imgg", {yPercent: 100})
-    .set(".smallprint", {yPercent: 100})
+    .set(".smallprint", {yPercent: 105})
     /* .set(".char", {yPercent: 100}) */
    /*  .set(mask, {yPercent: 0}) */
     //.set(image, {yPercent: 100})
