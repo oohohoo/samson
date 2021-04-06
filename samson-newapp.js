@@ -1057,7 +1057,7 @@ var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
   heroanimation
   //.set(".hide", {autoAlpha:1})
   .from(".char", {duration:1.8, stagger:0.02, yPercent:130})
-  .fromTo(".t1", {autoAlpha:0, y:40},{duration:0.8, autoAlpha:1, y:0}, "-=0.8")
+  .fromTo(".t1", {autoAlpha:0, y:80},{duration:0.8, autoAlpha:1, y:0}, "-=0.8")
   .fromTo(".clip", {y:200, autoAlpha:0, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
   {autoAlpha:1, duration:1.8, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "-=1")
 
