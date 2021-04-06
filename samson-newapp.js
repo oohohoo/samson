@@ -365,13 +365,13 @@ function initLoader() {
     //.set(".main", {y: 150})
 
 
-     .to(loaderInner, {scaleX: 0,transformOrigin: 'right',ease: 'power1.inOut'}) 
+     .to(loaderInner, {scaleY: 0,transformOrigin: 'right',ease: 'power1.inOut'}) 
 
     .addLabel('revealImage')
     //.to(image, {yPercent: 0}, 'revealImage-=0.5') 
     .to(".imgg", {yPercent: 0})
     /* .to(".txt", {yPercent: 0}) */
-    .to(".txt", {yPercent: 0, stagger: 0.2}, 'revealImage-=0.4');
+    .to(".txt", {yPercent: 0, stagger: 0.5}, 'revealImage-=0.4');
 
   // LOADER OUT
   const tlLoaderOut = gsap.timeline({
@@ -381,7 +381,7 @@ function initLoader() {
   tlLoaderOut
 
     .to(lines, {yPercent: -800,stagger: 0.2}, 0)
-    .to([loader, loaderContent], {yPercent: -100})
+    .to([loader, loaderContent], {yPercent: -100}, '-=0.4')
     //.to('.main', {y: 0}, 0);
 
   const tlLoader = gsap.timeline();
