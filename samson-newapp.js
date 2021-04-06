@@ -359,14 +359,14 @@ function initLoader() {
     .set(loaderContent, {autoAlpha: 1})
     .set(".txt", {yPercent: 100})
     .set(mask, {yPercent: 0})
-    .set(image, {yPercent: 100})
+    //.set(image, {yPercent: 100})
     //.set(".main", {y: 150})
 
 
     .to(loaderInner, {scaleY: 1,transformOrigin: 'bottom',ease: 'power1.inOut'})
 
     .addLabel('revealImage')
-    .to(image, {yPercent: 0}, 'revealImage-=0.5') 
+    //.to(image, {yPercent: 0}, 'revealImage-=0.5') 
     .to(".txt", {yPercent: 0, stagger: 0.2}, 'revealImage-=0.4');
 
   // LOADER OUT
