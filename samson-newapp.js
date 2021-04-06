@@ -367,7 +367,7 @@ function initLoader() {
 
     .addLabel('revealImage')
     //.to(image, {yPercent: 0}, 'revealImage-=0.5') 
-    .to(".txt", {yPercent: 0, stagger: 0.2}, 'revealImage-=0.4');
+    .to(".char", {yPercent: 0, stagger: 0.2}, 'revealImage-=0.4');
 
   // LOADER OUT
   const tlLoaderOut = gsap.timeline({
