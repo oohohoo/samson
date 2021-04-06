@@ -381,7 +381,7 @@ function initLoader() {
   tlLoaderOut
 
     .to(lines, {yPercent: -1000, duration:0.4, stagger: 0.02}, 0)
-    .to([loader, loaderContent], {yPercent: -100}, '-=0.8')
+    .to([loader, loaderContent], {yPercent: -100}, '-=0.2')
     //.to('.main', {y: 0}, 0);
 
   const tlLoader = gsap.timeline();
