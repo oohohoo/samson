@@ -859,7 +859,7 @@ menuAnimationBack
 
 .set(burger, {pointerEvents: "none"}, "<")
 
-.to(".f-nav", {duration: 0.8, yPercent: -110, stagger: 0.2, ease: "Expo.out"}, "<0.1")
+.to(".f-nav", {duration: 0.3, yPercent: -110, stagger: 0.05, force3D: true}, "<0.1")
 .to(".fadeinnav", {autoAlpha: 0, duration: 0.3, ease: "Expo.out"}, "<0.2")
 .to(slide, {duration: 0.8,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut"}, "<0.3")
 
@@ -985,7 +985,7 @@ function titleHero() {
 
  const mq = window.matchMedia('(min-width: 999px)')
 if (mq.matches) {
- var animation = gsap.timeline({defaults:{ease: "power3.inOut"}})
+ var animation = gsap.timeline({defaults:{force3d: true, ease: "power3.inOut"}})
  animation
  .from(".char", {stagger:0.02, yPercent:130, duration:1.5})
  .fromTo(".clip", {autoAlpha:0, y:200, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
@@ -1019,7 +1019,7 @@ function projectsHeroAnima() {
 
 const mq = window.matchMedia('(min-width: 999px)')
 if (mq.matches) {
-  var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
+  var heroanimation = gsap.timeline({defaults:{force3d: true, ease: "power3.inOut"}})
   heroanimation
   /* .set(".hide", {autoAlpha:1}) */
   .from(".char", {duration:1.5, stagger:0.02, yPercent:130})
