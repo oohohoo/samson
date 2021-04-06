@@ -372,7 +372,7 @@ function initLoader() {
     //.to(image, {yPercent: 0}, 'revealImage-=0.5') 
     .to(".imgg", {yPercent: 0})
     /* .to(".txt", {yPercent: 0}) */
-    .to(".txt", {yPercent: 0, stagger: 0.3}, 'revealImage-=0.4');
+    .to(".txt", {yPercent: 0, stagger: 0.3}, 'revealImage-=0.4')
     .to(".since", {yPercent: 0})
 
   // LOADER OUT
