@@ -365,7 +365,7 @@ function initLoader() {
     //.set(".main", {y: 150})
 
 
-    .to(loaderInner, {scaleX: 0,transformOrigin: 'left bottom',ease: 'power1.inOut'}) 
+    .to(loaderInner, {scaleX: 0,transformOrigin: 'right bottom',ease: 'power1.inOut'}) 
 
     .addLabel('revealImage')
     //.to(image, {yPercent: 0}, 'revealImage-=0.5') 
