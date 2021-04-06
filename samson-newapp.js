@@ -363,10 +363,11 @@ function initLoader() {
     //.set(".main", {y: 150})
 
 
-    .to(loaderInner, {scaleY: 1,transformOrigin: 'bottom',ease: 'power1.inOut'})
+    /* .to(loaderInner, {scaleY: 1,transformOrigin: 'bottom',ease: 'power1.inOut'}) */
 
     .addLabel('revealImage')
     //.to(image, {yPercent: 0}, 'revealImage-=0.5') 
+    .to(".imgg", {yPercent: 100})
     .to(".char", {yPercent: 0, stagger: 0.2}, 'revealImage-=0.4');
 
   // LOADER OUT
