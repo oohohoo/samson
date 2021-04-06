@@ -369,7 +369,7 @@ function initLoader() {
     .addLabel('revealImage')
     //.to(image, {yPercent: 0}, 'revealImage-=0.5') 
     .to(".imgg", {yPercent: 0})
-    .to(".txt", {yPercent: 0})
+    /* .to(".txt", {yPercent: 0}) */
     .to(".char", {yPercent: 0, stagger: 0.2}, 'revealImage-=0.4');
 
   // LOADER OUT
