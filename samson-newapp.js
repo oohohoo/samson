@@ -859,7 +859,7 @@ menuAnimationBack
 
 .set(burger, {pointerEvents: "none"}, "<")
 
-.to(".f-nav", {duration: 0.3, yPercent: -110, stagger: 0.05, ease: "Expo.out"}, "<0.1")
+.to(".f-nav", {duration: 0.8, yPercent: -110, stagger: 0.2, ease: "Expo.out"}, "<0.1")
 .to(".fadeinnav", {autoAlpha: 0, duration: 0.3, ease: "Expo.out"}, "<0.2")
 .to(slide, {duration: 0.8,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut"}, "<0.3")
 
