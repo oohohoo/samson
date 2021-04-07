@@ -343,7 +343,7 @@ SHOW HIDE MENU
    transition: transform .6s ease-in-out;
  }
  
- html[data-direction="down"] #second {
+ html[data-direction="down"] #third {
    transform: translate3d(0,-100%,0);
  }
 
