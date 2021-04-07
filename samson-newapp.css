@@ -318,7 +318,7 @@ SHOW HIDE MENU
   /* position: fixed;
    top: 0; left: 0; */
    transform: translate3d(0,0,0);
-   transition: transform .5s ease-in-out;
+   transition: transform .4s ease-in-out;
  }
  
  html[data-direction="down"] #header {
@@ -336,7 +336,17 @@ SHOW HIDE MENU
    transform: translate3d(0,-100%,0);
  }
 
+ #third {
+  /* position: fixed;
+   top: 0; left: 0; */
+   transform: translate3d(0,0,0);
+   transition: transform .6s ease-in-out;
+ }
  
+ html[data-direction="down"] #second {
+   transform: translate3d(0,-100%,0);
+ }
+
 
 
 /*
