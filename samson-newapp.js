@@ -419,7 +419,7 @@ function pageTransitionIn({
 }) {
   // console.log('pageTransitionIn');
   // timeline to stretch the loader over the whole screen
-  const tl = gsap.timeline({defaults: {duration: 0.6,ease: 'power3.inOut'}});
+  const tl = gsap.timeline({defaults: {duration: 0.6,ease: 'power3.out'}});
   tl
    /* .set(loaderInner, {autoAlpha: 0})
     .fromTo(loader, {yPercent: -100}, {yPercent: 0})
