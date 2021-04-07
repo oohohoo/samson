@@ -121,6 +121,14 @@ LOADER
   /* z-index: 5; */
 }
 
+@media (max-width: 991px) {
+  .loader__title {
+    top: 40%;
+  }
+  }
+
+
+
 .loader__image {
   width: var(--loader-width);
   padding-bottom: 50vh;
