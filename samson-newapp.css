@@ -333,7 +333,7 @@ SHOW HIDE MENU
  }
  
  html[data-direction="down"] #second {
-   transform: translate3d(0,-100%,0);
+   transform: translate3d(0,-120%,0);
  }
 
  #third {
@@ -344,7 +344,7 @@ SHOW HIDE MENU
  }
  
  html[data-direction="down"] #third {
-   transform: translate3d(0,-100%,0);
+   transform: translate3d(0,-140%,0);
  }
 
 
