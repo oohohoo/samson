@@ -115,18 +115,18 @@ LOADER
   font-weight: normal;
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   /* z-index: 5; */
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .loader__title {
     top: 60%;
   }
   }
-
+ */
 
 
 .loader__image {
@@ -325,27 +325,6 @@ SHOW HIDE MENU
    transform: translate3d(0,-100%,0);
  }
 
- #second {
-  /* position: fixed;
-   top: 0; left: 0; */
-   transform: translate3d(0,0,0);
-   transition: transform .5s ease-in-out;
- }
- 
- html[data-direction="down"] #second {
-   transform: translate3d(0,-120%,0);
- }
-
- #third {
-  /* position: fixed;
-   top: 0; left: 0; */
-   transform: translate3d(0,0,0);
-   transition: transform .6s ease-in-out;
- }
- 
- html[data-direction="down"] #third {
-   transform: translate3d(0,-140%,0);
- }
 
 
 
