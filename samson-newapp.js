@@ -1118,23 +1118,24 @@ function heroSwiper() {
 
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
- loop: true,
-		speed: 1000,
-     
-autoHeight: false,
-updateOnWindowResize: true,
-effect: 'fade',
-slidesPerView: 1,
-    observer: true,
+  loop: true,
+  speed: 800,
+  autoHeight: false,
+  updateOnWindowResize: true,
+  effect: 'fade',
+  slidesPerView: 1,
+  observer: true,
   observeParents: true,
   observeSlideChildren: true,
   longSwipes: false,
   grabCursor: true,
-  	autoplay: {
-				delay: 5000,
-				disableOnInteraction: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: true,
 },
-
+fadeEffect: {
+    crossFade: true
+  },
 });
 
 }
