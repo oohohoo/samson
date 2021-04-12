@@ -5,6 +5,11 @@ html {
   overflow: hidden;
   overflow-y: hidden;
 }
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
 /*
 ================================================================================
 DEFINE ROOT VARIABLES / definiraj svoje
