@@ -440,7 +440,6 @@ views: [{
         // do something once on the initial page load
         initLoader();
         fullscreenMenuNew(); 
-        fsmenuHover();
         underlineMouseover();
                 
       },
@@ -465,7 +464,6 @@ views: [{
         next
       }) {
       
-        fsmenuHover();
       },
 
       beforeEnter({next}) {
@@ -636,20 +634,10 @@ menuAnimationBack
 .to(".f-nav", {duration: 0.3, yPercent: -110, stagger: 0.05}, "<0.1")
 .to(".fadeinnav", {autoAlpha: 0, duration: 0.3, ease: "Expo.out"}, "<0.2")
 .to(slide, {duration: 0.8,transformOrigin: "top center", scaleY: 0, ease: "Expo.inOut"}, "<0.3")
-
 .set(burger, {pointerEvents: "all"})
-
-
 .set(slide, {scaleY: 0, transformOrigin: "bottom center"})
 .set(mainwrap, {scaleY: 0})
 .set(".fadein", {autoAlpha:0})
-
-/* 
-.set(".f-nav", {yPercent: 185})
- */
-
-
-
 
 
 ///////////////////////menuIn.invalidate();
@@ -657,7 +645,6 @@ menuAnimationBack
 // ADD EVENT LISTER
 ----------------------------- */
   
-
 burger.onclick = function() {
 
   toggle = !toggle;
@@ -669,10 +656,8 @@ burger.onclick = function() {
 $('nav li a, .menutrig').on('click', function(){
     $(burger).trigger('click');
 });
-
-  
-}
  
+}
 
 /*
 ================================================================================
