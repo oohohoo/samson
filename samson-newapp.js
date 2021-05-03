@@ -1,13 +1,13 @@
 // OVA VERZIJA RADI BARBA
 
 gsap.registerPlugin(ScrollTrigger);
-console.log("ScrollTrigger Loaded!");
+
 
 let locoScroll;
-console.log("Locomotive Loaded");
+
 
 Splitting();
-console.log("Splitting Loaded");
+
 /*
 ================================================================================
 PRELOADER
@@ -68,7 +68,7 @@ function init() {
 
   // update the progress of our progressBar tween
   function updateProgress(value) {
-    // console.log(value/imageCount)
+  
     // tween progress bar tween to the right value
     gsap.to(progressTween, {
       progress: value / imageCount,
@@ -145,7 +145,7 @@ locoScroll.on('scroll', (instance) => {
 
   // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
   ScrollTrigger.refresh();
-  console.log("Scrolltrigger refreshed!");
+ 
 
 
 /* PREVENT SCROLL UNDER FS MENU*/
