@@ -110,8 +110,6 @@ LOADER
   }
   }
 
-
-
 .loader__image {
   width: var(--loader-width);
   padding-bottom: 50vh;
@@ -153,13 +151,11 @@ LOADER
   height: var(--loader-height);
 }
 
-
  /* VISIBILITY NONE */
  .hide, .fadein, .in1, .in2, .since, .t1, .c1 {
     visibility: hidden;
 }
  
-
 /* Barba overlay blue */
  .loader {
     visibility: hidden;
@@ -170,29 +166,6 @@ LOADER
     position: relative !important;
     right: 1000px !important;
 }
-
-
-/* REFRESH ON ROTATE */
-/*delete Coming soon*/
-/* .the-grid.comingsoon {
-  height: 100vh; 
-  height: calc(var(--vh, 1vh) * 100);
-  margin: 0 auto;
-
-} */
-
-
-
-/* PROJECTS IMAGE CURSOR */
-
-/* .cursor {
-    width: 41.250em;
-    height: 22.500em;
-    background: no-repeat 50% 50%;
-    background-size: cover;
-    z-index: 0;
-} */
-
 /*
 ================================================================================
 LOCOMOTIVE SCROLL 4.0.6
@@ -207,8 +180,6 @@ html.has-scroll-dragging {
   -ms-user-select: none;
   user-select: none; }
 
-  
-
 .has-scroll-smooth body {
   overflow: hidden; }
 
@@ -219,8 +190,6 @@ html.has-scroll-dragging {
   height: 100vh;
   display: inline-block;
   white-space: nowrap; }
-
-  
 
 [data-scroll-direction="horizontal"] [data-scroll-section] {
   display: inline-block;
@@ -275,10 +244,10 @@ html.has-scroll-dragging {
 GSAP PERFORMANCE FIX
 ================================================================================
 */
-/* .smooth-scroll {
+ .clip {
   will-change: transform;
   backface-visibility: hidden;
-} */
+} 
 
 
 /*
