@@ -29,7 +29,6 @@ IMAGES LOADED
 */
 
 function init() {
-
   // show loader on page load
   gsap.set(loader, {autoAlpha: 1});
 
@@ -104,7 +103,6 @@ function initScroll(container) {
     getDirection: true,
     scrollFromAnywhere: true,
     touchMultiplier: 3,
-    // scrollbarContainer: document.querySelector('#primary'),
     smartphone: {
       smooth: true,
     },
@@ -121,8 +119,6 @@ function initScroll(container) {
 locoScroll.on('scroll', (instance) => {
     document.documentElement.setAttribute('data-direction', instance.direction)
 });
-
-
 
   // tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
   ScrollTrigger.scrollerProxy(".smooth-scroll", {
@@ -144,15 +140,6 @@ locoScroll.on('scroll', (instance) => {
     // pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed"
   });
 
-  /* ===== 
-  // Remove Old Locomotive Scrollbar.
-  const scrollbar = document.querySelectorAll( '.c-scrollbar' );
-      
-  if ( scrollbar.length > 1 ) {
-      scrollbar[0].remove();
-  }
-  /* ===== */
-
   // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
@@ -160,14 +147,8 @@ locoScroll.on('scroll', (instance) => {
   ScrollTrigger.refresh();
   console.log("Scrolltrigger refreshed!");
 
-  /* ===== */
-/*   locoScroll.update();
-  console.log("Locomotive Updated once more");; */
-
-
 
 /* PREVENT SCROLL UNDER FS MENU*/
-
 function handler1() {
    locoScroll.stop();
     $(this).one("click", handler2);
@@ -178,80 +159,6 @@ function handler2() {
     $(this).one("click", handler1);
 }
 $(".fs-nav-butt").one("click", handler1);
-
-/*
-  // When window reszie, need to update locomotive scroll.
-  $( window ).on( 'resize', function() {
-                  locoScroll.update();
-                  ScrollTrigger.refresh();
-                  console.log("JEBOTE RESIZED JEBOTE LOCOSCROLL I SCROLLTRIGGER UPDATED!");
-} 
-
-
-); 
-
-*/
-  /*
-  ================================================================================
-  SCROLLTRIGGER TEST
-  ================================================================================
-  */
-
-/* ScrollTrigger.create({
-  trigger: "#stickywrap",
-  scroller: ".smooth-scroll",
-  start: "top 20%",
-  end:"bottom 80%",
-pin: ".stop", 
- /*  onEnter: () => gsap.set('#sticky', {autoAlpha:1, rotate:45}),
-  onLeaveBack: () => gsap.set('#sticky', {autoAlpha:0, rotate: 270}),
-}); 
- */
-
-
-/*  */
- /*
-    gsap.utils.toArray('.pro-mask').forEach((el, i) => {
-      gsap.from(el, {
-        scrollTrigger: {
-          trigger: el,
-         // markers: true,
-          scroller: ".smooth-scroll",
-          start: 'top 80%',
-          end: "top top",
-        },
-        y: 200,
-        opacity: 0
-      })
-    });
-    console.log("Scrolltrigger animacija loaded");
-  
-*/
-
-/* ScrollTrigger.create({
-   scroller: ".smooth-scroll",
-   markers: true,
-  trigger: ".project-anchor",
-  start: "top 10%", 
-   end: "+=100%"
-   //pin: "#pinny",
- 
-}); */
-/* 
-gsap.from(".line-2", {
-  scrollTrigger: {
-    trigger: ".orange",
-    scroller: ".smooth-scroll",
-    scrub: true,
-    pin: true,
-    start: "top top",
-    end: "+=100%"
-  },
-  scaleX: 0, 
-  transformOrigin: "left center", 
-  ease: "none"
-}); */
-
 
 /*
 ================================================================================
@@ -266,7 +173,6 @@ $( "#tomain" ).on( "click", function() {
     'disableLerp': true
   });
   
-  
 });
 $( "#tomainipad" ).on( "click", function() {
   locoScroll.scrollTo( '#top', {
@@ -276,7 +182,6 @@ $( "#tomainipad" ).on( "click", function() {
     'disableLerp': true
   });
   
- 
 });
 
 /*
@@ -332,7 +237,6 @@ RELOAD ON MOBILE ORIENTATION CHANGE
 })( this );
 }
 
-
 /*
 ================================================================================
 PRELOADER --> vodi na --> INIT CONTENT
@@ -360,11 +264,6 @@ function initLoader() {
     .set(".txt", {yPercent: 100}) 
     .set(".imgg", {yPercent: 100})
     .set(".smallprint", {yPercent: 120})
-    /* .set(".char", {yPercent: 100}) */
-   /*  .set(mask, {yPercent: 0}) */
-    //.set(image, {yPercent: 100})
-    //.set(".main", {y: 150})
-
 
     .to(loaderInner, {scaleX: 0,transformOrigin: 'right bottom',ease: 'power1.inOut'}) 
 
@@ -384,14 +283,12 @@ function initLoader() {
 .to(".imgg", {autoAlpha:0})
     .to(lines, {stagger: 0.3, autoAlpha:0}, '-=0.5')
     .to([loader, loaderContent], {yPercent: -100}, '-=0.5')
-    //.to('.main', {y: 0}, 0);
 
   const tlLoader = gsap.timeline();
   tlLoader
     .add(tlLoaderIn)
     .add(tlLoaderOut);
 }
-
 
 /*
 ================================================================================
@@ -402,11 +299,7 @@ function initContent() {
 
   select('body').classList.remove('is-loading');
   initScroll();
-  console.log("Locoscroll+Scrolltrigger loaded after preloader done");
-
-  //initNavigation();
-  //initHeaderTilt();
-
+ 
 }
 
 /*
@@ -417,15 +310,10 @@ BARBA PAGE TRANSITION IN
 function pageTransitionIn({
   container
 }) {
-  // console.log('pageTransitionIn');
   // timeline to stretch the loader over the whole screen
   const tl = gsap.timeline({defaults: {duration: 0.6,ease: 'power3.out'}});
   tl
-   /* .set(loaderInner, {autoAlpha: 0})
-    .fromTo(loader, {yPercent: -100}, {yPercent: 0})
-    .fromTo(loaderMask, {yPercent: 80}, {yPercent: 0}, 0) */
     .to(container, {autoAlpha:0}, 0);
-
   return tl;
 }
 
@@ -438,15 +326,12 @@ BARBA PAGE TRANSITION OUT
 function pageTransitionOut({
   container
 }) {
-  //console.log('pageTransitionOut');
   // timeline to move loader away down
   const tl = gsap.timeline({defaults: {duration: 0.6, ease: 'power3.inOut'},
     // OVDJE SE INICIRA PONOVO SAV JS CONTENT / AKO ZATREBA
     onComplete: () => initContent()
   });
   tl
-    /*.to(loader, {yPercent: 100})
-    .to(loaderMask, {yPercent: -80}, 0)*/
     .from(container, {autoAlpha:0}, 0);
   return tl;
 }
@@ -469,31 +354,26 @@ function initPageTransitions() {
   // scroll to the top of the page
   barba.hooks.enter(() => {
     window.scrollTo(0, 0);
-    //strigtest();
+  
 
   });
   //kill scrolltrigger
   barba.hooks.beforeLeave(() => {
     locoScroll.destroy();
-    console.log("Locomotive scroll destroyed!");
+    
   });
   //init scrolltrigger
   barba.hooks.afterEnter(() => {
-    // console.log("možda ode učitat locoscroll");
-
+   
   });
-
 
   /*
   ================================================================================
   BARBA PREFETCH
   ================================================================================
   */
-
   barba.use(barbaPrefetch);
   /*
-
-
   ================================================================================
   BARBA INIT 
   ================================================================================
@@ -513,19 +393,13 @@ views: [{
   beforeEnter(data) {
   titleHero();
    heroSwiper();
-   console.log("SWIPPPPPPPP 1");
-
   },
   once(data) {
     titleHero();
     heroSwiper();
-    console.log("SWIPPPPPPPP 2");
-
   },
   afterEnter(data) {
-  
-  
-  }
+   }
 
 
 },{
@@ -533,13 +407,10 @@ views: [{
   beforeEnter(){
     projectsHeroAnima();
     projectAnchorScroll();
-  
-  },
+    },
   once(){
-   // projectsHeroAnima();
     projectAnchorScroll();
-  
-  }
+    }
 
 },{
     namespace: 'tailored',
@@ -562,21 +433,16 @@ views: [{
     ================================================================================
     */
     transitions: [{
-      // ROUTE AKO IDE NA ABOUT IDE DRUGA ANIMACIJA
-
-      //sync: true,
+   
       once({
         next
       }) {
         // do something once on the initial page load
         initLoader();
-       
         fullscreenMenuNew(); 
         fsmenuHover();
         underlineMouseover();
-        console.log("FULLSCREEN MENU LOADED --- loaded");
-      
-        
+                
       },
 
       async leave({
@@ -586,8 +452,6 @@ views: [{
           // animate loading screen in
         await pageTransitionIn(current);
         
-
-
       },
       enter({
         next
@@ -602,19 +466,11 @@ views: [{
       }) {
       
         fsmenuHover();
-     
-
       },
 
       beforeEnter({next}) {
         underlineMouseover();
-         
-
-      },
-
-
-
-
+     },
 
     }],
 
@@ -659,36 +515,6 @@ views: [{
   UPDATE ACTIVE CLASS ON THE MENU - BASED ON THE GIVEN URL
   ================================================================================
   */
-  /*
-  function updateMenu(url) {
-    const active = document.querySelector('.g-header .nav-link.active');
-
-    if (active !== null) {
-      active.classList.remove('active');
-    }
-
-    const links = Array.from(document.querySelectorAll('.g-header .nav-link'));
-
-    const index = links.map(link => link.href).findIndex((href) => {
-      return url.indexOf(href) !== -1;
-    });
-
-    if (index !== -1) {
-      links[index].classList.add('active');
-    }
-  }
-
-  // hooks that will be triggered before any page transition
-  // meaning your menu active class will be updated before going to the next page
-  barba.hooks.before((data) => {
-    updateMenu(data.trigger.href);
-  });
-  */
-  /*
-  ================================================================================
-  UPDATE ACTIVE CLASS ON THE MENU - BASED ON THE GIVEN URL
-  ================================================================================
-  */
 
   function init() {
     initLoader();
@@ -704,46 +530,7 @@ MENU - UNDERLINE AND HAMBURGER ANIMATION
 
 function underlineMouseover() {
 
-/*
-  ================================================================================
-  MENU ICON MOUSEOVER
-  ================================================================================
-  *//*
-  // MENU ICON MOUSEOVER 
-  menuhover.addEventListener('mouseover', () => {
-    let menuhovertimeline = gsap.timeline({
-      defaults: {
-        autoAlpha: 1
-      }
-    })
-    //animation.paused( true ); 
-    menuhovertimeline
-      .to(".mline2", {
-        width: "100%",
-        duration: 0.1
-      })
-      .to(".mline3", {
-        width: "100%"
-      }, "<-0.05")
-  })
-  // MENU ICON MOUSEOUT 
-  menuhover.addEventListener('mouseout', () => {
-    let menuhovertimeline = gsap.timeline({
-      defaults: {
-        autoAlpha: 1
-      }
-    })
-    //animation.paused( true ); 
-    menuhovertimeline
-      .to(".mline2", {
-        width: "80%",
-        duration: 0.1
-      })
-      .to(".mline3", {
-        width: "55%"
-      }, "<-0.05")
-  })
-*/
+
   /*
   ================================================================================
   MENU UNDERLINE
@@ -787,8 +574,6 @@ function underlineMouseover() {
 
 }
 
-
-
 /*
 ================================================================================
 FULLSCREEN MENU
@@ -797,25 +582,16 @@ FULLSCREEN MENU
 function fullscreenMenuNew() {
 
 /*OLD MENU*/
- /* const burger = select('.fs-nav-butt');*/
-   const fnav = select('.f-nav');
-//  let menuIsOpen = false; // tracks state
-
-
+  const fnav = select('.f-nav');
   const mainwrap = select('.nav-w');
   const slide = select('.nav--transition-slide');
   const burger = select('.fs-nav-butt');
   const klll = select('.f-nav-wrap')
   const linko = select('.line-wrapper')
- /*   const test = select('.link-wrapper') */
 
 /*GREENSOCK*/
 var menuAnimation = gsap.timeline({paused:true});
 var menuAnimationBack = gsap.timeline({paused:true});
-
-//var navMain = document.getElementById("nav-main");
-//var menuButton = document.getElementById("menu-button");
-
 
 var toggle = true;
 
@@ -824,8 +600,6 @@ var toggle = true;
 // MENU IN ANIMATION
 ----------------------------- */
   
-//const menuIn = gsap.timeline({paused: true, reversed: true});
-
 //menuIn
 
 menuAnimation
@@ -899,46 +673,6 @@ $('nav li a, .menutrig').on('click', function(){
   
 }
  
-/*
-================================================================================
-FULLSCREEEN MENU HOVER GRAY
-================================================================================
-*/
-function fsmenuHover() {
-
-const dev = {};
-
-dev.interactions = {
-  init: function() {
-    this.bindEvents();
-  },
-
-  bindEvents: function() {
-
-    let $filters = document.querySelectorAll("[data-filters] a");
-    $filters.forEach(function($filter) {
-      $filter.addEventListener("mouseenter", dev.interactions.filtersOnEnter);
-      $filter.addEventListener("mouseleave", dev.interactions.filtersOnLeave);
-    });
-
-  },
-
-  filtersOnEnter: function(e) {
-    // fade out all anchors
-    gsap.to("[data-filters] a", {duration:0.5, color: "#D0D0CE"});
-    
-    // keep hovered anchor the same
-    gsap.to(e.target, {color: "#1e1e1e", overwrite: true});
-  },
-
-  filtersOnLeave: function(e) {
-    // animate all anchors to normal calue
-    gsap.to("[data-filters] a", {duration:0.5, color: "#1e1e1e"});
-  }
-};
-dev.interactions.init();
-
-}
 
 /*
 ================================================================================
@@ -975,7 +709,6 @@ HOME PAGE TITLE & HERO GALLERY
 function titleHero() {
 
   Splitting();
-  console.log("Splitting update?");
   
  /*
  ================================================================================
@@ -991,7 +724,6 @@ if (mq.matches) {
  .fromTo(".clip", {autoAlpha:0, y:200, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
  { autoAlpha:1, duration:2, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "-=1.8")
 
-
 }
 else {
 var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
@@ -1001,7 +733,6 @@ var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
 
 }
 
-
 /*
 ================================================================================
 PROJECTS - HERO ANIMACIJA
@@ -1010,18 +741,11 @@ PROJECTS - HERO ANIMACIJA
 function projectsHeroAnima() {
 
   Splitting();
-  
-
-  // Create a media condition that targets viewports at least 768px wide
-
-
-
 
 const mq = window.matchMedia('(min-width: 999px)')
 if (mq.matches) {
   var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
   heroanimation
-  /* .set(".hide", {autoAlpha:1}) */
   .from(".char", {duration:1.5, stagger:0.02, yPercent:130})
   .fromTo(".in1", {autoAlpha:0, y:40},{duration:0.8,autoAlpha:1, y:0}, "<0.6")
   .fromTo(".in2", {autoAlpha:0, y:40},{duration:0.6, autoAlpha:1, stagger:0.2, y:0}, "<0.1")
@@ -1035,11 +759,6 @@ else {
 .set(".in1, .in2", {autoAlpha:1} );
 }
 
-
-
-
-
-  
   }
 
   /*
@@ -1055,12 +774,10 @@ const mq = window.matchMedia('(min-width: 999px)')
 if (mq.matches) {
 var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
   heroanimation
-  //.set(".hide", {autoAlpha:1})
   .from(".char", {duration:1.5, stagger:0.02, yPercent:130})
   .fromTo(".t1", {autoAlpha:0, y:40},{duration:0.8, stagger:0.02, autoAlpha:1, y:0}, "<0.6")
   .fromTo(".clip", {y:200, autoAlpha:0, clipPath:"polygon(40% 30%, 60% 30%, 60% 90%, 40% 90%)"}, 
   {autoAlpha:1, duration:2, y:0, clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"}, "-=1.8")
-
 
 }
 else {
@@ -1070,11 +787,6 @@ else {
 .set(".clip", {autoAlpha:1} )
 }
 
-
-
-
-  
-  
 }
 
 /*
@@ -1086,8 +798,6 @@ function contactHeroAnima() {
 
 Splitting();
 
-
-
 const mq = window.matchMedia('(min-width: 999px)')
 if (mq.matches) {
 var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
@@ -1095,16 +805,12 @@ heroanimation
 .from(".char", {stagger:0.02, duration:1.5,yPercent:130})
 .fromTo(".c1", {autoAlpha:0, y:40},{duration:0.8, autoAlpha:1, stagger:0.02, y:0}, "-=1.2")
 
-
 }
 else {
   var heroanimation = gsap.timeline({defaults:{ease: "power3.inOut"}})
   heroanimation
 .set(".c1", {autoAlpha:1} );
 }
-
-
-
 
 }
  
