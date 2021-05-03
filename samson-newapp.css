@@ -5,7 +5,6 @@ html {
   overflow: hidden;
   overflow-y: hidden;
 }
-
 body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -16,36 +15,22 @@ DEFINE ROOT VARIABLES / definiraj svoje
 ================================================================================
 */
 :root {
-  --header-height: 100px;
-  --burger-width: 40px;
-
   --bcg-lightblue:#f5f4f1;
-
   --bcg-loaderblue: #1e1e1e;
   --bcg-loaderbluedark: #f5f4f1;
-
   --loader-width: 50vw;
   --loader-height: 5em;
-
-  --v-spacing: 10vh;
-  --h-gutter: 6.6vw;
-
-  --easing: cubic-bezier(0.5, 0.7, 0.4, 1);
 }
-
 /*
 ================================================================================
 HIDE PAGE CONTENT BY DEFAULT
 ================================================================================
 */
 .is-loading #main,
-/* .is-loading .logo,
-.is-loading .burger, */
 .is-loading .header-container,
 .is-loading .fill-background {
   display: none;
 }
-
 /*
 ================================================================================
 IS LOADING BACKGROUND COLOR
@@ -54,7 +39,6 @@ IS LOADING BACKGROUND COLOR
 .is-loading {
   background-color: var(--bcg-loaderblue);
 }
-
 /*
 ================================================================================
 IS TRANSITIONING / BLUE PROGRESS CURSOR & POINTER EVENTS
@@ -64,7 +48,6 @@ IS TRANSITIONING / BLUE PROGRESS CURSOR & POINTER EVENTS
   pointer-events: none;
   cursor: progress;
 }
-
 /*
 ================================================================================
 LOADER
@@ -112,18 +95,13 @@ LOADER
 }
 
 .loader__title {
-  /* font-size: 7vw;*
-  line-height: 8vw; */
   margin: 0;
-  font-family: var(--font-headings);
-  color: var(--text-color);
   font-weight: normal;
   position: absolute;
   text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* z-index: 5; */
 }
 
 @media (max-width: 991px) {
