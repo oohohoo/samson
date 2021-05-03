@@ -249,26 +249,12 @@ GSAP PERFORMANCE FIX
   backface-visibility: hidden;
 } 
 
-
-/*
-================================================================================
-GSAP PERFORMANCE FIX
-================================================================================
-*/
-/* .loader__title--mask {
-  will-change: transform;
-  transform: translateZ(0);
-  backface-visibility: hidden;
-} */
-
 /*
 ================================================================================
 SHOW HIDE MENU
 ================================================================================
 */
 #header {
-  /* position: fixed;
-   top: 0; left: 0; */
    transform: translate3d(0,0,0);
    transition: transform .4s ease-in-out;
  }
@@ -276,9 +262,6 @@ SHOW HIDE MENU
  html[data-direction="down"] #header {
    transform: translate3d(0,-100%,0);
  }
-
-
-
 
 /*
 ================================================================================
@@ -289,128 +272,51 @@ ROTATE OVERTEXT
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); 
-
   -webkit-transform: translateY(-90deg);
   -webkit-transform: rotate(-90deg);
   -webkit-transform-origin:left bottom;
-
-
   -moz-transform: translateY(-90deg);
   -moz-transform-origin: left bottom; 
-
   -ms-transform: translateY(-90deg);
  -ms-transform-origin:left bottom; 
-
   -o-transform: translateY(-90deg);
-
   transform: translateY(-90deg);
   transform: rotate(-90deg);
-
-
   transform-origin: left bottom;
-
 }
-
-
 
 /*
 ================================================================================
 OHOHO ANIMACIJA
 ================================================================================
 */
-
 .ohohoone {
   display: block;
 }
-
 .ohohotwo {
   display:none;
-  }
-  
- .ohohowrap:hover .ohohoone {
+}
+.ohohowrap:hover .ohohoone {
   display: none;
 }
-
 .ohohowrap:hover .ohohotwo {
   display: block;
 } 
-
-
-
-/*
-================================================================================
-MAIN Z-INDEX
-================================================================================
-*/ /*
-main {
-  z-index: 1;
-  position: relative;
-}
-*/
-/*
-================================================================================
-ACTIVE LINK NE RADI!!!!
-================================================================================
-*/ 
-header {
-  text-align: center;
- /*  margin: 50px 15vw; */
-  overflow: hidden;
-}
-header a {
-  color: #202020;
-  font-size: 30px;
-  text-transform: uppercase;
-  padding: 5px 0 8px 0;
-  margin: 0 8px;
-  text-decoration: none;
-  display: inline-block;
-  overflow: hidden;
-  position: relative;
-}
-
-
-header a::after, header .nav-link.active span {
-  display: block;
-  content: ' ';
-  background-color: #1ab4d0;
-  position: absolute;
-  top: auto;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-}
-/*
-header a.nav-link .w-inline-block .w--current span {
-  background-color: #f70606;
-  z-index: 10;
-}
-
-*/
-
-
-
 
 /*
 ================================================================================
 TRICK TO UNIT PORTS ON MOBILE - VH
 ================================================================================
 */
-/* https://css-tricks.com/the-trick-to-viewport-units-on-mobile/ */
 .vhfix {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100)
 }
-
 /*
 ================================================================================
 INPUT FIELD FIX
 ================================================================================
 */
-
-
-
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -418,23 +324,19 @@ input:-webkit-autofill:active {
     -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
     -webkit-transition-delay: 9999s;
 }
-
 .w-input:focus, .w-select:focus {
   border-color: #1e1e1e;
   outline: 0;
   border-radius:0;
 }
-
 input {
     border-radius:0;
 }
-
-
 /*
 ================================================================================
 MEDIA QUERY
 ================================================================================
-*/
+
 @media (max-width: 699px) {
   html {
   font-size:12px
@@ -470,10 +372,5 @@ MEDIA QUERY
   font-size:24px
   }
   } 
-/*  animate all
-  *{
-      -webkit-transition:all 1s ease;
-           -moz-transition:all 1s ease;
-                 -o-transition:all 1s ease;
-                       transition:all 1s ease;
-  } */
+
+  */
